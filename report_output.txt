@@ -1,0 +1,1023 @@
+G:\a\python.exe G:\as\Assignment1\compair.py pickle_hashes_py36_win32_seed42.json pickle_hashes_py311_win32_seed42.json 
+Successfully loaded: pickle_hashes_py36_win32_seed42.json
+Successfully loaded: pickle_hashes_py311_win32_seed42.json
+Comparing results from:
+  1: pickle_hashes_py36_win32_seed42.json
+  2: pickle_hashes_py311_win32_seed42.json
+
+--- Category: Advanced Pickling Control ---
+  Test Case ID: memo_tricky_list_with_shared (List with shared MemoTricky instances: ["MemoTrick...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: a0fa7a9203257a8dcf96cdcea8705f736aa0e493de586452aaa8ac08311b20b3) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 873114e3b2117f0ac06ee3d8f3144f3844da554b1177cfdd24e9c36701738dd9) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_0': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: d4a592d619e6e29815084b3f63ae009c69779f2ef67a500a206617ea19313aad
+      pickle_hashes_py311_win32_seed42.json: 9e8db7240219cadcb76e3105f2430e29c5a143621a1bd5b4eb3a8850f971305d
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 24de7bf0a7bc6a964ae4b4bebc10ec10bc97123dd5a3faf93af30272cb02b1b9) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: reducible_point (ReduciblePoint(10, 20)...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: 4334814b785e3612262f6270f970013bbf1666680b9a3af2cd487a4e2364b2a3) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 52e8cbfad8a63d8eb67a68a7d5c574dae6fceacd6609e8edb8eea2db6f9dfd53) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_0': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: 788592bcd46184f3a9d657fdc4f59212e636dba97064d8e18c4772bf7459f9af
+      pickle_hashes_py311_win32_seed42.json: bf67bd91f4335a05af99bcb5864f06daf2b71c9ede483cd7620541be4f6fae2b
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 3dd18cc5d0bb080c4b9c232c35d67df6e15ff1cbeb2f245370fe09322145cd61) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: reducible_point_ex (ReduciblePointEx(30, 40, 50, extra={'info': 'from ...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: 56d689e2363fdcd2099148471ecbacca01c90e2305ee7ca586e2dbcadeb0857d) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 9240a64368571555f5b00baee66393200129a2da97fe29b6fd1d56092e848ec6) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_0': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: 9f1a21da7a1505e6238784854d5162d1e2fbdce367056cbc3966ae9f080f8432
+      pickle_hashes_py311_win32_seed42.json: cdf288597cf0b8a713b0805bdb3d3134448041c9160d8b8c2cd187229c940067
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: b2364e20879c165f013a2013a045253f9cd10096ff90970c0d8afe5b884aa625) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+--- Category: Basic Types ---
+  Test Case ID: boolean_false (Boolean False...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: ae7fee9ffff7b1a04c3cedd82d414c1e2cfab3fb24e845af73446fc61a2a47ca) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 24a5341c9a6e30357187cbeaebee0a02714ee3b3d6cead951a613e96ffb746dc) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_4': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: 820c3099a99b6082394f943e35b23b5c5f51f766e6cb173c3f30b29c423b6a03
+      pickle_hashes_py311_win32_seed42.json: 24a5341c9a6e30357187cbeaebee0a02714ee3b3d6cead951a613e96ffb746dc
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 132915fa0f4abd3a7939610b8d088fbbcdff866e17b5cbb2c0bdcb37782f4da2) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: boolean_true (Boolean True...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: 669a00d49bd5409dd9617512b8aa8496bcf68222338ae1785f98986736b3be6f) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 112bda3b495d867b6a98c899fac7c25eb60ca4b6e6fe5ec7ab9299f93e8274bc) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_4': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: f2c4bd92e4e9bdb9a8f1377e175b4a5098e0cb9c34fb387bb089b8dcc7afd184
+      pickle_hashes_py311_win32_seed42.json: 112bda3b495d867b6a98c899fac7c25eb60ca4b6e6fe5ec7ab9299f93e8274bc
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 5280fce43ea9afbd61ec2c2a16c35118af29eafa08aa2f5f714e54dc9cceb5ae) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: bytes_empty (Empty bytestring...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: 26d7b08551dba4274d2fc6c30264fdfa9a21571053a56402e7241026f3458c79) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 53b733953fb825c982984407c97cd225bf2a1be0613a8675da94eb8625acbcff) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 2213019ec9dc622db8a9d408db387f4ff32c857384008affc9c3929fbbcb2bd5) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: bytes_simple (Simple bytestring...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: 9af9ab82bc036b0af62bb431815a3e826407fa44d8383da37ab8f16227920dd0) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 6d69d43cbbd7c5f081372d25f21624a19fcdb817d94867e4e5b5f8520dcab159) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 1532edbdffa809490aa861a3ccab838b39684cce244e3832e6873381007028fe) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: bytes_with_null (Bytestring with null char...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: db467805db0e32e5e7e0e0a1dd9087bd465c8782c861acf42586ac501b0fcaa7) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: ed29131c1d5268b1fcb56b6eedef511c0f31eddfea463952beed869c40242a3c) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_0': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: 2ec86e1dfa9f02f2dad0e66e06f903c727b437f2c8f4b4e9b833101e31d37b22
+      pickle_hashes_py311_win32_seed42.json: 3dd75975feb31b7a4a59abae53dd5b80dea59c4d79d57c42a67d5f12766a2a47
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 9d4c9e2cea08e8d84db8f2558676f2acdcf938c3e827f1717be3aa677de53fc5) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: float_calc_sum (Float from sum 0.1 + 0.2 (precision issues known f...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: 792992589d58ac92150190aa9bbb6806188871b032b325a62a11e74bf90e607d) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: bf93f61ce898d84219e7335eacab09379ba06fe2b89af016f6a0e934b24b1310) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: d88e049b903372da5a0135f8c9af757a822dd05412cccbb6b16aca10c5afebcc) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: float_inf_neg (Negative infinity...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: 4de9d2a5d9f45e45fd1176d6fb28deba746519016f3dd0892eb7a3a208e3139c) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 6f5e2cc472d247afe9caf8b0f6a765d70826525e777deb031d6331942675c003) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 4e9b8fd92fa7cd41071d40eeae89ff2e298b294202398cd625fdba60310eb080) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: float_inf_pos (Positive infinity...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: 9c3694d605f23718b0e8be79520dc153195ab468c8150ee7165ab913710ba3f7) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 1b51ffe28645d16d1d34475071eef737ef4c1ea09eb443761da2d75821bf3398) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 23baec550585e574240d8c8668cd1580d4573704f20ae9eb2436609615d30f92) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: float_large_neg (Large negative float...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: b6f09119ef35884b0edf2cdec796d414a2b8f318a077dcfe1524861401a67bd4) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 57d2b25591d9682558e1503e60f0cbfb1b94fa96b0f5ccc2bbbb02726ae16913) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: a6281f2ef159bc4367880b8f05da1a2b2daf7573d1ea9a5b000919edec6ce132) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: float_large_pos (Large positive float (near double precision max)...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: bf02fc54a9cfbd22dbc26b2169e1766cda4cf3fa506b23ff996095173f9c1d46) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 5306a168ff104ef47e917b682ce222845f53b9971769f44dd10af1133002329e) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 4e0a1fbeb942b7e57ee5f8a697cc231ead617817cf76b512e24a6ebbf30e5756) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: float_nan (Not a Number (NaN)...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: 52b565ab592ec0251b8b70a43577d15eff2ef8184c1659cc109b8d7b3180503d) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 3d9d4af6ee01677bd51d3efb4dca6c1339ae8b2a73102f65990a6cbd7625eba9) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 9d51ddf5364920bd3e61ebdef1946ebfae7be8ef34371c87704a69f6e6b60660) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: float_neg_zero (Float negative zero (note: -0.0 == 0.0 is True)...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: d0dc81bd89ee88a29718e0129e6f6c4123a1924c5d61e023064719118866f111) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 7a16207b7902ce9558ba73dc0803d7c52d948fd4ab1fb3cd78131498db37a144) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 318c497b17171971d695c7941d1ff792710fa359be61ddbe6c7e0f20bb244ea3) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: float_sci (Float in scientific notation...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: 6689a75d1c2ade2dd37f6bb6a8593580c8337d16d7df28b25d7de47907cb6254) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 8b66f44551341117b6bd90d3c192c8074f73e976a1cf0f3050411f16f3dc6ac6) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 7f7958dc4256f05d5a157dda6633da2c23d54ab205cfa1b1f68ff8fa9a9d95af) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: float_simple (A simple float...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: c6b03d7d6f0145872a9d2da28fd3693ded65816314ab59f2429d91c6d39cdebc) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 0b5c6202025227ba3f177d6927438d5db991b59974338553501b300d669f7b70) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 7c934b9261dd7eaf2cb78930ccf1a13659369613cc6050c710bfc7011965fddf) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: float_small_neg (Small negative float...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: f313e0ac68bad8b533a9c1229e2ed9662ada6190ea57320e8e05da7b877d9b9a) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 6a55cc11571a177ef5094292c526e5bddd618ea9368c02e62e227b110bb0634a) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 4b1300aaa3cd0ce151732865f70cc142fa9f70f9feb770145d830c6f00d7e5f1) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: float_small_pos (Small positive float...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: 999babd71a1d311be4a5cf47f181f5460dcf2f312382da3336c34fbcae7ec437) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: eace655ada861c48d1172b48f0cb2c9a87b7ca3016308c79ea493d197db57cd9) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 5a34e763017ef62d38d396ed5930a93c1ec11cd9118f6494e65320ab106f67a3) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: float_zero (Float zero...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: b200873ca4f35029eecd0f274d54bc0c7984436dbf693976bc4c041216f1d6d7) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: cc976f3dfbf8f2c3a3ab3d8859ace71ce6548064dcfa9de3752ab6ea649f69ed) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 1b932989cefdb38583d481a7d425fc1cdc887af058a11add332d7d369b7efe27) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: int_boundary_32bit_plus_one (Max positive 32-bit signed int + 1...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: 5760825204d94cdfc34ae99dd1d35855df7baba9cb7d524f848165bbab5d673d) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 2b3ba5df4f3fee93a5e243d1096660c756e6a187c795967cf42221db8eb45a71) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: fdfdeaea04d6614dd0a062f297881dde4bd490576812b9ed8f4ecb3b8ab16d01) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: int_boundary_32bit_pos (Max positive 32-bit signed int...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: a6be1527af8f1912ede713555d8eb0d269992fdd1b100ac2271efd71eb9be2ca) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 16eb9cd60e902f52e42bc3be9d0c6cb299fb950a48928c57fcc49b9eae2cb40c) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_0': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: 52eeeaf22c35bbe6632dcd1f6ac331282171393d98239708c66374b7f681deb8
+      pickle_hashes_py311_win32_seed42.json: 7f108f528c4e0c9e984461cad777068d6b41b898ee35a322cc710d9a6086c592
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: d3e4667e4ed9eab22f9002fcd63d17b3a3fb58e2e6d28ed956e0432a18c60336) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: int_large_neg (A large negative integer...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: 915ae5e4e93e24773dfda11495b42655a1c96c4ad87d0497eca297fabec01ea9) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: e4654db3b6651ba2c28bfd7426ec37a7669c9cef3cc37454c06eafec7a6cf61c) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: e00ee2aa908991a6fd95f46025c83da37e1a94e019d8593ba736e73c8d776f33) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: int_large_pos (A large positive integer (Python arbitrary precisi...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: 34da32ed46456a8278aee8409473319b674506cc5e4016457d49e9f0f9466907) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: d9cc139c2ad059b59b62bd9271a15f53873b21d623012c6a59182fff0ae029bb) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 4f754e34008bf3f7391fdccd289f187d15479900c77b2ecb797b0b58d4a09200) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: int_neg (A negative integer...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: f101d3644f2fdba2c9510d6fc86f37505e4708553bd740b9bed6999c712f0ca3) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: b93f74be10c7cda35501aa380766657db803f4db8bd3c2b3ce62b06a7b70c432) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_0': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: cd2efc7cc59401b801a0abc02951eb95c3e69d4a72e8d2436621e0828f24573b
+      pickle_hashes_py311_win32_seed42.json: 79f73f32692014d9e23253218925ec4a03b9a5b73ecf81cb50f5e8306f0fc6ad
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 879b8330253d396182afd04924a738a60ba149a67f5e6b6f9b059977288f6c5d) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: int_simple (A simple integer...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: ca9493975e3875030e2d5a5c2265f13827a049d4473f62a448d71c05cd0e41ce) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: b78afd939a4aef912cfa7945f436bb5de305a4dc69cae7af84ddd948519f3a31) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_0': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: 6790502c3c8159db0c0a91582cecb9bfcfdb5e5222639c94211ff33f3ced9743
+      pickle_hashes_py311_win32_seed42.json: 8de1808191a42de6ceb4faff8de789aded7d490b099ffe194dfb889c835eca88
+    Protocol 'Protocol_4': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: bc77b99ceca46e60ffa2af9fe32db16ff47a84eff9dbed59df4b31196aa9ecf3
+      pickle_hashes_py311_win32_seed42.json: b78afd939a4aef912cfa7945f436bb5de305a4dc69cae7af84ddd948519f3a31
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 1d2c2565768d17dba9768415f6fd9fb92d6117f26839b35b6cc9ff5dc6108fe1) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: int_small_neg (Small negative integer...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: 5850b2207468dc892228ea3a4f825e4da98bec3b53030113b3dd209798c0c2ee) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 96768675c6178127fcdca41c26bab8793db9a864be4b16a2be3b74e0355b0a28) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_0': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: dd85d96faa223668354ee04be41af6be5f1c8ae65d6936e8444134878dfc88fe
+      pickle_hashes_py311_win32_seed42.json: f92a076d9aa1d3b0b1c18ee62f94491093618d619c899ebb7bc1277a0a1a4ddb
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: c02c9d9312b889362a1e628130c7a0d68b377e80edb69c7ad07c279b818d2c6b) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: int_zero (Integer zero...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: 24c04d87a97bdcefc011d2dd182eba1beaedfe91ae22e632ffb73e5ae7086bed) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: ac57d54dcc34f2ebf6f410f6d7fab436eb84f8f6b640782134b3d8062ebf71d0) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_0': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: e27df6af4cb2c24a091b58cfb1dddebbe751e40e2eb9802e4a4dedc8138adb07
+      pickle_hashes_py311_win32_seed42.json: b936adc764c6aa8def99e54394ab7b160671207ea86f3a5f18fb977cbf2aa3d9
+    Protocol 'Protocol_4': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: 299fb55a29347b3856f2dd57eb5ab8c65ed9edc6e8f2aae36104fcce763880cd
+      pickle_hashes_py311_win32_seed42.json: ac57d54dcc34f2ebf6f410f6d7fab436eb84f8f6b640782134b3d8062ebf71d0
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 641af9bbbd4b784e0009f34e46e39c48e44fc6fde2554d0ee8ffc92b8067a2ec) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: none_type (NoneType object...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: 4f3fc348a818941a464e415fff6b9d416c1ddc3b1c64743861d328fbc345bcd6) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 9c298d589a2158eb513cb52191144518a2acab2cb0c04f1df14fca0f712fa4a1) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_4': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: 6832703fd8cadedf69772ea09524d8f68e8fbe05ff8143bca25aa1187740f2d8
+      pickle_hashes_py311_win32_seed42.json: 9c298d589a2158eb513cb52191144518a2acab2cb0c04f1df14fca0f712fa4a1
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 6c09635decb8153d3c12e3782a69fd2eb097426f912547d351a8647b27d5580a) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: string_empty (An empty string...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: 9238a956da94f16cf609c1b8b8ca16940cf1c77a9fb8ecf7f67ef75f6b2e0f68) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 8e2a8bd996c29b99c909664ee51eb5ee3b2358306a4269d5b69dd99075e6dd85) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 3279c4b947f331d055c47442171c9ea17712596bd7fe094c31d4a5d432b42d68) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: string_long (A long string...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: dd27f3587ff0d3ef18c72e842dd47b809d55490a9f5d1c2dce8f8b673049131c) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: f48c55713a4ddde648fec95b7b24b0041dd6a77261b92cdc50cc27687cb3026d) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: fa9c334cad5855068a6f8acea5c03fb188b607cd612058385c0d9631e9b4ae31) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: string_looks_like_num (String that looks like a number...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: d9d138e3bfaf430570c135e330fa70508628a8d8a9930eb426e49f56a3552f0b) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 878362cefc931db87bc2e7b86d78ed66d1c22c17cd322442c1413432e022334d) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 6bf64ab137f5e5952c725a817851b15db6a363ba438dee8adf4859e8621a1fbc) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: string_pickle_chars (String with potential pickle control/special chars...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: bb2784258c9d684fac57128f1af92f7a5308574fd3d44da813b6a31fde49c74c) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: c4fbb4557448a41f2801d3414776519fc322914f603e259c380819e3b95fe2f0) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: f01715deff7ca18c5e5c6c4770d69824797392de06fba50b0316fa4ccd611c2c) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: string_simple (A simple ASCII string...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: c46182e846d6e7fd76cae600a122de0fe74ec98c5afa9cd74bbcb4cba33a330f) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: af20840d7725c3869b26f88302626794e6945c76d5846da4bf667e127f81ce72) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: fe2953ddbde652837b74d6c4b2b52520e47005d913eddf66437259fe4cecfb12) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: string_unicode (A Unicode string with various chars...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: 463231303b447085ffdb00234c39c9d17449f3a2f8ef7e1d7be784feecede181) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 9f004f79dd60c0c5f73a9770ddbc430a27096ae13eb3cd9267cb15dd38278eb3) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 0676fd986dc4c0899909d6116cd4692f3f122fb7de4847da92ed3e2608ee863d) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: string_whitespace (String with various whitespace...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: fa222014cc334681906f009db63ead195872a376b631bf6d939f0fc2b239bf3c) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 1c0de947cd2782384bf886a4ab8f22d80040c49d0940d997d02d9963cc9d8526) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 52a6b5972fb56064c302cff1429de2bdc0139255902b9c9a011709f2a0cab2e7) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+--- Category: Complex Structures ---
+  Test Case ID: dict_nested_basic (Basic nested dictionary...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: 5ed730ec8adbf6a671551aac0c97f6189441e58146040b1d936bbeb5f933d6e8) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 2798e449b1adaebd4c7afb463f801df1d1fb9dec99eadde50069f655775b0a3f) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_0': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: abaa846feb165d6a1db16f398ab449458a92b87cb14d35cf463b382ab30eb05f
+      pickle_hashes_py311_win32_seed42.json: be705a129a3c9e943efa3b5b9f43a7ec0fc791d820c6a22f0b90e5303c91e2c5
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: df5e9e5defbf29a492bf62678ed3ee5af425b893ead84b9a2c96a978a493d9a5) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: dict_with_list_of_sets (Dict containing list of sets/frozensets...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: 67c44b47616bb2c23f605d657432da5d29d06980928cf792b8835660f5d847c6) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 96b7fd7a644ee801618c55c59e9fce5eefbfd50ae7964a85f7a6b5d50b114d2f) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_0': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: a647d9dfb418bfca4d10887859d53bf0c3b008b12112a49ee7e93858d10ce02c
+      pickle_hashes_py311_win32_seed42.json: 22a3c58f4d5dfe9ad3966cec1885b0588498ebad53d94b42c6b49c2edebacdd0
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 3cbe4f981f7e040aa4840af64f52d5deedc2e38e7f974313e72193b0241aedfc) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: list_containing_all_special_floats (List with all special floats in specific order...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: 35f5fed9cef8f094fd9348c0df33b311c5df733ccf127e7f150bfbe646f8b56c) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 4049c7afda04627f6bedbf4e06440dbe4262c8337fd1fbe847c3d4ea2de879cf) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: ed82220f3b6ada126f6995a6cfc3979394b03e7d51392a2824ef24eca74df271) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: list_deeply_nested_orig_logic (Deeply nested list using original recursive logic ...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: b04217a61bdd0b4a89ae7c440c672141d88ac807e19b46d0050ffd0ca778f556) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 25212a860be12b50b8b9418a44af288f08c4396b4949a8bd472115c7e5126657) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_0': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: f926142d229bdd8f7a62d096e9720c724521825450b6ac8b5a21b7d785e140d0
+      pickle_hashes_py311_win32_seed42.json: 5dcb23cefa721c3565238dc2fffbbebc2af1afd2af8cfd9185342516fd39c0ff
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 3384c54fb358e752378ff17185beb6610c550d7786c736d2a896927f76aec9a6) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: list_deeply_nested_simple (Deeply nested list (non-recursive def, depth 30)...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: 6af8a97c31571e4c62f48302291973e0b608b878f6e16d57087473e0580210ed) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 743a8cb23d07e5b9b4e50e7e584df22eac9b93b4542300900cdf7884dbc83f06) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: e81870c2f6cf7095663c95bd9e9b0fdcff1d3c1b3ee1d8078348e46d26acf17b) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: list_nested_basic (Basic nested list...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: cd9a0660d3b576bd961bf77fb16776e874059e6357a592bc98b38e4a8365e49d) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: cb271b7e8cfc033fc2429ecba903f7117f746c8c24a3b291dd7f1bb141cfd413) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_0': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: 7ebe37202222db1e858997bd1244e839ff0ff4e2c9c68c954953c7ab8089f1ba
+      pickle_hashes_py311_win32_seed42.json: 141f217aa5ad2a34aa431b015c20f0ec8765393a44b64f907ae4e005c7a81467
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 94351a1d0137d94f65b0442a20fa19275f80de78b6ab1839bf42bd5d8bbe0a20) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: list_of_dicts_varied (List of dictionaries with varied content...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: 1bfcafe434fda5e0270b1780d3cd6519429741088d88294037ad3625f7322467) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: f61e0435387002f9341ef28896d5a5ae57b284213d7aaeccd6d70afee38b407d) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_0': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: 40d1a22975f9419d430670666ef2bca76bf4b96e6a9c75f747eab3650ff91402
+      pickle_hashes_py311_win32_seed42.json: d78eb1fa1433567b1035fe28c867164fb1a0ebde8e14f5dc9a70b0cada537590
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 7cf3580fd3e0d61eef70afd85d521df3a93121649ba7e12a50731b7e671ebd10) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: set_containing_tuples_with_nans (Set of tuples where tuples contain NaN (complex co...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: f5cebf496e3af20fba8dc0336c09a64d24ea43eb576b22bef9392ca12f8d0497) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 03f67c56eadef04d827c0a3c03dd98916dc687fb6c5162919ae67930409f7704) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_0': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: 9b58f02c571b05a6fbacb67ce79d637d03ffdaa2fef9cc886ffda2fe9a3aa4e0
+      pickle_hashes_py311_win32_seed42.json: 55ec6fb74f37163c3e029041c429ac31c41cbdc5a5fa38c90fbf09227de4bda2
+    Protocol 'Protocol_1': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: a2e6a60d1bc768777feb9642be5b5209d19d04af65294c2e1d19760e1003f3c1
+      pickle_hashes_py311_win32_seed42.json: 4434ee5bf5198f689206cd5594cec4fde74d8ae1b989a83c7c9004bb5916d145
+    Protocol 'Protocol_2': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: 9726b3edd7866adca652c7903889953bbd5b31bddc1c090d97dbd711f58e4733
+      pickle_hashes_py311_win32_seed42.json: 0637d529f894bef2d71883a54fb7aeab9f9404c14b2dd337ac5f2965c350b6b1
+    Protocol 'Protocol_3': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: f5cebf496e3af20fba8dc0336c09a64d24ea43eb576b22bef9392ca12f8d0497
+      pickle_hashes_py311_win32_seed42.json: ac19682fc410b61e12a1b3cc52f1fefbd4dc72a9ae7a847b8e420ffdb8cce087
+    Protocol 'Protocol_4': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: 5c675239ed539c4889adb58c82aed23e5da00ceecb035a2ff672205cb5d85de6
+      pickle_hashes_py311_win32_seed42.json: 03f67c56eadef04d827c0a3c03dd98916dc687fb6c5162919ae67930409f7704
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: dec6c168d3e4c3ca050bef525b2f7e97be5819bebac24f3c3a2f2801e5f65108) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: structure_with_shared_obj (Structure with internally shared object reference...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: 42f7514679db245e07dafffcb0f8f776983ce5ce4cb7a3c7235eb44621d3b544) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: d3620257c3c26a3641c7a23072ee82de3e32fc9c792d31331a6cc34af66449df) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 7054f71e31392f6f5731839eceb9eb4321552c764067156b6d5b99048e33ae77) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+--- Category: Container Types ---
+  Test Case ID: dict_empty (Empty dictionary...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: 8ec16a78d9c9d3646c559df239aea3f15333605ddc702eeacebf6dd3ebeff684) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 926248e52d1fa532c317e37da24ed652ae64110f8219cb5e061668bd3091f048) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_4': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: 35d79123a0af9b56982cbfa85c84014912a6eedd3851d15bed4edc54cd35e7d8
+      pickle_hashes_py311_win32_seed42.json: 926248e52d1fa532c317e37da24ed652ae64110f8219cb5e061668bd3091f048
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: bfce13fc2f13ad950016bb48ccbbbd04ce13be07c748476dde1f940fcdfa0d52) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: dict_mixed_keys (Dictionary with mixed key types...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: 3d759723e6f684679a0649f5f5528f1e8e7c4d3454faaa53737e30c4ce1612da) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 82c50025f2458a1ea1cf80311829672b03dd73d0060dc204bb7c0700504c94ea) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_0': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: d30e7a59f6f0d62645ad2dabc43bd16fa50f8d48e063927f35185484ef8dd915
+      pickle_hashes_py311_win32_seed42.json: c086903454f78611c1da3f95b2a4fdf50bd8f7c2bfe3c45d66fb38441c704a3f
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 32557b1bf90792d08b56df99df65701bfe46020b07e4fb2347eda16b016c5319) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: dict_numeric_keys (Dictionary with numeric keys...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: 735eb3be74aa37cad46826e765ab247504bfa42963db091b3351dcb2d8a47108) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 432e05d5acdda08bdcb726c8bddb05df1ad671f01478d0e2a5f1de524c9ef6fe) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_0': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: e8fa7ad8d5ddc7d8227b5e5deceaaa44b4e326730cd6990a619e5e4ba7fc147e
+      pickle_hashes_py311_win32_seed42.json: d69ffc877a7ab33f6912d0cbae9cd8d4c818313ac303ace5591ea14a2b7689b8
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: fb967cdee233e377d7ae371336754e0793930e22e1b3d3909c822dcd86415c5e) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: dict_ordered_keys_insertion (Dict with specific insertion order (Python 3.7+ pr...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: 3e19a9ae7b24cb1d9951bbec70e1fd6c79dd50ee763b7fdb710ad0397a3ae598) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 2dd485760ff460574f3829f49d066c0ee4ff30af7b0efb84b137cf48646d0752) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_0': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: 3a39623372451f3eda035cfb0e529489dd32affa5c320f603693dc2f004021a4
+      pickle_hashes_py311_win32_seed42.json: 6b59f895d3c09cdd72bbd65f3e6e4b758e2a30edd40f4519bf0ec449892c5c04
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 0b6e657178269628445b0c56665c87457350da2499124ee1b9bd43f528b98514) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: dict_simple (Simple dictionary...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: b1089e8d0d648f881182663b0c3cd3d003266092f012a1d56868b59bbf50600e) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 1e5c69f932195a6fac80961af02ff56e81315042632cbabf665a0fd4f6958d4e) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_0': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: bc465a58bfd5a1218bfb68b28fcbb212d9777ec559c57f16c2809582700cbdec
+      pickle_hashes_py311_win32_seed42.json: 1e17431631cd6fd19952c830b45eb98c3849f5279a9b0cfd01684c42bda7b1ab
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: a949341003bdcded06657248e2f38ebc7535480e48d2c5af2e711501a472bbb4) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: dict_single_entry (Dictionary with a single entry...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: c81a588496e8ef2ff741cb5278916a2e9ab1dc280cec6fd99ef9dde53451e730) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 06abbdd67a6a827cdf824746600e46776fe4231d33c4da6f963756e44eec7719) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 9ce3ed309f9b168caa4839314c38a7c8e98fe76920497825f0f215297f7d80ea) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: frozenset_empty (Empty frozenset...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: 27cdd558887f8c748022e6626ab6d60df07449a7382e71d236c5dbad40122167) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 3677f417ba9910f2b5a146c85a9f5a0cd2380842a40510104ac040dc4f8f95cc) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 3758908d1d08c3c770b60e8814f368ffbd07c506487117fe9d058583a9d6c5ce) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: frozenset_simple (Simple frozenset (EXPECT POTENTIAL VARIATION like ...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: ebe2c72fa156735c0f1621848c499d702f9f7dc6c05046396b78e1a614ebc676) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: afe4593bafeb164263b895de5cb58d453769958fc0638a0ecf0afd673bcd490f) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_0': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: 49562c7d9d85dda3960509c33a76588ad94fb7745d1ebf9e1b935b8b2dfa1c22
+      pickle_hashes_py311_win32_seed42.json: 7d3e2b938855e4574c140e1e91b9776f3b6f5e73971c419eaf6cbcdcc85ad577
+    Protocol 'Protocol_1': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: 83cb68ab847ed540bbbc7a6d3a2aa2c0fe4b7e608b822f11a92179e9f57a5927
+      pickle_hashes_py311_win32_seed42.json: 43cc032be8965e31d57f7bd7092eee421f5b0fb530e50ab186f9018d5e408432
+    Protocol 'Protocol_2': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: e623d65fb6006d5192fe06ab53ccf6d17ed8d5562f36ded87fa220e99e0688e4
+      pickle_hashes_py311_win32_seed42.json: 236d1dbe2a7f831df3c628a58eb802eae76523ed5313404e12d8b6b554678728
+    Protocol 'Protocol_3': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: ebe2c72fa156735c0f1621848c499d702f9f7dc6c05046396b78e1a614ebc676
+      pickle_hashes_py311_win32_seed42.json: 8d7220705573de0e264fafd193084b0115ff38611e947112e65ef47710f0e436
+    Protocol 'Protocol_4': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: be9c6180a6e2076e2fdd2243139d7268c67d93f9219d7c4b74c165818ffa644f
+      pickle_hashes_py311_win32_seed42.json: afe4593bafeb164263b895de5cb58d453769958fc0638a0ecf0afd673bcd490f
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 1234db684a8b81ca8304968a4e43dfbddb4e53556c50c9fb791f7ae07c9d8d7a) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: list_empty (Empty list...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: 08e14d71fb56a8d6888e9b1f0c21d1a98050e7cdf034fdfcd06d0db59f810477) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: ec0a6ccf9debf1c16781445c4b9106080d00478b0559469336db7c7b7b9711c8) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_4': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: 0f9c830c70a829acb048aec3b47efb07913b0dbca36022aaaa72ed76f244bd58
+      pickle_hashes_py311_win32_seed42.json: ec0a6ccf9debf1c16781445c4b9106080d00478b0559469336db7c7b7b9711c8
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 3fe4a92ad75f98888c0fdc32304e33df0191042a9f85c4d1c59ea2ca284412c0) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: list_many_elements_hetero (List with many heterogenous elements...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: c638793f82bb791fd4249ddaf9708d25ef503e6255520b255eb326541f482863) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: a3355e1bdbd21e43bb64d0481013c79df7e3bde4cb964224f9dcbe4a976f7ae3) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_0': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: 7e48198fe45450eee3777ff8be95932eb92a86c89c29edccb42946661f00e8f0
+      pickle_hashes_py311_win32_seed42.json: a9497deff7121e1d11230989d6da3612385f41dfb3466655781f4e5e33b423f6
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 38e5d132c45e583a3588af37958cf8a2fb04eaea336cc22c1d36a160bcdd592f) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: list_many_elements_homo (List with many homogenous elements...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: b8d85d4ca8b8454a8186e02b804fbdb5d3118213963ce97a3a3441f134eebc65) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: c7d91d681d9351778ad14a66231c2c33fafdc58d824d197fe380aa8d4238324f) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_0': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: 62e0cdc31ab63d81a585eec8454adeb73ede7cc821032d5d41c32cf66f546613
+      pickle_hashes_py311_win32_seed42.json: 6e16216fbd29ff886b302e5e568679fae0234db247d4084de2a577d57f81a1c8
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 38510c30d04d6f8f42099437c77539c647efe98135fda4613f7af2a7f1897fe1) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: list_simple (Simple list with mixed types...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: 35fc54ebefe0ec057c7f7cbc3b48091386a6af84e59cd5b9bb6df99ccee803e9) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: d22e7b4a8e8b1ef6d1ff2d4dfadc070b96de44a054b6252a1cb2eb6ae07eb4a3) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_0': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: 74ec0b4d50e8304d4e37636c8a55794e326a0bd87c481ac55ed0bbd6f37f838d
+      pickle_hashes_py311_win32_seed42.json: 7cea443bf78530f23ddc36d13a2d27c8bea3e71f1c38ce5e045c811751c06708
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 50a67f42fb3177844f4595f42028ddd800bdea76da40cbfe20a9d03af3de67a5) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: list_single_element (List with a single element...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: 3ad071a59ec770e1aff2946eb854ad189c4bd59dfaf7b94cc56b038509a54f8f) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 10707dd033b80b53c09da7acaf957c5180ff5376173df1d090693a69f55389e5) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 694a12b51e16e4e57043dfe39ab7119fbc9272274759e8ee165ed5281cd1cf23) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: list_with_special_floats (List containing special floats...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: 20526c147d79d7b9ecdf3065b4420221196176498a9f918b0a8fa4f766bfa67d) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 8d98abedfbd392791248cd106c411d20eb78cf4843e2a8c6d50880a4676d5061) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: fc55e508e85853ffc886dfec7f3929df6e95d8f260742dbc889cbb5505dd4ed8) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: set_all_same_type (Set with elements of same type...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: acb4422883cf733550bdea71b34e81708527e7f7cec44230aecb8988b1134149) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 7335333d65feea23113e06f56096d733801866af2ca97aa586ef025928454a58) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_0': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: cfe89a040ffc621d903834bc2ecfcc55ef1631d30231100bedc80eea72eb42ef
+      pickle_hashes_py311_win32_seed42.json: 446e6d2746f7a0278e3cf4b45fff115b9a3af73809c69eae9aae48256117d303
+    Protocol 'Protocol_1': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: 6227fb869ea771545e30ba58571063eaaa67a86471f7eb828e6a7f65e6da839d
+      pickle_hashes_py311_win32_seed42.json: 22bac4fb97ddcbb05a9377992aac9ea0e7e27eec9829c1b0c28a8fdc043858c2
+    Protocol 'Protocol_2': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: c56e74aed8d72ca595e73f2cb58cdcad4d1c3e9f6fddd54742a03134fcea1fe3
+      pickle_hashes_py311_win32_seed42.json: 920069eaa9dba734477276c39273325eb75f9dc968733367d50a97525d586177
+    Protocol 'Protocol_3': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: acb4422883cf733550bdea71b34e81708527e7f7cec44230aecb8988b1134149
+      pickle_hashes_py311_win32_seed42.json: a2b6f0608d6684fa79cf19a9ae931de4a3b5c0c9fcaab6ab412f5ad2eafa2b16
+    Protocol 'Protocol_4': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: 187371990c94df45019608995870f0ddae02b7d5359f8d5cf3d783535afb2293
+      pickle_hashes_py311_win32_seed42.json: 7335333d65feea23113e06f56096d733801866af2ca97aa586ef025928454a58
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 147590a48dd7f99d9566bff2007963175341d444249ec718b4ce517baba4b539) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: set_empty (Empty set...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: 0cdaff94fb5e168a49c2a0b2807ed3972fce8e480f1250e43ec781d150f077ec) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: bea826fb2bda1fb34703d8f0f8cff70a6d3c36fc695d3cb044acc1da6c36b429) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_4': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: 31b67d00a430ff330d730ccca43e63189b973087a0a65078d39866ebb8284c18
+      pickle_hashes_py311_win32_seed42.json: bea826fb2bda1fb34703d8f0f8cff70a6d3c36fc695d3cb044acc1da6c36b429
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 56d08dc47ca0820b594ef3bcf3a7a79b167e7747889c5363935d52d80b9c53f1) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: set_from_list_with_duplicates (Set created from list with duplicates...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: f9c410a7e858533c399362dc4e95ae170c309404275d6cc08ff68052b1dac8b3) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: e736a6ea77a0ae395d86d1d12a327d10aaa56ae1356b55260b10a6d6950beafc) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_0': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: e141ca612b16b7a22db5402c9bd9c6f4062f33772b5c5c5cb7335ec972652d37
+      pickle_hashes_py311_win32_seed42.json: 03e132a301977d8f39b25ea3fdeffb922403ed0aae892607dc1dca826d0f098c
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: a7873220312be3c86bdd786da9a8ec34a97f9bc347cdeb9d8f147c6364d0204b) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: set_simple (Simple set (EXPECT POTENTIAL VARIATION for protoco...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: 0d96590e6923760ca7214b217ef3df931e519a8b3de68d26eabe766e68ce4ce5) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: d4a90bae4be89e96926e388a0d9932a34a824142fd1fbb0bfa4ce1b60d562539) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_0': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: 725d7b7342806c49a5866878004843df49e5a2f0a7c2747a606d89f20dfd05b6
+      pickle_hashes_py311_win32_seed42.json: c95c2ff6e91b95bef2ffe33a387c6d60c5abedb8e0d511140353efee0b20b291
+    Protocol 'Protocol_1': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: c80c7672fcb7d607bb04c14aaaf4dc97952033bebf8658504dc38b3b7daaac90
+      pickle_hashes_py311_win32_seed42.json: f3ab30dab5d7137099e1d3e73d57cd82db2bbf5f88818fd20141dc7612ddd4e1
+    Protocol 'Protocol_2': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: 7291c75321414acabfe2e2ba08d0fe21434ceae2b11249ab62450475455878c4
+      pickle_hashes_py311_win32_seed42.json: 9951b19261bdeec95e531f824b2005e8e1e8c19ba06e8b3992c73d3b41629e9e
+    Protocol 'Protocol_3': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: 0d96590e6923760ca7214b217ef3df931e519a8b3de68d26eabe766e68ce4ce5
+      pickle_hashes_py311_win32_seed42.json: 8d0ea82b828684a9bc7b17ee9a0f3578a898a55fc1bc8638f502077c1f9cf4d1
+    Protocol 'Protocol_4': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: 556b6459d0c1566d1cced1f897af0a8b622d3405d2c13eee2ef61f9fbd21037c
+      pickle_hashes_py311_win32_seed42.json: d4a90bae4be89e96926e388a0d9932a34a824142fd1fbb0bfa4ce1b60d562539
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 311438495b0ba20bc029881635074fda85f576539c7982b1b141564acb6ad469) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: set_single_element (Set with a single element...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: 69cecd5ca8a6ccc5bd1a2d0828024bbb94131dab4c2c0d8bce1936a73b5c88af) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 3be04f0e958cd409da104670add379a682c3308e979d58b57c026c859429b1bc) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 126d5875744fe1e1c07d6cfaa1f4565cadca482eb3caddf6d305d2bcf769c647) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: set_with_special_floats (Set containing special floats (NaN makes it tricky...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: 8e1ab50cad8a2b13e8828915e268bd9b74612a9e567c855a4e60e65d140090cd) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 155ba64dba12a9c56b3b6db3d145530bd1e7dcdb40ea6709f46749ccfbcb5a64) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 725c382132dee5fd31ca89863eb735ac67fc613b68159073fa5f6cf852c43c0b) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: tuple_empty (Empty tuple...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: c60882f6222b65821e2af3f1d0a1086a04469164bc9617b35fcc612ce814ddee) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 559bededcb346584f1200f573f2076d34a011e43064063b0f635e49190772830) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_4': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: 05cbd7fe125e7024a2d21155fe89f1aa3480682138834b6922c26fa432681146
+      pickle_hashes_py311_win32_seed42.json: 559bededcb346584f1200f573f2076d34a011e43064063b0f635e49190772830
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 4d2bde2bcd7529f75df8685357afae6f49a6792a5e61bbb22a51ae121291bf57) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: tuple_many_elements (Tuple with many elements...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: 067ab7ed7cee0c679cfc06796a6740d4081ad39f6594a016bef59c253b37f002) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 5ecc62e60da846b7314fd43a918f0e48e112e3a7b50b7824d5c3a8559d7b124b) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_0': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: 59bfafbf67386ec7afcfc90d85cfcb7fc0f3a30c24cceb4a341338d1819ea5c5
+      pickle_hashes_py311_win32_seed42.json: a20b8cfb8534681bf86dfb76ac88a7f6345d173c1484c9cab2ebd95e65cb090d
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 22072b10bae3369448489db36a2b9fd0099d7edac5b78f7477595c9faa693a47) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: tuple_simple (Simple tuple...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: 2695cd7acbd5c12da5ad5d698a45b1cebfa079d79d39d2fb60a644e4a228f7bf) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 9e87309b210d0b89a2eb89e74d8928483e470ad2545dfb0f5d0a46140345a3b1) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_0': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: 83888ff327ac3b56eb69192ee113f5fbb48af36fe2ff89ccb7921dd90c603180
+      pickle_hashes_py311_win32_seed42.json: 00bede543690023f2bf96919117ade7dccbd1415a717e065b08fb73a0aa5cce6
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 9ab0e6b8c552d79829aa039f7ad9f724397d7f6deafad5c687a85368d4caa997) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: tuple_single_element (Tuple with a single element (note comma)...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: c6dbe8fc5bf82a3f945bfbc2fee1193598ccf8b07b75b426f58847e528a54463) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 7ac67431b8a2b78c2ce01b641fad9932a4e88a5db248c4b008b16828ef9252b1) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: e7c7c56c90b81e2e4d7489ef3b806bb5b6e5d94929e891d2277656cd39f8cfff) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+--- Category: Custom Objects ---
+  Test Case ID: custom_obj_default_with_set_attr (MyObjectDefault(attr1='val1_instance', attr2_set={...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: 5ffdd16ad008b19ae7d703047f728f7c7b4c3d35108f3739526d6fec1c8cfabe) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: fd9911137e475c87c64ea9e1c63f5a04aa928f186ab3c5e1a9a4ed87a3090f6e) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 6da8cc082dedc0817c97b372bd8a795060c00240fcf75dc3fcb40dd725492afb) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: custom_obj_stable_getstate (MyObjectStable(name='stable', value=100, items_set...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: e42142907ae7a444469c69d1638ffa92d3133176b2976caf5f240f71a23be74e) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: aafd16c78ce59f9e80a2b7185a388c6399bf229915112d4dc6f467963401430a) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_0': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: b349d848658199a5e37b1f8fccb2efcde4b95c21a3fa49045e9f1e98d8b2d406
+      pickle_hashes_py311_win32_seed42.json: 90a66848be6b398a688d62b1774da75deae7722f16cd257a4a0a87b384d1a35b
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 9a24e89835e8b822a13b3dfa95aa17dd8560b9a2cfe8f241cd8604ed1f96f83b) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: custom_obj_unstable_no_getstate_with_set_attr (MyObjectUnstable(name='unstable', value=200, items...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: 3ab418cb929a9c89635e58825cd915e307a7451819ec12bdd812d18678091fa9) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: be79e4b101a0c59b80e886b69b95eb0ec8f27f5cb4fc6f4dd4b22239732aa166) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_0': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: 592cdc836f506e201ad1f648bdd4e8b4776fd8a2f97c475241790b14640a1541
+      pickle_hashes_py311_win32_seed42.json: cab03ff8a3343f9269159c9f8bb4ab421b0d2a8c3e6c581a120456e95b07a70c
+    Protocol 'Protocol_1': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: b049ce02f8a3934d3e547cbbaa83178b45967762ecefbc64bb641ebce757a271
+      pickle_hashes_py311_win32_seed42.json: bf97a16e6ebc2318d168c9b91e5fe420d4fdd016e661449d8789e34aa065ac8a
+    Protocol 'Protocol_2': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: 61e54c1eca4d13ad1e7f1e5c57d3711bc2a84b60cea783fc4cf29f87d829cfe0
+      pickle_hashes_py311_win32_seed42.json: 0ed1441a4a96091abe848ba412d7b1686340772f3603496eb01a3e3479c80dcb
+    Protocol 'Protocol_3': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: 3ab418cb929a9c89635e58825cd915e307a7451819ec12bdd812d18678091fa9
+      pickle_hashes_py311_win32_seed42.json: b713f3713adafae1bd3cd7c384cba51be32d0b8cd421ddd2992e33809c6bfd5d
+    Protocol 'Protocol_4': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: 06ca0ce54f92fb417c4e422dcc4434cb86fed29e4cb0e3b57af2288080d1559d
+      pickle_hashes_py311_win32_seed42.json: be79e4b101a0c59b80e886b69b95eb0ec8f27f5cb4fc6f4dd4b22239732aa166
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 5587110e9a1a72a8103705e576afdb7a13ce2e4c39a246afb2ba58099a89331f) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+--- Category: Fuzzing ---
+  Test Case ID: fuzz_1 (Fuzzed data (seed=42, depth<=3, size<=4): 10750011...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: c7db347a1640281a26272e18dedcf7fdbcaa35227f658386932e253c07dbb03d) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 65c9f02ee45338120113bdd22964cd816dd1852dad3af522d8888ba0eb886849) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_0': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: 344a0c5babe908c9d6aa0326055588f5aed0e155530be8b1e9fe4fabc9ece074
+      pickle_hashes_py311_win32_seed42.json: a005e24ac2550e5d46d90d8a0fa8c4ab89b9af1355dfca8674fcd0f9f680645e
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: e6f94230e1e3b88c7fc9eba7bd97ffcbdfbe2eca1d0bf5a98d9fff5d87b666f2) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: fuzz_10 (Fuzzed data (seed=42, depth<=3, size<=4): None...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: 4f3fc348a818941a464e415fff6b9d416c1ddc3b1c64743861d328fbc345bcd6) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 9c298d589a2158eb513cb52191144518a2acab2cb0c04f1df14fca0f712fa4a1) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_4': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: 6832703fd8cadedf69772ea09524d8f68e8fbe05ff8143bca25aa1187740f2d8
+      pickle_hashes_py311_win32_seed42.json: 9c298d589a2158eb513cb52191144518a2acab2cb0c04f1df14fca0f712fa4a1
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 6c09635decb8153d3c12e3782a69fd2eb097426f912547d351a8647b27d5580a) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: fuzz_11 (Fuzzed data (seed=42, depth<=3, size<=4): [{None}]...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: ec13db89071dcbc35b16256df002c05e24acd10df1dc8a02b67bdc814a1a9315) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 8bee74a514ee8d9958d0318dcb440ff05a8e7584c502d3ce87bbdcc661b3b538) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 11223e55326259947af011b7a2114468e3522d2f6b63e9516582b5e241846e94) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: fuzz_12 (Fuzzed data (seed=42, depth<=3, size<=4): {None: [...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: 27eed843e4e6cd71e74372b0350628dd07e3248b1f18cc783a4418dccb86e69e) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 0b5570e0f39910d913f2f6ddaf1b0d64ee5716f0af82bc13be7851e0d306658c) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 82fa454e08cf4265023ba62a3eca77d16f25dd806527c8ac8bfe9e54ae1eb075) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: fuzz_13 (Fuzzed data (seed=42, depth<=3, size<=4): []...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: 08e14d71fb56a8d6888e9b1f0c21d1a98050e7cdf034fdfcd06d0db59f810477) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: ec0a6ccf9debf1c16781445c4b9106080d00478b0559469336db7c7b7b9711c8) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_4': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: 0f9c830c70a829acb048aec3b47efb07913b0dbca36022aaaa72ed76f244bd58
+      pickle_hashes_py311_win32_seed42.json: ec0a6ccf9debf1c16781445c4b9106080d00478b0559469336db7c7b7b9711c8
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 3fe4a92ad75f98888c0fdc32304e33df0191042a9f85c4d1c59ea2ca284412c0) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: fuzz_14 (Fuzzed data (seed=42, depth<=3, size<=4): b'Zliw\x...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: 703765acbe504649896f4f9dc929d6c4cd3e483f7bdc72e481d493b6789b9108) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 101214eaf150f0f99fd36d4a8bfb851200b22e4487f3259255c2a61cd9dd6837) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_0': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: cf49cd6e33a7153bbb4da215500c4ef1afffa9e0fe5eec81122acadcbb8ba603
+      pickle_hashes_py311_win32_seed42.json: 99f011464a7e8be3cb4d2934b50a784e0f1b8f8c1d9ef7a0554e4f2ad14e1063
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 81bc214ae216881877c7ea32b83613d114669feb84d847b44727a548fd94c74d) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: fuzz_15 (Fuzzed data (seed=42, depth<=3, size<=4): (8294902...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: bdff1f23e5419fd9d8160c27af789d026ae2d7637364125b465ef4945f17159c) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 30dc90fa3439db436f09625c668d78aea4980f3763d3e78cdbb80824ef37cc45) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_0': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: e076c970363ff232a24a9ebaaed7c4c9e0bf85877939fb45d2c65042776c2c94
+      pickle_hashes_py311_win32_seed42.json: 274c0d048671c43375ae2d71d4cc10309b494f628e99ffa19a598995a7533a5a
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 3633c085190fef38d5b1190fc6c00aaa06a59c187e4de12e928702430790cb15) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: fuzz_16 (Fuzzed data (seed=42, depth<=3, size<=4): -5849964...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: b143a39a14d022f4d81c8c9ada2d0374cdc0db840703481b38cd160d35afefac) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: f02e72275b1a76e40f63790c1c620ef630681ed087c6154eaec213202ac0dadc) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_0': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: 35528f10257f6e484018303a8ccfea779c6d40360b9b6a99f5225b24e46cd096
+      pickle_hashes_py311_win32_seed42.json: 347da427db3097a6f56aff49934d412d6c5ec7701be234c1a9fdd700a7132976
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 749417ec9cfb2597275085510c71fccc2fa14229b2e0ccb3a6cc4a7a9c410427) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: fuzz_17 (Fuzzed data (seed=42, depth<=3, size<=4): [[[60310...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: f3926a78ddd388db9d19a69cf77c645b4c91e203d42dee1d8f01f442debdbe0c) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 7f91c2c330b54d7d9968cc7a0c87b99f5b444093a584686c0c151135838bbeed) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_0': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: 5a9dc761dca0856d12358b37cd86d07acfbcd49d37c1e0c8eced5e7ff66fa5f4
+      pickle_hashes_py311_win32_seed42.json: 39b8c4d6b3bde446650f57512e538d52c9319d10cdc886d522dd7de9aae26255
+    Protocol 'Protocol_1': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: e1128888df03b54144f9cd6226acf68c8ef4545e42c1cccdefa9b74c04ac44e9
+      pickle_hashes_py311_win32_seed42.json: 9a5c797a31a4a768ae3d7748eefc608156e950a892103d1e83650f64cf273842
+    Protocol 'Protocol_2': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: e0eff42a9252ebd73cc0609c3aef14dd631ea4c7f1ce74dd3b8723cc7509182d
+      pickle_hashes_py311_win32_seed42.json: b561a8d199c320c125aab35c92a9ca3bfc23371d9e9e89768a76ad2a5f5eae2b
+    Protocol 'Protocol_3': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: f3926a78ddd388db9d19a69cf77c645b4c91e203d42dee1d8f01f442debdbe0c
+      pickle_hashes_py311_win32_seed42.json: 4a849800b6c3febd46f7a4c035b42a56f45429b84e211066dd38d0e6e02f7595
+    Protocol 'Protocol_4': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: 0954722e9c73e7832648c6ac51898832ef372f7e172e2134ee8be78dd3be18c3
+      pickle_hashes_py311_win32_seed42.json: 7f91c2c330b54d7d9968cc7a0c87b99f5b444093a584686c0c151135838bbeed
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 3806b5e1c695970c60796f0a59a3983d859b60be40518711f4a08bc4d1ceeedc) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: fuzz_18 (Fuzzed data (seed=42, depth<=3, size<=4): {'5Jq^v\...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: 18e2c87b120f32f42aac0a41a5d7efa3d672e8c4171aa66c844a8e7290a16ba0) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: ae1514430af4f05c6b6db4e11833c4e42e021190e9c614de6ed85149c88ceaf6) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 4f07b7484003fbad39155976dcb89993c647d60f2b08df2cdaaf2e95ccfd9595) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: fuzz_19 (Fuzzed data (seed=42, depth<=3, size<=4): [b'a\xdf...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: 9f3e92c181a8d425a1c724e25da86bbc37751ba03892fc684dc4d6e89e6a8250) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: b234c66c275cf78bdc8975df826e20c3f0707512d567e1dcec85381204f727bd) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: dd8425d40a8b42977c3c1c9ea0c4a0f2a64738b5923e91ded702b60f5135dcb4) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: fuzz_2 (Fuzzed data (seed=42, depth<=3, size<=4): [-700342...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: 5b65f14429a8bce349577f9688e09d173200f6dcc500f0631970ea0a0cd00687) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: cd85269a176970203265d6ad3fec8bd698ce9193f08c5f0a0bdbe2a88636d2b7) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_0': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: 16bed63ee090e60980d38cf9be8c34c87437189353bed4e56013b48a51876db7
+      pickle_hashes_py311_win32_seed42.json: 77d35c35d44520475139926ef88aaf897a73404bc57da1fd03d95f6b9ccf7ae5
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: d4b36620fec4304a58dcdfb5cdb5fdebbcf85fe3067f93e818b2f4303619ed73) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: fuzz_20 (Fuzzed data (seed=42, depth<=3, size<=4): (b'fTG\x...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: 3a3a809dc75e9eb80bcc39353302ba5bf2cf18dd89c941493e49542e77806f29) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 22edf104734e29e8d5a101e9758953b78ab755c484f8d6e8782e9866a3f1f171) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: c550b8d0db6b6532441be8e8c186cd19e9b55ad5abcb00261ffa35ca4ad96984) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: fuzz_21 (Fuzzed data (seed=42, depth<=3, size<=4): {'-x4d/T...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: bcc983d8d910481a3e99a015d9e54add7d48dec28cd381dce81e21c027a168e9) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: e94f1dadf09686e265383317f7bd92440f97046953c5611eb497e136279b1108) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_0': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: 9b8f6af5aa3ddd5e492139ddc615bd5040ebbdcd003bc63c3b24a35f15456f7d
+      pickle_hashes_py311_win32_seed42.json: 567f91548f3e93d976ddfbeb3185ed148fd377ae051e7d518d44aa9dea1cae4d
+    Protocol 'Protocol_1': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: a05d0320948617bccea69d5cc75ccbcd271f6d6e282c9d952002ebac47704866
+      pickle_hashes_py311_win32_seed42.json: 698376884963065f82fdffe3ccc09985997473089358562a2674c47a9fe91319
+    Protocol 'Protocol_2': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: 934b5608745b492b8a0472deecbb618eecb2394d9be8ab1f97a2250b1ca55ae1
+      pickle_hashes_py311_win32_seed42.json: 674ac731d0c82574e39fe49063211d7461cd097a82a2fc12cd0ec9ed6098a295
+    Protocol 'Protocol_3': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: bcc983d8d910481a3e99a015d9e54add7d48dec28cd381dce81e21c027a168e9
+      pickle_hashes_py311_win32_seed42.json: 0cbcbda5362d381c65d67946425f78d0c1c764c4d6e2ce5f10eca1e10e9a35b3
+    Protocol 'Protocol_4': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: 3d2549ead281100318335f002ea215429c5b393db0dc70e23724a9511605efb0
+      pickle_hashes_py311_win32_seed42.json: e94f1dadf09686e265383317f7bd92440f97046953c5611eb497e136279b1108
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: c6e205df01104481886f25548b644abfb2cfb59f321a9e554b9237c4f22d52a5) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: fuzz_22 (Fuzzed data (seed=42, depth<=3, size<=4): ()...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: c60882f6222b65821e2af3f1d0a1086a04469164bc9617b35fcc612ce814ddee) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 559bededcb346584f1200f573f2076d34a011e43064063b0f635e49190772830) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_4': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: 05cbd7fe125e7024a2d21155fe89f1aa3480682138834b6922c26fa432681146
+      pickle_hashes_py311_win32_seed42.json: 559bededcb346584f1200f573f2076d34a011e43064063b0f635e49190772830
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 4d2bde2bcd7529f75df8685357afae6f49a6792a5e61bbb22a51ae121291bf57) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: fuzz_23 (Fuzzed data (seed=42, depth<=3, size<=4): {}...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: 8ec16a78d9c9d3646c559df239aea3f15333605ddc702eeacebf6dd3ebeff684) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 926248e52d1fa532c317e37da24ed652ae64110f8219cb5e061668bd3091f048) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_4': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: 35d79123a0af9b56982cbfa85c84014912a6eedd3851d15bed4edc54cd35e7d8
+      pickle_hashes_py311_win32_seed42.json: 926248e52d1fa532c317e37da24ed652ae64110f8219cb5e061668bd3091f048
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: bfce13fc2f13ad950016bb48ccbbbd04ce13be07c748476dde1f940fcdfa0d52) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: fuzz_24 (Fuzzed data (seed=42, depth<=3, size<=4): {False, ...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: 47e689d6174232793d6680f569d0b7178f22ad2e124c6f281aee35320691e517) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: dcf4c3eaffd7173b3853951f63971b444a6160bd0a1a2de63ad881d113d92efe) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 58f2bc3ed1c6567b0b82c43bce9fe79b9b24e408edc948b76f0d682ade25796c) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: fuzz_25 (Fuzzed data (seed=42, depth<=3, size<=4): {True, N...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: 4b96e828c1a9b821efc51464ba95333ffe34c86d4df8b70b6c9ba43135a78628) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 33582cca32497e923909291411dae2d0be10b9d1c988108cf5c13eac86e8101d) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_0': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: 143e8c22e82bb685c987814ed5061de78435af4fa44515c3463d82a9a0f0b5f6
+      pickle_hashes_py311_win32_seed42.json: 3980c21294a17e6a9339ae32cddd121acdf0085890994a8d54b58d54bdaffc61
+    Protocol 'Protocol_1': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: 4ca7662381cee22673131557984b121703d1b4868f727179868275feb73bfa79
+      pickle_hashes_py311_win32_seed42.json: 3791e89f92fcd96c1dfac1a72df89a8b4ed75422d5c315478a8ee0e92c9ecfe7
+    Protocol 'Protocol_2': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: 14762d97bbfbca8084e6221ce7ce7f2962a84e3305510e6857b1d17475f045bb
+      pickle_hashes_py311_win32_seed42.json: b3ce7f48a2517a3d15556e098ed59de9f64a3a05c226062261e72f15cf3c0f98
+    Protocol 'Protocol_3': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: 4b96e828c1a9b821efc51464ba95333ffe34c86d4df8b70b6c9ba43135a78628
+      pickle_hashes_py311_win32_seed42.json: 525defea8294752b98e803459e9bd1adf4b4da2579be12571be71458c5ef9334
+    Protocol 'Protocol_4': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: 2931b466795106dcae92486662dbf1db1941f315f6b9d7132dead54750b17a85
+      pickle_hashes_py311_win32_seed42.json: 33582cca32497e923909291411dae2d0be10b9d1c988108cf5c13eac86e8101d
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 4668f67b7ce530df79b50ba5d3d32b51f86f2e2f8b3d4358d0b892aef4f514d0) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: fuzz_3 (Fuzzed data (seed=42, depth<=3, size<=4): {-134698...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: 2ddc7d44fc288ca2e2b01897aaff117ddaeae28dd4b5f3a54ee08bde2b860af9) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 9462dbd0c50248da9e2e45fb17ac575db485b8a8cb859b2237dd346a49836177) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_0': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: 9d6d5ea6ad2705f4ca8630c9c90a2bfe3cfae47e4d6d651dc19f3ee9f609089b
+      pickle_hashes_py311_win32_seed42.json: 1c879c39f08a404847bf7ebe20289b48f1bba40339dea7da06289b3305e14c3b
+    Protocol 'Protocol_1': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: 825d5a798b56e41fa202ec2f151d9529eb7177a0488600f8ee7c6218fb00920a
+      pickle_hashes_py311_win32_seed42.json: 7c2378c8d54c88348d5d0cca50153b412f72ce3ed3d74e1febf98820d4247e96
+    Protocol 'Protocol_2': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: e9bdd2927b02b78fa6d6db1f1ffac16f3abbf9e60f5a57cd2f91dc51af095a55
+      pickle_hashes_py311_win32_seed42.json: 73c50c1256d15fccb548e64a4e20e3afeeaea36ce455cb245503d9fc30368d10
+    Protocol 'Protocol_3': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: 2ddc7d44fc288ca2e2b01897aaff117ddaeae28dd4b5f3a54ee08bde2b860af9
+      pickle_hashes_py311_win32_seed42.json: b2467817e5e38dbbad21dfb802ca6965c76b5becc6f0509a3c7c5c0860c3491d
+    Protocol 'Protocol_4': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: 573511d36d05922c81b3d10ac4070da5d96ef72e08c4c5365f51c3318fd05c1f
+      pickle_hashes_py311_win32_seed42.json: 9462dbd0c50248da9e2e45fb17ac575db485b8a8cb859b2237dd346a49836177
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 8d349a4f15efe6c4706d54ef9953ab72b60af3f0932a201e380101a716966503) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: fuzz_4 (Fuzzed data (seed=42, depth<=3, size<=4): {False: ...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: 9131ab730f385e3bd993bc0a27a88d0eef9035969701d867bfcac2bb7f25f40f) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 2fb0647879a9161412d8e50ebc91ed4de313c780ccf03c8eaf5881b267516c8c) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 5e12adfadae65fecdb45b5a5c2bbc3fc7b545d5786a5366e8fe11c22a048cf8d) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: fuzz_5 (Fuzzed data (seed=42, depth<=3, size<=4): [()]...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: 6b13e385548bbb5b771ccadf45b1b9ef31bb6816fe168c7122ee354a73aa9256) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: a1cd846e1abcf4866cb14afb396f4deff5490969a47059edf27d26d34cafe8e8) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: e137b10e6ba83e07ff7773e6c56b3979a823b41484487e4bcec37d8277f5c449) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: fuzz_6 (Fuzzed data (seed=42, depth<=3, size<=4): True...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: 669a00d49bd5409dd9617512b8aa8496bcf68222338ae1785f98986736b3be6f) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 112bda3b495d867b6a98c899fac7c25eb60ca4b6e6fe5ec7ab9299f93e8274bc) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_4': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: f2c4bd92e4e9bdb9a8f1377e175b4a5098e0cb9c34fb387bb089b8dcc7afd184
+      pickle_hashes_py311_win32_seed42.json: 112bda3b495d867b6a98c899fac7c25eb60ca4b6e6fe5ec7ab9299f93e8274bc
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 5280fce43ea9afbd61ec2c2a16c35118af29eafa08aa2f5f714e54dc9cceb5ae) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: fuzz_7 (Fuzzed data (seed=42, depth<=3, size<=4): (b'\x89\...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: d9aea6be6701074f7b6b201e23746a0ee73f1753a24aa73800781ba2261a6ef0) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 9c8bf5bf7b2ded06aeefbea6ad8166092f114194cb21dead766889cb10740ce2) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_0': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: a2baca285c42a82295774881a288314a2989c9d1833e1bcc2c669e50300d14e5
+      pickle_hashes_py311_win32_seed42.json: d8493196975fcbd6fb1676bc90aa8086d2ffd117e48940b7d60f1249bceeb0c4
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 0a39d580b83b176f07320bb648269aa296fcf36e262865cfc1808e367c419c11) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: fuzz_8 (Fuzzed data (seed=42, depth<=3, size<=4): {(None,)...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: 3d154f86fa859c473476b46ec553d570a63c7fdb487f1f49cfdef3f061a420e5) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: db9bbfa3e9f2e2eec05149f19b4a57c3cd879f96409c5244bc255285c869d2c4) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_0': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: be9b0607bc6b24faff10770651e832446af71d3a12d90a795186b7e60ef74a75
+      pickle_hashes_py311_win32_seed42.json: b08f491dae08f50b533935b2e0519cee702a4019d277603de8bc9db1bd8655f0
+    Protocol 'Protocol_1': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: 0348168d2289eedfb9d2ec257851300f2ac31ef6208135c48dc873f8914efbdc
+      pickle_hashes_py311_win32_seed42.json: 2df93caeb7b79c679ab50b5e41a8af40df113331ab2af9b47e66231a3c6cd708
+    Protocol 'Protocol_2': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: 5619cacadf6ea378b79277ae3c7f3fd106101fd7837e9746bbd2a12391cb551e
+      pickle_hashes_py311_win32_seed42.json: 5dfed4c8ab1a63ffb46284c9eed9ad2efd4a067c90adc4dbdfd7b971c696f40a
+    Protocol 'Protocol_3': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: 3d154f86fa859c473476b46ec553d570a63c7fdb487f1f49cfdef3f061a420e5
+      pickle_hashes_py311_win32_seed42.json: 0d9a499cc8f0492f16917bfb7ad0e1a652a69eb881ac236a47f91fd2bca0c133
+    Protocol 'Protocol_4': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: 2035ebda3049ef3c94ca65eeeb7ef70e1baee0e72a54b13f43aee8c7c42b5ad4
+      pickle_hashes_py311_win32_seed42.json: db9bbfa3e9f2e2eec05149f19b4a57c3cd879f96409c5244bc255285c869d2c4
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: e1ebbc63e46bda2b156b02a20b284a12124f1195264e7390f520735451ca20de) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: fuzz_9 (Fuzzed data (seed=42, depth<=3, size<=4): 10135712...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: c1bd031cc3793ee2f3736c55ce17c211aed3d786fd7595812a73b889a85d71ab) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 2c563d18532cb02e4d854a5a3a6209ba02c5f15b4212318adfc327dfd988f996) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_0': MISMATCH!
+      pickle_hashes_py36_win32_seed42.json: 9423bfabb81cc41921b51d83bbd771ba48348b1c68e4f327d5b638d6691c5336
+      pickle_hashes_py311_win32_seed42.json: 21d97c4c82b9f1c3e884ab9231a0b76ae9b38d37f9a2b4b40cfceb4c5fb7f672
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 89841005695502ad1c24608d716ecd42148c9c864c6346f204272651f16ff496) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+--- Category: Recursive Structures ---
+  Test Case ID: dict_recursive_direct (Directly recursive dictionary (d={self:d})...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: cab29aa6532067fee25f920b70a38eec2f961efc5cb61969428e52de52df1531) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: b8205b1671223d0f624004c0571b98b257b665b6b5523751c3e2ac978b2ead6d) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 8e4773e8d9510881f1cc3ec02186138cc807e5ba1eef330b4493ae33b366d124) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: list_AB_recursion (Mutually recursive lists A <-> B...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: 208c298e96b170ceda1034a055965a17f91993b4e532f20ea9f2e9797d78d30d) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 74ac966e338dd58c9dbef28b33185e0204ae5dd54878bd16d2e309f8b889b379) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 91cba3d6d4ce44e8282974510003c9ca17be9caf4608534986129032019590b7) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: list_recursive_direct (Directly recursive list (l=[l])...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: 845faf7a64cebdf73f665137333f74dbf05322f97183daacb5b8d66858791ebe) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 86dc462a0a5b079247e5f114fc256ec30e1e31b7a7d28965ea18ec2021941dc2) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 3ebda89318bbee412ade820e56f24939d2f5431c89b7723e33f55f1c479e6be5) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+  Test Case ID: obj_indirect_recursion_complex_shared_part (Shared object part of a complex structure (re-test...)
+    Protocol 'Default_Protocol_3': Exists in 'pickle_hashes_py36_win32_seed42.json' (Hash: 38733935bb315e8e71ead4ef16308fd140568358bcb6a160e9a6f6cc27b5dabf) but MISSING in 'pickle_hashes_py311_win32_seed42.json'
+    Protocol 'Default_Protocol_4': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: f8989dddb23166de0eca469a6be8a7e72fba66a0b20db815f70008352a4718e5) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+    Protocol 'Protocol_5': Exists in 'pickle_hashes_py311_win32_seed42.json' (Hash: 5c95739aa8177a23d73c1764cfbf60f8059b530860aed4e1fb5436f85363f2f8) but MISSING in 'pickle_hashes_py36_win32_seed42.json'
+
+
+--- Found 399 mismatches/differences. ---
+
+进程已结束，退出代码为 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+G:\a\python.exe G:\as\Assignment1\compair.py pickle_hashes_py311_darwin_seed42.json pickle_hashes_py311_win32_seed42.json 
+Successfully loaded: pickle_hashes_py311_darwin_seed42.json
+Successfully loaded: pickle_hashes_py311_win32_seed42.json
+Comparing results from:
+  1: pickle_hashes_py311_darwin_seed42.json
+  2: pickle_hashes_py311_win32_seed42.json
+
+--- Category: Advanced Pickling Control ---
+--- Category: Basic Types ---
+--- Category: Complex Structures ---
+  Test Case ID: set_containing_tuples_with_nans (Set of tuples where tuples contain NaN (complex co...)
+    Protocol 'Default_Protocol_4': MISMATCH!
+      pickle_hashes_py311_darwin_seed42.json: f5242be723b6dfd12293bdf9e2a5f01132ed2d5f05b343fb048733e7fd80517a
+      pickle_hashes_py311_win32_seed42.json: 03f67c56eadef04d827c0a3c03dd98916dc687fb6c5162919ae67930409f7704
+    Protocol 'Protocol_0': MISMATCH!
+      pickle_hashes_py311_darwin_seed42.json: 6a0b53c3b81e93211d04c530f33f4ec1e4574522765feb1d195a235eacb73650
+      pickle_hashes_py311_win32_seed42.json: 55ec6fb74f37163c3e029041c429ac31c41cbdc5a5fa38c90fbf09227de4bda2
+    Protocol 'Protocol_1': MISMATCH!
+      pickle_hashes_py311_darwin_seed42.json: 93cfa247e8b2a57309f99b917813865b161ea37d3054125a7af6f967b8049706
+      pickle_hashes_py311_win32_seed42.json: 4434ee5bf5198f689206cd5594cec4fde74d8ae1b989a83c7c9004bb5916d145
+    Protocol 'Protocol_2': MISMATCH!
+      pickle_hashes_py311_darwin_seed42.json: d23a1dad8b6c4fca09a01208a8009f2f498cb643ecc72065bc2a00c853bae25b
+      pickle_hashes_py311_win32_seed42.json: 0637d529f894bef2d71883a54fb7aeab9f9404c14b2dd337ac5f2965c350b6b1
+    Protocol 'Protocol_3': MISMATCH!
+      pickle_hashes_py311_darwin_seed42.json: 560dd500ee0451edd45910c7c3dbdd8fdaaa063815374628b603a5d6239da291
+      pickle_hashes_py311_win32_seed42.json: ac19682fc410b61e12a1b3cc52f1fefbd4dc72a9ae7a847b8e420ffdb8cce087
+    Protocol 'Protocol_4': MISMATCH!
+      pickle_hashes_py311_darwin_seed42.json: f5242be723b6dfd12293bdf9e2a5f01132ed2d5f05b343fb048733e7fd80517a
+      pickle_hashes_py311_win32_seed42.json: 03f67c56eadef04d827c0a3c03dd98916dc687fb6c5162919ae67930409f7704
+    Protocol 'Protocol_5': MISMATCH!
+      pickle_hashes_py311_darwin_seed42.json: 700952544c01905e8977a1e6770a2419adbe4bd1ff65e9125f0400212d07bda3
+      pickle_hashes_py311_win32_seed42.json: dec6c168d3e4c3ca050bef525b2f7e97be5819bebac24f3c3a2f2801e5f65108
+
+--- Category: Container Types ---
+  Test Case ID: frozenset_simple (Simple frozenset (EXPECT POTENTIAL VARIATION like ...)
+    Protocol 'Default_Protocol_4': MISMATCH!
+      pickle_hashes_py311_darwin_seed42.json: 860f8b57388654ab5f18056883103909f3665c48952ce88848d7776bbd4862df
+      pickle_hashes_py311_win32_seed42.json: afe4593bafeb164263b895de5cb58d453769958fc0638a0ecf0afd673bcd490f
+    Protocol 'Protocol_0': MISMATCH!
+      pickle_hashes_py311_darwin_seed42.json: 6b9e4a46b734c8d02e13ed3b259e75122ccf36bfcb01078ecc568d31c14475d9
+      pickle_hashes_py311_win32_seed42.json: 7d3e2b938855e4574c140e1e91b9776f3b6f5e73971c419eaf6cbcdcc85ad577
+    Protocol 'Protocol_1': MISMATCH!
+      pickle_hashes_py311_darwin_seed42.json: abf685f1289fce78346c44084f6c2565be725eb5700f00dfb04071ea53817cd9
+      pickle_hashes_py311_win32_seed42.json: 43cc032be8965e31d57f7bd7092eee421f5b0fb530e50ab186f9018d5e408432
+    Protocol 'Protocol_2': MISMATCH!
+      pickle_hashes_py311_darwin_seed42.json: 47a26b22ad9766f016ccfe5e363992b58dff70561d57eec0ea4ec968cea69bf8
+      pickle_hashes_py311_win32_seed42.json: 236d1dbe2a7f831df3c628a58eb802eae76523ed5313404e12d8b6b554678728
+    Protocol 'Protocol_3': MISMATCH!
+      pickle_hashes_py311_darwin_seed42.json: 56359692ed0e98daccd1fdecb038797149ecf86e3c767c798f2e1d941a836f61
+      pickle_hashes_py311_win32_seed42.json: 8d7220705573de0e264fafd193084b0115ff38611e947112e65ef47710f0e436
+    Protocol 'Protocol_4': MISMATCH!
+      pickle_hashes_py311_darwin_seed42.json: 860f8b57388654ab5f18056883103909f3665c48952ce88848d7776bbd4862df
+      pickle_hashes_py311_win32_seed42.json: afe4593bafeb164263b895de5cb58d453769958fc0638a0ecf0afd673bcd490f
+    Protocol 'Protocol_5': MISMATCH!
+      pickle_hashes_py311_darwin_seed42.json: 7d87330a46cdeb4f8d64a96cbed56c23b8790bbcd0a259c4d145a00cf9e42d0b
+      pickle_hashes_py311_win32_seed42.json: 1234db684a8b81ca8304968a4e43dfbddb4e53556c50c9fb791f7ae07c9d8d7a
+
+  Test Case ID: set_simple (Simple set (EXPECT POTENTIAL VARIATION for protoco...)
+    Protocol 'Default_Protocol_4': MISMATCH!
+      pickle_hashes_py311_darwin_seed42.json: 312ccef7071f0b3ae8784926de67883348e349e21b5a26c1b85300be7f9e6d50
+      pickle_hashes_py311_win32_seed42.json: d4a90bae4be89e96926e388a0d9932a34a824142fd1fbb0bfa4ce1b60d562539
+    Protocol 'Protocol_0': MISMATCH!
+      pickle_hashes_py311_darwin_seed42.json: b017b53957b8cdaebc9901607e44645c624c5edc1159dac7118d308fb2eca55f
+      pickle_hashes_py311_win32_seed42.json: c95c2ff6e91b95bef2ffe33a387c6d60c5abedb8e0d511140353efee0b20b291
+    Protocol 'Protocol_1': MISMATCH!
+      pickle_hashes_py311_darwin_seed42.json: d4a041acfa4c1a39fa146fcdc367eb439464e1ff9ccd9d44a94970021573b443
+      pickle_hashes_py311_win32_seed42.json: f3ab30dab5d7137099e1d3e73d57cd82db2bbf5f88818fd20141dc7612ddd4e1
+    Protocol 'Protocol_2': MISMATCH!
+      pickle_hashes_py311_darwin_seed42.json: 7408cb6a00887d17399df9338e66bf3fadba74aedc85a7c720e878c153c3effc
+      pickle_hashes_py311_win32_seed42.json: 9951b19261bdeec95e531f824b2005e8e1e8c19ba06e8b3992c73d3b41629e9e
+    Protocol 'Protocol_3': MISMATCH!
+      pickle_hashes_py311_darwin_seed42.json: 607a7ed7986fff1b13a50ec0ee3aae26a1e166a68b5c262e411e87385868d5da
+      pickle_hashes_py311_win32_seed42.json: 8d0ea82b828684a9bc7b17ee9a0f3578a898a55fc1bc8638f502077c1f9cf4d1
+    Protocol 'Protocol_4': MISMATCH!
+      pickle_hashes_py311_darwin_seed42.json: 312ccef7071f0b3ae8784926de67883348e349e21b5a26c1b85300be7f9e6d50
+      pickle_hashes_py311_win32_seed42.json: d4a90bae4be89e96926e388a0d9932a34a824142fd1fbb0bfa4ce1b60d562539
+    Protocol 'Protocol_5': MISMATCH!
+      pickle_hashes_py311_darwin_seed42.json: 9ec3c2e55da22b1ff2b3dd8d69324c61460c79c6c1a24dbd84d20ff3b92d8e7f
+      pickle_hashes_py311_win32_seed42.json: 311438495b0ba20bc029881635074fda85f576539c7982b1b141564acb6ad469
+
+--- Category: Custom Objects ---
+  Test Case ID: custom_obj_unstable_no_getstate_with_set_attr (MyObjectUnstable(name='unstable', value=200, items...)
+    Protocol 'Default_Protocol_4': MISMATCH!
+      pickle_hashes_py311_darwin_seed42.json: 66e82bdaeaf8338eb304721f08b282cecd6818c118766bccaf5c64d7183a0a3e
+      pickle_hashes_py311_win32_seed42.json: be79e4b101a0c59b80e886b69b95eb0ec8f27f5cb4fc6f4dd4b22239732aa166
+    Protocol 'Protocol_0': MISMATCH!
+      pickle_hashes_py311_darwin_seed42.json: bf772f8210539c954e1fbeec69ac0ff6f437387094ad261ca1d7c587d719658f
+      pickle_hashes_py311_win32_seed42.json: cab03ff8a3343f9269159c9f8bb4ab421b0d2a8c3e6c581a120456e95b07a70c
+    Protocol 'Protocol_1': MISMATCH!
+      pickle_hashes_py311_darwin_seed42.json: 56a7b1c9fc34aba8dd7fa661e816accafddeaee85aa83f5b3c38984f671f2257
+      pickle_hashes_py311_win32_seed42.json: bf97a16e6ebc2318d168c9b91e5fe420d4fdd016e661449d8789e34aa065ac8a
+    Protocol 'Protocol_2': MISMATCH!
+      pickle_hashes_py311_darwin_seed42.json: dc83cd0e70921b09154225ba51293d5968a7de25ce4c998ccf133c53cfbc91e4
+      pickle_hashes_py311_win32_seed42.json: 0ed1441a4a96091abe848ba412d7b1686340772f3603496eb01a3e3479c80dcb
+    Protocol 'Protocol_3': MISMATCH!
+      pickle_hashes_py311_darwin_seed42.json: 92034b34596e11df8d9c335d0b79cc402596ec882fe31c4acba809d27d2c791f
+      pickle_hashes_py311_win32_seed42.json: b713f3713adafae1bd3cd7c384cba51be32d0b8cd421ddd2992e33809c6bfd5d
+    Protocol 'Protocol_4': MISMATCH!
+      pickle_hashes_py311_darwin_seed42.json: 66e82bdaeaf8338eb304721f08b282cecd6818c118766bccaf5c64d7183a0a3e
+      pickle_hashes_py311_win32_seed42.json: be79e4b101a0c59b80e886b69b95eb0ec8f27f5cb4fc6f4dd4b22239732aa166
+    Protocol 'Protocol_5': MISMATCH!
+      pickle_hashes_py311_darwin_seed42.json: 34c46bc7a174415edaa4bbd1a05199aebc292a7af4cbb408cd93ae31283845ff
+      pickle_hashes_py311_win32_seed42.json: 5587110e9a1a72a8103705e576afdb7a13ce2e4c39a246afb2ba58099a89331f
+
+--- Category: Fuzzing ---
+  Test Case ID: fuzz_17 (Fuzzed data (seed=42, depth<=3, size<=4): [[[60310...)
+    Protocol 'Default_Protocol_4': MISMATCH!
+      pickle_hashes_py311_darwin_seed42.json: 55d588de21467a489a310364562f306166946c87b1209f2d3c4bd5b11a914cc3
+      pickle_hashes_py311_win32_seed42.json: 7f91c2c330b54d7d9968cc7a0c87b99f5b444093a584686c0c151135838bbeed
+    Protocol 'Protocol_0': MISMATCH!
+      pickle_hashes_py311_darwin_seed42.json: 468ceedcde7a7549150c29c3eb62a982f0fdc97cc5434135c628bcec093ee367
+      pickle_hashes_py311_win32_seed42.json: 39b8c4d6b3bde446650f57512e538d52c9319d10cdc886d522dd7de9aae26255
+    Protocol 'Protocol_1': MISMATCH!
+      pickle_hashes_py311_darwin_seed42.json: 31e1ec88d92723603c5dd609a46cc648c17e1a598106509bc3841ab8f7f3e425
+      pickle_hashes_py311_win32_seed42.json: 9a5c797a31a4a768ae3d7748eefc608156e950a892103d1e83650f64cf273842
+    Protocol 'Protocol_2': MISMATCH!
+      pickle_hashes_py311_darwin_seed42.json: d2860adfab8dbeca7eee6b49b85d92842f09aea731c23a4cfc845cadf1f97eaf
+      pickle_hashes_py311_win32_seed42.json: b561a8d199c320c125aab35c92a9ca3bfc23371d9e9e89768a76ad2a5f5eae2b
+    Protocol 'Protocol_3': MISMATCH!
+      pickle_hashes_py311_darwin_seed42.json: 0c08767def28687c259966485bb60559cf7e03c91d49a85a4bf829b5ab9a576f
+      pickle_hashes_py311_win32_seed42.json: 4a849800b6c3febd46f7a4c035b42a56f45429b84e211066dd38d0e6e02f7595
+    Protocol 'Protocol_4': MISMATCH!
+      pickle_hashes_py311_darwin_seed42.json: 55d588de21467a489a310364562f306166946c87b1209f2d3c4bd5b11a914cc3
+      pickle_hashes_py311_win32_seed42.json: 7f91c2c330b54d7d9968cc7a0c87b99f5b444093a584686c0c151135838bbeed
+    Protocol 'Protocol_5': MISMATCH!
+      pickle_hashes_py311_darwin_seed42.json: aad08b69b54945252354eede9b8cc5803128f382390cb67335ed45d0bc1a8d8b
+      pickle_hashes_py311_win32_seed42.json: 3806b5e1c695970c60796f0a59a3983d859b60be40518711f4a08bc4d1ceeedc
+
+  Test Case ID: fuzz_25 (Fuzzed data (seed=42, depth<=3, size<=4): {True, -...)
+    Protocol 'Default_Protocol_4': MISMATCH!
+      pickle_hashes_py311_darwin_seed42.json: 61768227a6160c1e3c63c755b38cff99c8d869496879fb12500652accd62758c
+      pickle_hashes_py311_win32_seed42.json: 33582cca32497e923909291411dae2d0be10b9d1c988108cf5c13eac86e8101d
+    Protocol 'Protocol_0': MISMATCH!
+      pickle_hashes_py311_darwin_seed42.json: acef1bfd6a3003e2c6c4bb4508e0d6caa7b7fc14421255b330a8c5a1cecdad42
+      pickle_hashes_py311_win32_seed42.json: 3980c21294a17e6a9339ae32cddd121acdf0085890994a8d54b58d54bdaffc61
+    Protocol 'Protocol_1': MISMATCH!
+      pickle_hashes_py311_darwin_seed42.json: ba332d6a8b1f5da8941e3bb3909dcf4b3bb3c494eb0b810cfebd5cdbbf6b3365
+      pickle_hashes_py311_win32_seed42.json: 3791e89f92fcd96c1dfac1a72df89a8b4ed75422d5c315478a8ee0e92c9ecfe7
+    Protocol 'Protocol_2': MISMATCH!
+      pickle_hashes_py311_darwin_seed42.json: d13611da1d577ad68425fff2b2c1eeb56960a9a6fc1a018d30997f07baf06b35
+      pickle_hashes_py311_win32_seed42.json: b3ce7f48a2517a3d15556e098ed59de9f64a3a05c226062261e72f15cf3c0f98
+    Protocol 'Protocol_3': MISMATCH!
+      pickle_hashes_py311_darwin_seed42.json: 22730f0052c63f3222dfe0d40e108c9238ce6fa377440b2d61b6321855af57ad
+      pickle_hashes_py311_win32_seed42.json: 525defea8294752b98e803459e9bd1adf4b4da2579be12571be71458c5ef9334
+    Protocol 'Protocol_4': MISMATCH!
+      pickle_hashes_py311_darwin_seed42.json: 61768227a6160c1e3c63c755b38cff99c8d869496879fb12500652accd62758c
+      pickle_hashes_py311_win32_seed42.json: 33582cca32497e923909291411dae2d0be10b9d1c988108cf5c13eac86e8101d
+    Protocol 'Protocol_5': MISMATCH!
+      pickle_hashes_py311_darwin_seed42.json: b87773f03469d03f970130a65e54af6aa21cc9d52591492552de66d202f6e14f
+      pickle_hashes_py311_win32_seed42.json: 4668f67b7ce530df79b50ba5d3d32b51f86f2e2f8b3d4358d0b892aef4f514d0
+
+  Test Case ID: fuzz_3 (Fuzzed data (seed=42, depth<=3, size<=4): {4026499...)
+    Protocol 'Default_Protocol_4': MISMATCH!
+      pickle_hashes_py311_darwin_seed42.json: a6005b0031e6159cdbcd98a5f39f1d094bddd6a10114cb0367461ce653404f01
+      pickle_hashes_py311_win32_seed42.json: 9462dbd0c50248da9e2e45fb17ac575db485b8a8cb859b2237dd346a49836177
+    Protocol 'Protocol_0': MISMATCH!
+      pickle_hashes_py311_darwin_seed42.json: 1bc335b096b0d89b3217548fbed35aedb1eaf2a4e16519026c6665051fde5ce6
+      pickle_hashes_py311_win32_seed42.json: 1c879c39f08a404847bf7ebe20289b48f1bba40339dea7da06289b3305e14c3b
+    Protocol 'Protocol_1': MISMATCH!
+      pickle_hashes_py311_darwin_seed42.json: 60a9f95495fa67560f259e5ba0941e75eb075dc6692c5eb2861cbd33a998fdb8
+      pickle_hashes_py311_win32_seed42.json: 7c2378c8d54c88348d5d0cca50153b412f72ce3ed3d74e1febf98820d4247e96
+    Protocol 'Protocol_2': MISMATCH!
+      pickle_hashes_py311_darwin_seed42.json: 32e851ba45d587446c175623b680292f9b36df28d7af9119b9ca6a645eb156d2
+      pickle_hashes_py311_win32_seed42.json: 73c50c1256d15fccb548e64a4e20e3afeeaea36ce455cb245503d9fc30368d10
+    Protocol 'Protocol_3': MISMATCH!
+      pickle_hashes_py311_darwin_seed42.json: c3650a0080d97e021fff3d9aa3287842ce15af75d65348502fcbeb1e24be4c68
+      pickle_hashes_py311_win32_seed42.json: b2467817e5e38dbbad21dfb802ca6965c76b5becc6f0509a3c7c5c0860c3491d
+    Protocol 'Protocol_4': MISMATCH!
+      pickle_hashes_py311_darwin_seed42.json: a6005b0031e6159cdbcd98a5f39f1d094bddd6a10114cb0367461ce653404f01
+      pickle_hashes_py311_win32_seed42.json: 9462dbd0c50248da9e2e45fb17ac575db485b8a8cb859b2237dd346a49836177
+    Protocol 'Protocol_5': MISMATCH!
+      pickle_hashes_py311_darwin_seed42.json: 7647b76dab5e197f53e107f1ee99d97c971164bf5dd40fb8537439a79afe1464
+      pickle_hashes_py311_win32_seed42.json: 8d349a4f15efe6c4706d54ef9953ab72b60af3f0932a201e380101a716966503
+
+--- Category: Recursive Structures ---
+
+--- Found 49 mismatches/differences. ---
+
+进程已结束，退出代码为 0
