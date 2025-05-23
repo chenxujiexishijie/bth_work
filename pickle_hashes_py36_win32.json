@@ -1,0 +1,1127 @@
+{
+  "Basic Types": {
+    "int_simple": {
+      "description": "A simple integer",
+      "hashes": {
+        "Default_Protocol_3": "ca9493975e3875030e2d5a5c2265f13827a049d4473f62a448d71c05cd0e41ce",
+        "Protocol_0": "6790502c3c8159db0c0a91582cecb9bfcfdb5e5222639c94211ff33f3ced9743",
+        "Protocol_1": "8f158df929dfd3235fb94e9530b96b6ce8524704f31439523e37add8acd1ec40",
+        "Protocol_2": "17849d9ed4194082163606b9482c73d3a6c17195c9cdb142077b72cc9d030ee8",
+        "Protocol_3": "ca9493975e3875030e2d5a5c2265f13827a049d4473f62a448d71c05cd0e41ce",
+        "Protocol_4": "bc77b99ceca46e60ffa2af9fe32db16ff47a84eff9dbed59df4b31196aa9ecf3"
+      }
+    },
+    "int_zero": {
+      "description": "Integer zero",
+      "hashes": {
+        "Default_Protocol_3": "24c04d87a97bdcefc011d2dd182eba1beaedfe91ae22e632ffb73e5ae7086bed",
+        "Protocol_0": "e27df6af4cb2c24a091b58cfb1dddebbe751e40e2eb9802e4a4dedc8138adb07",
+        "Protocol_1": "17ac464a7317b2ac9ec5bc5d818c7ca1aa28d329880fd1c7bad29a1cf3ef5778",
+        "Protocol_2": "a0d88effe547df9d123e38f87b34042c335a952c610beb9e452267e878d48776",
+        "Protocol_3": "24c04d87a97bdcefc011d2dd182eba1beaedfe91ae22e632ffb73e5ae7086bed",
+        "Protocol_4": "299fb55a29347b3856f2dd57eb5ab8c65ed9edc6e8f2aae36104fcce763880cd"
+      }
+    },
+    "int_neg": {
+      "description": "A negative integer",
+      "hashes": {
+        "Default_Protocol_3": "f101d3644f2fdba2c9510d6fc86f37505e4708553bd740b9bed6999c712f0ca3",
+        "Protocol_0": "cd2efc7cc59401b801a0abc02951eb95c3e69d4a72e8d2436621e0828f24573b",
+        "Protocol_1": "6a82db586b735b5c1f700181d0eabdd801df94b557f017f4c4c697240042eb44",
+        "Protocol_2": "6d001e6e77750e32205788654ea79e3c2ba3ae0ecd91e90f0cb13d7b1419708c",
+        "Protocol_3": "f101d3644f2fdba2c9510d6fc86f37505e4708553bd740b9bed6999c712f0ca3",
+        "Protocol_4": "b93f74be10c7cda35501aa380766657db803f4db8bd3c2b3ce62b06a7b70c432"
+      }
+    },
+    "int_small_neg": {
+      "description": "Small negative integer",
+      "hashes": {
+        "Default_Protocol_3": "5850b2207468dc892228ea3a4f825e4da98bec3b53030113b3dd209798c0c2ee",
+        "Protocol_0": "dd85d96faa223668354ee04be41af6be5f1c8ae65d6936e8444134878dfc88fe",
+        "Protocol_1": "07df32287b7344432343d1171e24f724306e1f057ff4983ba6a8df2be6a3eac9",
+        "Protocol_2": "5ee3475f2f69f0e2b98ed410a1f513275547ef29a114b2838015500674f6e1cf",
+        "Protocol_3": "5850b2207468dc892228ea3a4f825e4da98bec3b53030113b3dd209798c0c2ee",
+        "Protocol_4": "96768675c6178127fcdca41c26bab8793db9a864be4b16a2be3b74e0355b0a28"
+      }
+    },
+    "int_large_pos": {
+      "description": "A large positive integer (Python arbitrary precision)",
+      "hashes": {
+        "Default_Protocol_3": "34da32ed46456a8278aee8409473319b674506cc5e4016457d49e9f0f9466907",
+        "Protocol_0": "cf016b49f1545bd73928886fcc89e6a91af7adaba66f7e8a5f0dac37f41aab38",
+        "Protocol_1": "cf016b49f1545bd73928886fcc89e6a91af7adaba66f7e8a5f0dac37f41aab38",
+        "Protocol_2": "bed6f48caf4dade8149e091b0979bbe1a8fa2781766d1207edbfcffff79ea8a7",
+        "Protocol_3": "34da32ed46456a8278aee8409473319b674506cc5e4016457d49e9f0f9466907",
+        "Protocol_4": "d9cc139c2ad059b59b62bd9271a15f53873b21d623012c6a59182fff0ae029bb"
+      }
+    },
+    "int_large_neg": {
+      "description": "A large negative integer",
+      "hashes": {
+        "Default_Protocol_3": "915ae5e4e93e24773dfda11495b42655a1c96c4ad87d0497eca297fabec01ea9",
+        "Protocol_0": "6fb22cae7cae390d0bc334e405a9406799ded3362833d2deaa50d6924a948ebe",
+        "Protocol_1": "6fb22cae7cae390d0bc334e405a9406799ded3362833d2deaa50d6924a948ebe",
+        "Protocol_2": "0828247435a368f08f3f81a4194df6082746eb0d609910d85129998608019996",
+        "Protocol_3": "915ae5e4e93e24773dfda11495b42655a1c96c4ad87d0497eca297fabec01ea9",
+        "Protocol_4": "e4654db3b6651ba2c28bfd7426ec37a7669c9cef3cc37454c06eafec7a6cf61c"
+      }
+    },
+    "int_boundary_32bit_pos": {
+      "description": "Max positive 32-bit signed int",
+      "hashes": {
+        "Default_Protocol_3": "a6be1527af8f1912ede713555d8eb0d269992fdd1b100ac2271efd71eb9be2ca",
+        "Protocol_0": "52eeeaf22c35bbe6632dcd1f6ac331282171393d98239708c66374b7f681deb8",
+        "Protocol_1": "9db34244b26b4a8e0de43c5352f2de7f4716a3fe6c6012b74853c4fbc080ea17",
+        "Protocol_2": "e24234c111e74def5771891cbcd73aa92ac468b4b8b3318ca62022aaf71298d8",
+        "Protocol_3": "a6be1527af8f1912ede713555d8eb0d269992fdd1b100ac2271efd71eb9be2ca",
+        "Protocol_4": "16eb9cd60e902f52e42bc3be9d0c6cb299fb950a48928c57fcc49b9eae2cb40c"
+      }
+    },
+    "int_boundary_32bit_plus_one": {
+      "description": "Max positive 32-bit signed int + 1",
+      "hashes": {
+        "Default_Protocol_3": "5760825204d94cdfc34ae99dd1d35855df7baba9cb7d524f848165bbab5d673d",
+        "Protocol_0": "33d80a85fe539bf2d8dbd1f93f6b1caae2fb55c780f38977500696af7740e957",
+        "Protocol_1": "33d80a85fe539bf2d8dbd1f93f6b1caae2fb55c780f38977500696af7740e957",
+        "Protocol_2": "4851076e3152ba449adca1514c09a10cfef34e8969e948ccfd4cd22141fc9d96",
+        "Protocol_3": "5760825204d94cdfc34ae99dd1d35855df7baba9cb7d524f848165bbab5d673d",
+        "Protocol_4": "2b3ba5df4f3fee93a5e243d1096660c756e6a187c795967cf42221db8eb45a71"
+      }
+    },
+    "float_simple": {
+      "description": "A simple float",
+      "hashes": {
+        "Default_Protocol_3": "c6b03d7d6f0145872a9d2da28fd3693ded65816314ab59f2429d91c6d39cdebc",
+        "Protocol_0": "ec707cb82959c4dc5689629a39b08f090bb327e50ce0bf6a2d93bd018f877a93",
+        "Protocol_1": "6cf1dc5e7157f162f3ea1a95d0d3e51e080b0eb890111e5f00c6caf7138b811b",
+        "Protocol_2": "537844519e01d810512cb10feca0d81c994687614e4348511ad5457b160aae01",
+        "Protocol_3": "c6b03d7d6f0145872a9d2da28fd3693ded65816314ab59f2429d91c6d39cdebc",
+        "Protocol_4": "0b5c6202025227ba3f177d6927438d5db991b59974338553501b300d669f7b70"
+      }
+    },
+    "float_zero": {
+      "description": "Float zero",
+      "hashes": {
+        "Default_Protocol_3": "b200873ca4f35029eecd0f274d54bc0c7984436dbf693976bc4c041216f1d6d7",
+        "Protocol_0": "2e3211661366a55535b0737a4c327e3190c0819edb251f5d1b942a7584f6c2a2",
+        "Protocol_1": "c3e880395adfdb56ff553eb13178ab3136acf414733c7138a9de5247dfb2351f",
+        "Protocol_2": "941ff3533a8d6c80836d206bd508eacaf620945fa20aa78c39764ef7432a961d",
+        "Protocol_3": "b200873ca4f35029eecd0f274d54bc0c7984436dbf693976bc4c041216f1d6d7",
+        "Protocol_4": "cc976f3dfbf8f2c3a3ab3d8859ace71ce6548064dcfa9de3752ab6ea649f69ed"
+      }
+    },
+    "float_neg_zero": {
+      "description": "Float negative zero (note: -0.0 == 0.0 is True)",
+      "hashes": {
+        "Default_Protocol_3": "d0dc81bd89ee88a29718e0129e6f6c4123a1924c5d61e023064719118866f111",
+        "Protocol_0": "97e45cb29f69196b958ca3016bef3c14730c7b20750ceedd471793d037127509",
+        "Protocol_1": "dd29ee341b16ea9f30022584c7daacfc1cd8b540c8114e60feabc07ea0e2a6b4",
+        "Protocol_2": "ddf2a52fe5f74ab91600d010c4a04c32755736e55fc8cff01786724c1159e351",
+        "Protocol_3": "d0dc81bd89ee88a29718e0129e6f6c4123a1924c5d61e023064719118866f111",
+        "Protocol_4": "7a16207b7902ce9558ba73dc0803d7c52d948fd4ab1fb3cd78131498db37a144"
+      }
+    },
+    "float_small_pos": {
+      "description": "Small positive float",
+      "hashes": {
+        "Default_Protocol_3": "999babd71a1d311be4a5cf47f181f5460dcf2f312382da3336c34fbcae7ec437",
+        "Protocol_0": "2b1fc6d4bd4e5fd57121b9a6c0a806e89e6b183cc71fbfa420f7f1a76e4edcf9",
+        "Protocol_1": "27535ee5af7aaa4a4c12c41d6e3a0da5fe9519323e6f9d3e3eb5edc7d37dc884",
+        "Protocol_2": "6dcf667885f577a1c07e761ed8e94703c00c3fdfbc16fc0f7b0e9f39059f4a4e",
+        "Protocol_3": "999babd71a1d311be4a5cf47f181f5460dcf2f312382da3336c34fbcae7ec437",
+        "Protocol_4": "eace655ada861c48d1172b48f0cb2c9a87b7ca3016308c79ea493d197db57cd9"
+      }
+    },
+    "float_small_neg": {
+      "description": "Small negative float",
+      "hashes": {
+        "Default_Protocol_3": "f313e0ac68bad8b533a9c1229e2ed9662ada6190ea57320e8e05da7b877d9b9a",
+        "Protocol_0": "0e5b2d34abb8d63e4216443d6ad0e1aea2b8bd4d029c51260aaf6a47172474d4",
+        "Protocol_1": "54366e5390d1c65a66bd24f42ff7407989424daf6533782bad47aeb9418ae076",
+        "Protocol_2": "9d08aeb16eda8368d7cfe202887ce1eca67ab452bdfbcc6d1208b61ab223034c",
+        "Protocol_3": "f313e0ac68bad8b533a9c1229e2ed9662ada6190ea57320e8e05da7b877d9b9a",
+        "Protocol_4": "6a55cc11571a177ef5094292c526e5bddd618ea9368c02e62e227b110bb0634a"
+      }
+    },
+    "float_large_pos": {
+      "description": "Large positive float (near double precision max)",
+      "hashes": {
+        "Default_Protocol_3": "bf02fc54a9cfbd22dbc26b2169e1766cda4cf3fa506b23ff996095173f9c1d46",
+        "Protocol_0": "132100665265dbf06e0b2d08b01c3d9f8583ed075b48187deeedf51afeb41b9a",
+        "Protocol_1": "35b1a84ea829e70f193b68fc95d731115aec5f6cc19e1598df826e8d54f125a7",
+        "Protocol_2": "2778d318023ba28a0ddc3a002c0bd7a6f7ece2f6facb722a1e4bea8ef2b034b1",
+        "Protocol_3": "bf02fc54a9cfbd22dbc26b2169e1766cda4cf3fa506b23ff996095173f9c1d46",
+        "Protocol_4": "5306a168ff104ef47e917b682ce222845f53b9971769f44dd10af1133002329e"
+      }
+    },
+    "float_large_neg": {
+      "description": "Large negative float",
+      "hashes": {
+        "Default_Protocol_3": "b6f09119ef35884b0edf2cdec796d414a2b8f318a077dcfe1524861401a67bd4",
+        "Protocol_0": "21c576587e77f3337e5a390983a10abc6c7cb3eb4e8f046404e36c3d255b1242",
+        "Protocol_1": "8a35350d68f2d238480f058f5ca3fe12b97b2eefba73ad6a507234cd428ed672",
+        "Protocol_2": "88768029230473e62ea21771a764d5fc8fae70089fb697336f68c532549def02",
+        "Protocol_3": "b6f09119ef35884b0edf2cdec796d414a2b8f318a077dcfe1524861401a67bd4",
+        "Protocol_4": "57d2b25591d9682558e1503e60f0cbfb1b94fa96b0f5ccc2bbbb02726ae16913"
+      }
+    },
+    "float_sci": {
+      "description": "Float in scientific notation",
+      "hashes": {
+        "Default_Protocol_3": "6689a75d1c2ade2dd37f6bb6a8593580c8337d16d7df28b25d7de47907cb6254",
+        "Protocol_0": "e04cd56d5730e9ebc5603a9966df32422b132a79888acebe2cfd9e87e402782a",
+        "Protocol_1": "fc51e4de4360a320fc87b96849a5139854cd859371da2450076f0f4897271e9e",
+        "Protocol_2": "88a1fd9a1e53e3703d9cec92395d03d6ff0e2c2222d7d8331d12bc0a5bbe861c",
+        "Protocol_3": "6689a75d1c2ade2dd37f6bb6a8593580c8337d16d7df28b25d7de47907cb6254",
+        "Protocol_4": "8b66f44551341117b6bd90d3c192c8074f73e976a1cf0f3050411f16f3dc6ac6"
+      }
+    },
+    "float_calc_sum": {
+      "description": "Float from sum 0.1 + 0.2 (precision issues known for value)",
+      "hashes": {
+        "Default_Protocol_3": "792992589d58ac92150190aa9bbb6806188871b032b325a62a11e74bf90e607d",
+        "Protocol_0": "85a8b9189f048e14bb0070e32fc2105234d945b9823230e9e0ab7b00c1f2ef22",
+        "Protocol_1": "c70788f4369967494df9c57d0b4de2adc916b1b989cf76488fcddb28571bdfc4",
+        "Protocol_2": "85e716b06b547e6659e99406459891684c01c1f495222d490ccd127d6088ce68",
+        "Protocol_3": "792992589d58ac92150190aa9bbb6806188871b032b325a62a11e74bf90e607d",
+        "Protocol_4": "bf93f61ce898d84219e7335eacab09379ba06fe2b89af016f6a0e934b24b1310"
+      }
+    },
+    "float_inf_pos": {
+      "description": "Positive infinity",
+      "hashes": {
+        "Default_Protocol_3": "9c3694d605f23718b0e8be79520dc153195ab468c8150ee7165ab913710ba3f7",
+        "Protocol_0": "12e313a3ab2fe2d2a7877a883c85f87f5e53ea9e28b698b6b2444df33eef7308",
+        "Protocol_1": "88e9de223253bc2ab3a1c53ee0d0092cc3031a1048d69735ad4a7e61e45c8e6e",
+        "Protocol_2": "ec80275179e0fd03c34eb2f24d0e631167d99ce17a8efea9cddaba702ed52100",
+        "Protocol_3": "9c3694d605f23718b0e8be79520dc153195ab468c8150ee7165ab913710ba3f7",
+        "Protocol_4": "1b51ffe28645d16d1d34475071eef737ef4c1ea09eb443761da2d75821bf3398"
+      }
+    },
+    "float_inf_neg": {
+      "description": "Negative infinity",
+      "hashes": {
+        "Default_Protocol_3": "4de9d2a5d9f45e45fd1176d6fb28deba746519016f3dd0892eb7a3a208e3139c",
+        "Protocol_0": "ba7f20fc2c37b76e61c27d0d2a16acfde2144c083ebdf38291f25cef3e4337a2",
+        "Protocol_1": "06db4f05872cd693deefec6936d40824f8372410acaf5fc1c508b4126595d38d",
+        "Protocol_2": "646a99531dbede2d16b3fbd2ffd33b9adc45a54d874dbd593b385491571cf291",
+        "Protocol_3": "4de9d2a5d9f45e45fd1176d6fb28deba746519016f3dd0892eb7a3a208e3139c",
+        "Protocol_4": "6f5e2cc472d247afe9caf8b0f6a765d70826525e777deb031d6331942675c003"
+      }
+    },
+    "float_nan": {
+      "description": "Not a Number (NaN)",
+      "hashes": {
+        "Default_Protocol_3": "52b565ab592ec0251b8b70a43577d15eff2ef8184c1659cc109b8d7b3180503d",
+        "Protocol_0": "05efdb62350ed3e1d11482a32df81d0f9def5daffba080d4e85015cb20c5e389",
+        "Protocol_1": "2ff4d9bd70ae63ab256cfcb70c3e08256c732aca046efd531cbe53c974c53e58",
+        "Protocol_2": "298f1ac470aa54c82ef367bd99b061ed094a0a706801c6d2320ad8d18e847414",
+        "Protocol_3": "52b565ab592ec0251b8b70a43577d15eff2ef8184c1659cc109b8d7b3180503d",
+        "Protocol_4": "3d9d4af6ee01677bd51d3efb4dca6c1339ae8b2a73102f65990a6cbd7625eba9"
+      }
+    },
+    "string_simple": {
+      "description": "A simple ASCII string",
+      "hashes": {
+        "Default_Protocol_3": "c46182e846d6e7fd76cae600a122de0fe74ec98c5afa9cd74bbcb4cba33a330f",
+        "Protocol_0": "453a68da513fae4fbc7ec067a3afbdc4a681c842474dc6360db5967c15fbe80b",
+        "Protocol_1": "abf2646b0eaefff9fa42e6e38278dbadd1b4bc687d8c2a09e18216b7f9a440a8",
+        "Protocol_2": "1b533630f3a3154020e5975e34d75dc2592c027f7e9e7af95b37d560b76ee5cc",
+        "Protocol_3": "c46182e846d6e7fd76cae600a122de0fe74ec98c5afa9cd74bbcb4cba33a330f",
+        "Protocol_4": "af20840d7725c3869b26f88302626794e6945c76d5846da4bf667e127f81ce72"
+      }
+    },
+    "string_empty": {
+      "description": "An empty string",
+      "hashes": {
+        "Default_Protocol_3": "9238a956da94f16cf609c1b8b8ca16940cf1c77a9fb8ecf7f67ef75f6b2e0f68",
+        "Protocol_0": "3154c21b524dfacc0b3009e27a7972f64202165da7349dba6c5aa67120f3f5a1",
+        "Protocol_1": "67101444398c332393cd1bcd1a0dad4d97a7d78565bf4e2d3fa7f742dcfae590",
+        "Protocol_2": "0f368cccff4bd0da25f0b84738179c6d667f63ede601297e2903607c42596edd",
+        "Protocol_3": "9238a956da94f16cf609c1b8b8ca16940cf1c77a9fb8ecf7f67ef75f6b2e0f68",
+        "Protocol_4": "8e2a8bd996c29b99c909664ee51eb5ee3b2358306a4269d5b69dd99075e6dd85"
+      }
+    },
+    "string_unicode": {
+      "description": "A Unicode string with various chars",
+      "hashes": {
+        "Default_Protocol_3": "463231303b447085ffdb00234c39c9d17449f3a2f8ef7e1d7be784feecede181",
+        "Protocol_0": "be3eda344c078ed7285ca716b2a98e2f1600861f870b34293a1203028781d67f",
+        "Protocol_1": "c770a856d330bed180fa29b62bf1c882b5ddaa2bb98311a64e20981019dcba02",
+        "Protocol_2": "e3caab56ccd5a6844fdf9460d342432df70a38b6fe40c21d5224e5a7786d4d47",
+        "Protocol_3": "463231303b447085ffdb00234c39c9d17449f3a2f8ef7e1d7be784feecede181",
+        "Protocol_4": "9f004f79dd60c0c5f73a9770ddbc430a27096ae13eb3cd9267cb15dd38278eb3"
+      }
+    },
+    "string_long": {
+      "description": "A long string",
+      "hashes": {
+        "Default_Protocol_3": "dd27f3587ff0d3ef18c72e842dd47b809d55490a9f5d1c2dce8f8b673049131c",
+        "Protocol_0": "a4d1b1f4523c09635371b0ca968c26849318e98defe556bd9da699f901afc272",
+        "Protocol_1": "eb398c5ca9bcfb5a2aca8ca93c24e2a84f6202f1a3a3aa13cf53e264dfef9624",
+        "Protocol_2": "e9868eb14237a341c0847b43ba3909c0be779218763f3b47427006a2a8250635",
+        "Protocol_3": "dd27f3587ff0d3ef18c72e842dd47b809d55490a9f5d1c2dce8f8b673049131c",
+        "Protocol_4": "f48c55713a4ddde648fec95b7b24b0041dd6a77261b92cdc50cc27687cb3026d"
+      }
+    },
+    "string_whitespace": {
+      "description": "String with various whitespace",
+      "hashes": {
+        "Default_Protocol_3": "fa222014cc334681906f009db63ead195872a376b631bf6d939f0fc2b239bf3c",
+        "Protocol_0": "412a9b0d6eec2145a5a4e60355316d8e2c1f5c8769a57c1e9bf72d548a85cf65",
+        "Protocol_1": "0a0ace00c58b23607d762586fbc7a9b518097cc638d52fe1ed05f894e1d13746",
+        "Protocol_2": "8ea0fe0a7d050cc8778820435d8564d311da7b7a228a088a6f5ae3abdc1497b6",
+        "Protocol_3": "fa222014cc334681906f009db63ead195872a376b631bf6d939f0fc2b239bf3c",
+        "Protocol_4": "1c0de947cd2782384bf886a4ab8f22d80040c49d0940d997d02d9963cc9d8526"
+      }
+    },
+    "string_looks_like_num": {
+      "description": "String that looks like a number",
+      "hashes": {
+        "Default_Protocol_3": "d9d138e3bfaf430570c135e330fa70508628a8d8a9930eb426e49f56a3552f0b",
+        "Protocol_0": "3ecec8580dac20207271ab1b3b81a4becdd1162d879334665c2f9a7eab792e07",
+        "Protocol_1": "b7a7d5a21ff7c1d5151d57efec558bcb1f0c2548f6b8c49fae77c75ea4b4676f",
+        "Protocol_2": "98bc6706aae8f8318ab92736c84338966d09bde3dce3cd395b675ace15f992b9",
+        "Protocol_3": "d9d138e3bfaf430570c135e330fa70508628a8d8a9930eb426e49f56a3552f0b",
+        "Protocol_4": "878362cefc931db87bc2e7b86d78ed66d1c22c17cd322442c1413432e022334d"
+      }
+    },
+    "string_pickle_chars": {
+      "description": "String with potential pickle control/special chars",
+      "hashes": {
+        "Default_Protocol_3": "bb2784258c9d684fac57128f1af92f7a5308574fd3d44da813b6a31fde49c74c",
+        "Protocol_0": "12459ea2a431255e93fc4ba56e2bac1417ead4c8304953d282904f7b01e160d5",
+        "Protocol_1": "e10e5a3e8ad1f902ccda10ed0c268b4c1f9dd24d23677c3f5480378636072b81",
+        "Protocol_2": "a3840a4e84f55a73baefb652476859e2c7deccfcc52415505811505e39b8e555",
+        "Protocol_3": "bb2784258c9d684fac57128f1af92f7a5308574fd3d44da813b6a31fde49c74c",
+        "Protocol_4": "c4fbb4557448a41f2801d3414776519fc322914f603e259c380819e3b95fe2f0"
+      }
+    },
+    "bytes_simple": {
+      "description": "Simple bytestring",
+      "hashes": {
+        "Default_Protocol_3": "9af9ab82bc036b0af62bb431815a3e826407fa44d8383da37ab8f16227920dd0",
+        "Protocol_0": "6f81d3acdda74fe8a3dd603ad2fcfb70f0bb7bbf06cbc71b222e527af04e8c8b",
+        "Protocol_1": "edd662a33c23ffccd9577fce86387bf72dfc2a77c212800f4c40dde0d6dd55fa",
+        "Protocol_2": "7fe7804aa6f01a7b46c673bfe71083b617796691706016ed745c4211a7dd2350",
+        "Protocol_3": "9af9ab82bc036b0af62bb431815a3e826407fa44d8383da37ab8f16227920dd0",
+        "Protocol_4": "6d69d43cbbd7c5f081372d25f21624a19fcdb817d94867e4e5b5f8520dcab159"
+      }
+    },
+    "bytes_empty": {
+      "description": "Empty bytestring",
+      "hashes": {
+        "Default_Protocol_3": "26d7b08551dba4274d2fc6c30264fdfa9a21571053a56402e7241026f3458c79",
+        "Protocol_0": "bb735f289af0e6aad2a446a384639d63e639672ccc106dd52c40a201c17d6add",
+        "Protocol_1": "782ca64ef79fb072406359b79114c93534328958ae715728809f72eee72c77a6",
+        "Protocol_2": "91e3129fa017c01ff63464bb275f5bb0575a4192f986c91ca6efa04bae370245",
+        "Protocol_3": "26d7b08551dba4274d2fc6c30264fdfa9a21571053a56402e7241026f3458c79",
+        "Protocol_4": "53b733953fb825c982984407c97cd225bf2a1be0613a8675da94eb8625acbcff"
+      }
+    },
+    "bytes_with_null": {
+      "description": "Bytestring with null char",
+      "hashes": {
+        "Default_Protocol_3": "db467805db0e32e5e7e0e0a1dd9087bd465c8782c861acf42586ac501b0fcaa7",
+        "Protocol_0": "2ec86e1dfa9f02f2dad0e66e06f903c727b437f2c8f4b4e9b833101e31d37b22",
+        "Protocol_1": "2ec3d5768963809bbf581c62267aecd5a9a7a6d19608138383eb06fbdaef4e14",
+        "Protocol_2": "f97bebe289dcd69e0c1e3e278ef7c4f47c78140cd53a753e9e6f5dafefecd190",
+        "Protocol_3": "db467805db0e32e5e7e0e0a1dd9087bd465c8782c861acf42586ac501b0fcaa7",
+        "Protocol_4": "ed29131c1d5268b1fcb56b6eedef511c0f31eddfea463952beed869c40242a3c"
+      }
+    },
+    "boolean_true": {
+      "description": "Boolean True",
+      "hashes": {
+        "Default_Protocol_3": "669a00d49bd5409dd9617512b8aa8496bcf68222338ae1785f98986736b3be6f",
+        "Protocol_0": "8252f6b37cd88a9afd6c793d8ed9a59850775b739b0cb629cf5f8cab92fd2de1",
+        "Protocol_1": "8252f6b37cd88a9afd6c793d8ed9a59850775b739b0cb629cf5f8cab92fd2de1",
+        "Protocol_2": "6b20db5af84de94011f7e8aa3df46b404959716f84dd8dd4110fdd20428a0ae6",
+        "Protocol_3": "669a00d49bd5409dd9617512b8aa8496bcf68222338ae1785f98986736b3be6f",
+        "Protocol_4": "f2c4bd92e4e9bdb9a8f1377e175b4a5098e0cb9c34fb387bb089b8dcc7afd184"
+      }
+    },
+    "boolean_false": {
+      "description": "Boolean False",
+      "hashes": {
+        "Default_Protocol_3": "ae7fee9ffff7b1a04c3cedd82d414c1e2cfab3fb24e845af73446fc61a2a47ca",
+        "Protocol_0": "b5c02fe928cc341f80db9f9d6fa8aa44fe0473ec08cf67375f50b6da92513c5f",
+        "Protocol_1": "b5c02fe928cc341f80db9f9d6fa8aa44fe0473ec08cf67375f50b6da92513c5f",
+        "Protocol_2": "c8bed7b7e2f4cb1c60ef195cd92aa122d64fc656c10bd7fa138e16382cb52be3",
+        "Protocol_3": "ae7fee9ffff7b1a04c3cedd82d414c1e2cfab3fb24e845af73446fc61a2a47ca",
+        "Protocol_4": "820c3099a99b6082394f943e35b23b5c5f51f766e6cb173c3f30b29c423b6a03"
+      }
+    },
+    "none_type": {
+      "description": "NoneType object",
+      "hashes": {
+        "Default_Protocol_3": "4f3fc348a818941a464e415fff6b9d416c1ddc3b1c64743861d328fbc345bcd6",
+        "Protocol_0": "8b1663da576e3578fd9e93e64081f24282af0bc3e08b3d3c8e288c26741faa4d",
+        "Protocol_1": "8b1663da576e3578fd9e93e64081f24282af0bc3e08b3d3c8e288c26741faa4d",
+        "Protocol_2": "e71559db7df35982f168ca0bd6d35a0270e621095a7bfd0c3a1773ed09ae1a44",
+        "Protocol_3": "4f3fc348a818941a464e415fff6b9d416c1ddc3b1c64743861d328fbc345bcd6",
+        "Protocol_4": "6832703fd8cadedf69772ea09524d8f68e8fbe05ff8143bca25aa1187740f2d8"
+      }
+    }
+  },
+  "Container Types": {
+    "list_simple": {
+      "description": "Simple list with mixed types",
+      "hashes": {
+        "Default_Protocol_3": "35fc54ebefe0ec057c7f7cbc3b48091386a6af84e59cd5b9bb6df99ccee803e9",
+        "Protocol_0": "74ec0b4d50e8304d4e37636c8a55794e326a0bd87c481ac55ed0bbd6f37f838d",
+        "Protocol_1": "68d95d70b14da9d0203e992efb0a677b913181635310f2cb98763db6ef1aedce",
+        "Protocol_2": "8b1ca811af035034ac5dec0b91206d88c16c83cd293ec49b531c9724dbdb970a",
+        "Protocol_3": "35fc54ebefe0ec057c7f7cbc3b48091386a6af84e59cd5b9bb6df99ccee803e9",
+        "Protocol_4": "d22e7b4a8e8b1ef6d1ff2d4dfadc070b96de44a054b6252a1cb2eb6ae07eb4a3"
+      }
+    },
+    "list_empty": {
+      "description": "Empty list",
+      "hashes": {
+        "Default_Protocol_3": "08e14d71fb56a8d6888e9b1f0c21d1a98050e7cdf034fdfcd06d0db59f810477",
+        "Protocol_0": "91c9a231a5a188e4c6d11b075897454d774e325bebd389b92bec24a60c85ce8e",
+        "Protocol_1": "e49ed736a4f3d288c710ed373717adc18e9976fa7b7af0fe5673c7817d0a9755",
+        "Protocol_2": "a4f82e84e67aa7b6f1c1c917b333fe0fc57973b55e4d42202c8e3c39447bd060",
+        "Protocol_3": "08e14d71fb56a8d6888e9b1f0c21d1a98050e7cdf034fdfcd06d0db59f810477",
+        "Protocol_4": "0f9c830c70a829acb048aec3b47efb07913b0dbca36022aaaa72ed76f244bd58"
+      }
+    },
+    "list_single_element": {
+      "description": "List with a single element",
+      "hashes": {
+        "Default_Protocol_3": "3ad071a59ec770e1aff2946eb854ad189c4bd59dfaf7b94cc56b038509a54f8f",
+        "Protocol_0": "728e12265ea3fd1fdc2f7083f271c878cff59dd8a539514c52307d393c5d11f6",
+        "Protocol_1": "2869098bca143029f4d282eb0f4d1160d13151efd9961d245c1d0c49153496d9",
+        "Protocol_2": "6484ccf87841751b45e8066f30902bde7a1e52199a91e87964b317d1ff6cb7eb",
+        "Protocol_3": "3ad071a59ec770e1aff2946eb854ad189c4bd59dfaf7b94cc56b038509a54f8f",
+        "Protocol_4": "10707dd033b80b53c09da7acaf957c5180ff5376173df1d090693a69f55389e5"
+      }
+    },
+    "list_many_elements_homo": {
+      "description": "List with many homogenous elements",
+      "hashes": {
+        "Default_Protocol_3": "b8d85d4ca8b8454a8186e02b804fbdb5d3118213963ce97a3a3441f134eebc65",
+        "Protocol_0": "62e0cdc31ab63d81a585eec8454adeb73ede7cc821032d5d41c32cf66f546613",
+        "Protocol_1": "b6aecabea8b679d7e3da91e3ad648169d6867030a2f77c5c362dd7614ab7aac1",
+        "Protocol_2": "3855ac46dd426a0fd0d82ed8548a470d3c3eba7317ce348cddd87d1721e56929",
+        "Protocol_3": "b8d85d4ca8b8454a8186e02b804fbdb5d3118213963ce97a3a3441f134eebc65",
+        "Protocol_4": "c7d91d681d9351778ad14a66231c2c33fafdc58d824d197fe380aa8d4238324f"
+      }
+    },
+    "list_many_elements_hetero": {
+      "description": "List with many heterogenous elements",
+      "hashes": {
+        "Default_Protocol_3": "c638793f82bb791fd4249ddaf9708d25ef503e6255520b255eb326541f482863",
+        "Protocol_0": "7e48198fe45450eee3777ff8be95932eb92a86c89c29edccb42946661f00e8f0",
+        "Protocol_1": "c3a94a6398ff63bfd2d350d586924f820bad99b830768e5225d6d93b4af13458",
+        "Protocol_2": "d94f6193dd928b6d00268df8d5ee6ecb22ff5d57b2fe193cafa53b56f37a1481",
+        "Protocol_3": "c638793f82bb791fd4249ddaf9708d25ef503e6255520b255eb326541f482863",
+        "Protocol_4": "a3355e1bdbd21e43bb64d0481013c79df7e3bde4cb964224f9dcbe4a976f7ae3"
+      }
+    },
+    "list_with_special_floats": {
+      "description": "List containing special floats",
+      "hashes": {
+        "Default_Protocol_3": "20526c147d79d7b9ecdf3065b4420221196176498a9f918b0a8fa4f766bfa67d",
+        "Protocol_0": "2804e8c3476ab2160984cb1f9afd360f91b893c96b93cb729c935510b8d239a4",
+        "Protocol_1": "b48822c7b94814a87bc092073681a44dafe8f4cf1f403aa3394804736e2745e2",
+        "Protocol_2": "fa38ddee990b0d98356b883678dd98bb393584cce1621a5e23ef9b2f8cf1d436",
+        "Protocol_3": "20526c147d79d7b9ecdf3065b4420221196176498a9f918b0a8fa4f766bfa67d",
+        "Protocol_4": "8d98abedfbd392791248cd106c411d20eb78cf4843e2a8c6d50880a4676d5061"
+      }
+    },
+    "tuple_simple": {
+      "description": "Simple tuple",
+      "hashes": {
+        "Default_Protocol_3": "2695cd7acbd5c12da5ad5d698a45b1cebfa079d79d39d2fb60a644e4a228f7bf",
+        "Protocol_0": "83888ff327ac3b56eb69192ee113f5fbb48af36fe2ff89ccb7921dd90c603180",
+        "Protocol_1": "621eea9f33189b8a8ff6d49fbcb8fdf52d7841f92d26008009645268d70203a7",
+        "Protocol_2": "285a85102b8db93a9bd402e297ee401c64e73696dd56e6a53d0ac708b956918d",
+        "Protocol_3": "2695cd7acbd5c12da5ad5d698a45b1cebfa079d79d39d2fb60a644e4a228f7bf",
+        "Protocol_4": "9e87309b210d0b89a2eb89e74d8928483e470ad2545dfb0f5d0a46140345a3b1"
+      }
+    },
+    "tuple_empty": {
+      "description": "Empty tuple",
+      "hashes": {
+        "Default_Protocol_3": "c60882f6222b65821e2af3f1d0a1086a04469164bc9617b35fcc612ce814ddee",
+        "Protocol_0": "cec88ee7627d5bbd6bde131af5b2c84ed91d5e4bfe57b1c546270f19db7bd13b",
+        "Protocol_1": "c4b2896a2081395e282313d6683f07c81e3339ef8b9d2b5a299ea5b626a0998f",
+        "Protocol_2": "52b7561470a738d0daa05ce97f99460d02f997b8dfef94ccb0b8bd5493b574d4",
+        "Protocol_3": "c60882f6222b65821e2af3f1d0a1086a04469164bc9617b35fcc612ce814ddee",
+        "Protocol_4": "05cbd7fe125e7024a2d21155fe89f1aa3480682138834b6922c26fa432681146"
+      }
+    },
+    "tuple_single_element": {
+      "description": "Tuple with a single element (note comma)",
+      "hashes": {
+        "Default_Protocol_3": "c6dbe8fc5bf82a3f945bfbc2fee1193598ccf8b07b75b426f58847e528a54463",
+        "Protocol_0": "a934a86271f78f8afd6fd0bb186932fbafb1400241ef39273d466d280337a213",
+        "Protocol_1": "2079d3f02742d76fd5e1da9a33bc6f50ab62d77014f10b7709864ced62724585",
+        "Protocol_2": "f4576fde29be82013564a3d94062f8fbe521dadc4afe3cdfb8611097338d514e",
+        "Protocol_3": "c6dbe8fc5bf82a3f945bfbc2fee1193598ccf8b07b75b426f58847e528a54463",
+        "Protocol_4": "7ac67431b8a2b78c2ce01b641fad9932a4e88a5db248c4b008b16828ef9252b1"
+      }
+    },
+    "tuple_many_elements": {
+      "description": "Tuple with many elements",
+      "hashes": {
+        "Default_Protocol_3": "067ab7ed7cee0c679cfc06796a6740d4081ad39f6594a016bef59c253b37f002",
+        "Protocol_0": "59bfafbf67386ec7afcfc90d85cfcb7fc0f3a30c24cceb4a341338d1819ea5c5",
+        "Protocol_1": "bad55dbd8c3c16db3732a03a2dde3ab461f0925d6981917e3269704e988ecd5a",
+        "Protocol_2": "eab0a68c8497f92c1785d5c3d4a9cdc6497c23750e01f8c42dd731bd87cdbd64",
+        "Protocol_3": "067ab7ed7cee0c679cfc06796a6740d4081ad39f6594a016bef59c253b37f002",
+        "Protocol_4": "5ecc62e60da846b7314fd43a918f0e48e112e3a7b50b7824d5c3a8559d7b124b"
+      }
+    },
+    "dict_simple": {
+      "description": "Simple dictionary",
+      "hashes": {
+        "Default_Protocol_3": "b1089e8d0d648f881182663b0c3cd3d003266092f012a1d56868b59bbf50600e",
+        "Protocol_0": "bc465a58bfd5a1218bfb68b28fcbb212d9777ec559c57f16c2809582700cbdec",
+        "Protocol_1": "d7b49978055df6de0e1e01fc76ff351de94510de939c48aaadd1d3dca243e784",
+        "Protocol_2": "2c76a8488152aba7b32bb303cfe2bcc1cb99771f0bf726c90fb7b90bc9580053",
+        "Protocol_3": "b1089e8d0d648f881182663b0c3cd3d003266092f012a1d56868b59bbf50600e",
+        "Protocol_4": "1e5c69f932195a6fac80961af02ff56e81315042632cbabf665a0fd4f6958d4e"
+      }
+    },
+    "dict_empty": {
+      "description": "Empty dictionary",
+      "hashes": {
+        "Default_Protocol_3": "8ec16a78d9c9d3646c559df239aea3f15333605ddc702eeacebf6dd3ebeff684",
+        "Protocol_0": "8e452144801c40bbf1278559e870c09bfeadf68a56dbd75cc095941659b4634d",
+        "Protocol_1": "f07d5abe19c47bb964fc352ae026a6b82a5c2a8d02cd32de48348ab940d53c25",
+        "Protocol_2": "ad2598304a8af697d0c335a50a3e5a1ba06c82d9b63ef5f9d3e730b54cf9148a",
+        "Protocol_3": "8ec16a78d9c9d3646c559df239aea3f15333605ddc702eeacebf6dd3ebeff684",
+        "Protocol_4": "35d79123a0af9b56982cbfa85c84014912a6eedd3851d15bed4edc54cd35e7d8"
+      }
+    },
+    "dict_single_entry": {
+      "description": "Dictionary with a single entry",
+      "hashes": {
+        "Default_Protocol_3": "c81a588496e8ef2ff741cb5278916a2e9ab1dc280cec6fd99ef9dde53451e730",
+        "Protocol_0": "3c2df1981c177fa2e58c0961d7a0d16958907d804002abeac6dd659839417e5d",
+        "Protocol_1": "c1e990e2f3ef646a4acd222396162e0f166f761665a66e6f83993ed1424d7cac",
+        "Protocol_2": "7e036d2493f8171b08967d98cec6f0d3cec9651a35369e571e2eab59a3826762",
+        "Protocol_3": "c81a588496e8ef2ff741cb5278916a2e9ab1dc280cec6fd99ef9dde53451e730",
+        "Protocol_4": "06abbdd67a6a827cdf824746600e46776fe4231d33c4da6f963756e44eec7719"
+      }
+    },
+    "dict_numeric_keys": {
+      "description": "Dictionary with numeric keys",
+      "hashes": {
+        "Default_Protocol_3": "735eb3be74aa37cad46826e765ab247504bfa42963db091b3351dcb2d8a47108",
+        "Protocol_0": "e8fa7ad8d5ddc7d8227b5e5deceaaa44b4e326730cd6990a619e5e4ba7fc147e",
+        "Protocol_1": "71fdf491032d8860c61345a2be87f5c327d362e3fb374883b5ae47a602c4afeb",
+        "Protocol_2": "ffde3858876930456d17820a2c6588e5976802eeaa57a4ea998fe1a811583000",
+        "Protocol_3": "735eb3be74aa37cad46826e765ab247504bfa42963db091b3351dcb2d8a47108",
+        "Protocol_4": "432e05d5acdda08bdcb726c8bddb05df1ad671f01478d0e2a5f1de524c9ef6fe"
+      }
+    },
+    "dict_mixed_keys": {
+      "description": "Dictionary with mixed key types",
+      "hashes": {
+        "Default_Protocol_3": "3d759723e6f684679a0649f5f5528f1e8e7c4d3454faaa53737e30c4ce1612da",
+        "Protocol_0": "d30e7a59f6f0d62645ad2dabc43bd16fa50f8d48e063927f35185484ef8dd915",
+        "Protocol_1": "07421fae21d1e79fbb05c59f95e5e7ee3618a4c2e65d34330cf3c2027763e505",
+        "Protocol_2": "ba842e45b745a4390f7448ca32b4edcccf7ebaf4d53979369df93f6027bbd91f",
+        "Protocol_3": "3d759723e6f684679a0649f5f5528f1e8e7c4d3454faaa53737e30c4ce1612da",
+        "Protocol_4": "82c50025f2458a1ea1cf80311829672b03dd73d0060dc204bb7c0700504c94ea"
+      }
+    },
+    "dict_ordered_keys_insertion": {
+      "description": "Dict with specific insertion order (Python 3.7+ preserves it)",
+      "hashes": {
+        "Default_Protocol_3": "3e19a9ae7b24cb1d9951bbec70e1fd6c79dd50ee763b7fdb710ad0397a3ae598",
+        "Protocol_0": "3a39623372451f3eda035cfb0e529489dd32affa5c320f603693dc2f004021a4",
+        "Protocol_1": "cb5fadd26ca90445e030b1836e496f0144680bb1f9266167314ae20aa8cdd85e",
+        "Protocol_2": "7448b5c4b01177dc2ae822cdc76ab47e41f846828dce2e16716408b000a19b1d",
+        "Protocol_3": "3e19a9ae7b24cb1d9951bbec70e1fd6c79dd50ee763b7fdb710ad0397a3ae598",
+        "Protocol_4": "2dd485760ff460574f3829f49d066c0ee4ff30af7b0efb84b137cf48646d0752"
+      }
+    },
+    "set_simple": {
+      "description": "Simple set (EXPECT POTENTIAL VARIATION for protocols < 4 or across Pythons)",
+      "hashes": {
+        "Default_Protocol_3": "607a7ed7986fff1b13a50ec0ee3aae26a1e166a68b5c262e411e87385868d5da",
+        "Protocol_0": "d68b5a03f0b4ebea08a83f2c53558d5a1f189e7be8b9b5276d63ca660f04615d",
+        "Protocol_1": "d4a041acfa4c1a39fa146fcdc367eb439464e1ff9ccd9d44a94970021573b443",
+        "Protocol_2": "7408cb6a00887d17399df9338e66bf3fadba74aedc85a7c720e878c153c3effc",
+        "Protocol_3": "607a7ed7986fff1b13a50ec0ee3aae26a1e166a68b5c262e411e87385868d5da",
+        "Protocol_4": "312ccef7071f0b3ae8784926de67883348e349e21b5a26c1b85300be7f9e6d50"
+      }
+    },
+    "set_empty": {
+      "description": "Empty set",
+      "hashes": {
+        "Default_Protocol_3": "0cdaff94fb5e168a49c2a0b2807ed3972fce8e480f1250e43ec781d150f077ec",
+        "Protocol_0": "e69592a8b1d32df0039cd5d30dee6de023152c222ef28282db599df8e29d1932",
+        "Protocol_1": "48d62f729b782c2311786ea79c0aaa0faa7fb061cbe19cd6a5a0796048670d22",
+        "Protocol_2": "1db3ba52320687cce83a938105d8473d3e2b0ce7c05ae307f4ad09a093bed7c8",
+        "Protocol_3": "0cdaff94fb5e168a49c2a0b2807ed3972fce8e480f1250e43ec781d150f077ec",
+        "Protocol_4": "31b67d00a430ff330d730ccca43e63189b973087a0a65078d39866ebb8284c18"
+      }
+    },
+    "set_single_element": {
+      "description": "Set with a single element",
+      "hashes": {
+        "Default_Protocol_3": "69cecd5ca8a6ccc5bd1a2d0828024bbb94131dab4c2c0d8bce1936a73b5c88af",
+        "Protocol_0": "7d664d5a00ba08fbe1f93c351aff5e05b78a1ae9ba0290003e9d57c54fd89983",
+        "Protocol_1": "0149e883aba56ea844b56bec5cc64efa53fe396204c843eaba4621b2f2c60d0a",
+        "Protocol_2": "9b426e597449fb952aa24c84cc29c68751466c8f6c0f3dbdcebab06794da25d5",
+        "Protocol_3": "69cecd5ca8a6ccc5bd1a2d0828024bbb94131dab4c2c0d8bce1936a73b5c88af",
+        "Protocol_4": "3be04f0e958cd409da104670add379a682c3308e979d58b57c026c859429b1bc"
+      }
+    },
+    "set_all_same_type": {
+      "description": "Set with elements of same type",
+      "hashes": {
+        "Default_Protocol_3": "acb4422883cf733550bdea71b34e81708527e7f7cec44230aecb8988b1134149",
+        "Protocol_0": "cfe89a040ffc621d903834bc2ecfcc55ef1631d30231100bedc80eea72eb42ef",
+        "Protocol_1": "6227fb869ea771545e30ba58571063eaaa67a86471f7eb828e6a7f65e6da839d",
+        "Protocol_2": "c56e74aed8d72ca595e73f2cb58cdcad4d1c3e9f6fddd54742a03134fcea1fe3",
+        "Protocol_3": "acb4422883cf733550bdea71b34e81708527e7f7cec44230aecb8988b1134149",
+        "Protocol_4": "187371990c94df45019608995870f0ddae02b7d5359f8d5cf3d783535afb2293"
+      }
+    },
+    "set_with_special_floats": {
+      "description": "Set containing special floats (NaN makes it tricky)",
+      "hashes": {
+        "Default_Protocol_3": "8e1ab50cad8a2b13e8828915e268bd9b74612a9e567c855a4e60e65d140090cd",
+        "Protocol_0": "e0c54f92e01e1a8010519c6c5b5de8e886097324b8507db395dfb0c9a35e69fd",
+        "Protocol_1": "67bc4e991540372dd966bc0804a4961bbbca1b5e32f6696ab9f31eef4616afb5",
+        "Protocol_2": "3ed8efd704ffd6cb853c74e15f688084831c5f5d9546092e6a99e664fb90972d",
+        "Protocol_3": "8e1ab50cad8a2b13e8828915e268bd9b74612a9e567c855a4e60e65d140090cd",
+        "Protocol_4": "155ba64dba12a9c56b3b6db3d145530bd1e7dcdb40ea6709f46749ccfbcb5a64"
+      }
+    },
+    "set_from_list_with_duplicates": {
+      "description": "Set created from list with duplicates",
+      "hashes": {
+        "Default_Protocol_3": "f9c410a7e858533c399362dc4e95ae170c309404275d6cc08ff68052b1dac8b3",
+        "Protocol_0": "e141ca612b16b7a22db5402c9bd9c6f4062f33772b5c5c5cb7335ec972652d37",
+        "Protocol_1": "09e0fdf7c2e70d0ed49e249c9c8681282b5f5d8f91f7b514f994d3545ff80e28",
+        "Protocol_2": "8832dad91b487e3c07cd5e015e9abd97a4f91a9c6d83ca3a121e1d626e250a80",
+        "Protocol_3": "f9c410a7e858533c399362dc4e95ae170c309404275d6cc08ff68052b1dac8b3",
+        "Protocol_4": "e736a6ea77a0ae395d86d1d12a327d10aaa56ae1356b55260b10a6d6950beafc"
+      }
+    },
+    "frozenset_simple": {
+      "description": "Simple frozenset (EXPECT POTENTIAL VARIATION like sets)",
+      "hashes": {
+        "Default_Protocol_3": "56359692ed0e98daccd1fdecb038797149ecf86e3c767c798f2e1d941a836f61",
+        "Protocol_0": "c3c80b0172bb94451852d682053ae17d7288d7e99140ddca0a85a98cc2948ea6",
+        "Protocol_1": "abf685f1289fce78346c44084f6c2565be725eb5700f00dfb04071ea53817cd9",
+        "Protocol_2": "47a26b22ad9766f016ccfe5e363992b58dff70561d57eec0ea4ec968cea69bf8",
+        "Protocol_3": "56359692ed0e98daccd1fdecb038797149ecf86e3c767c798f2e1d941a836f61",
+        "Protocol_4": "860f8b57388654ab5f18056883103909f3665c48952ce88848d7776bbd4862df"
+      }
+    },
+    "frozenset_empty": {
+      "description": "Empty frozenset",
+      "hashes": {
+        "Default_Protocol_3": "27cdd558887f8c748022e6626ab6d60df07449a7382e71d236c5dbad40122167",
+        "Protocol_0": "210b24c77dca64047d81e4cd8be37c609d0b1ead8bdfeafb99fdfbc87222eacd",
+        "Protocol_1": "c3b52cb0c3630f1d6077006eee3fe6c831004d53dbc9033d7b9163c40d92147f",
+        "Protocol_2": "5fb35b811fd15843d6b461b9573470f53fd916b81d08ce156083968c26897a8c",
+        "Protocol_3": "27cdd558887f8c748022e6626ab6d60df07449a7382e71d236c5dbad40122167",
+        "Protocol_4": "3677f417ba9910f2b5a146c85a9f5a0cd2380842a40510104ac040dc4f8f95cc"
+      }
+    }
+  },
+  "Complex Structures": {
+    "list_nested_basic": {
+      "description": "Basic nested list",
+      "hashes": {
+        "Default_Protocol_3": "cd9a0660d3b576bd961bf77fb16776e874059e6357a592bc98b38e4a8365e49d",
+        "Protocol_0": "7ebe37202222db1e858997bd1244e839ff0ff4e2c9c68c954953c7ab8089f1ba",
+        "Protocol_1": "90317ff56f04a79f4b61692a4a8a1860331006a0a048f5e34e4c0a470cee76f5",
+        "Protocol_2": "c46d9d137855d31014d90cb017aee8fda95c2315a71c287094a5c12472321895",
+        "Protocol_3": "cd9a0660d3b576bd961bf77fb16776e874059e6357a592bc98b38e4a8365e49d",
+        "Protocol_4": "cb271b7e8cfc033fc2429ecba903f7117f746c8c24a3b291dd7f1bb141cfd413"
+      }
+    },
+    "list_deeply_nested_orig_logic": {
+      "description": "Deeply nested list using original recursive logic (depth approx 10)",
+      "hashes": {
+        "Default_Protocol_3": "b04217a61bdd0b4a89ae7c440c672141d88ac807e19b46d0050ffd0ca778f556",
+        "Protocol_0": "f926142d229bdd8f7a62d096e9720c724521825450b6ac8b5a21b7d785e140d0",
+        "Protocol_1": "f77e4353c26513a7cd805ed679b9e8a66a61b898bc2668386f4eb57e89b9424d",
+        "Protocol_2": "985c50eaa6689548a9acec991306389617c5b1bb45590b24d5d36dfea24192ba",
+        "Protocol_3": "b04217a61bdd0b4a89ae7c440c672141d88ac807e19b46d0050ffd0ca778f556",
+        "Protocol_4": "25212a860be12b50b8b9418a44af288f08c4396b4949a8bd472115c7e5126657"
+      }
+    },
+    "list_deeply_nested_simple": {
+      "description": "Deeply nested list (non-recursive def, depth 30)",
+      "hashes": {
+        "Default_Protocol_3": "6af8a97c31571e4c62f48302291973e0b608b878f6e16d57087473e0580210ed",
+        "Protocol_0": "133444132c662837792862e8d2220f3c43331f1bf4995347ed671be1b0f8df85",
+        "Protocol_1": "a6594e3210240796ff1058f316dc19313679c11ca1dd8d8c5422473d850cb848",
+        "Protocol_2": "284474e02bef1d7959faebf86b38d6a032fdd844fdd44d80d78f287fdc20a597",
+        "Protocol_3": "6af8a97c31571e4c62f48302291973e0b608b878f6e16d57087473e0580210ed",
+        "Protocol_4": "743a8cb23d07e5b9b4e50e7e584df22eac9b93b4542300900cdf7884dbc83f06"
+      }
+    },
+    "dict_nested_basic": {
+      "description": "Basic nested dictionary",
+      "hashes": {
+        "Default_Protocol_3": "5ed730ec8adbf6a671551aac0c97f6189441e58146040b1d936bbeb5f933d6e8",
+        "Protocol_0": "abaa846feb165d6a1db16f398ab449458a92b87cb14d35cf463b382ab30eb05f",
+        "Protocol_1": "4c270e7f1c3724d4a5d229bacecdb888f4a53c202f2952e3f3b15c60bb6d4c32",
+        "Protocol_2": "78fc68828c186b688c66731ee536e9a39981ae01985bd1ef43290e5c59090030",
+        "Protocol_3": "5ed730ec8adbf6a671551aac0c97f6189441e58146040b1d936bbeb5f933d6e8",
+        "Protocol_4": "2798e449b1adaebd4c7afb463f801df1d1fb9dec99eadde50069f655775b0a3f"
+      }
+    },
+    "list_of_dicts_varied": {
+      "description": "List of dictionaries with varied content",
+      "hashes": {
+        "Default_Protocol_3": "1bfcafe434fda5e0270b1780d3cd6519429741088d88294037ad3625f7322467",
+        "Protocol_0": "40d1a22975f9419d430670666ef2bca76bf4b96e6a9c75f747eab3650ff91402",
+        "Protocol_1": "85fa11724ad5d2d78c6efc5fa6129f37b8320343febda227f797f9f250671daf",
+        "Protocol_2": "e9d5d3d4f86daa861d32f8a269403e0ece9812e508be273a0f4130c85f830b10",
+        "Protocol_3": "1bfcafe434fda5e0270b1780d3cd6519429741088d88294037ad3625f7322467",
+        "Protocol_4": "f61e0435387002f9341ef28896d5a5ae57b284213d7aaeccd6d70afee38b407d"
+      }
+    },
+    "dict_with_list_of_sets": {
+      "description": "Dict containing list of sets/frozensets",
+      "hashes": {
+        "Default_Protocol_3": "67c44b47616bb2c23f605d657432da5d29d06980928cf792b8835660f5d847c6",
+        "Protocol_0": "a647d9dfb418bfca4d10887859d53bf0c3b008b12112a49ee7e93858d10ce02c",
+        "Protocol_1": "a58df2fcb03b2d3946bffd65ca9e1703ec9bcd9b5f04ae1606e8ced9985c1244",
+        "Protocol_2": "5ed427e49f7e9745d7a3bcb57f3a60850365b083f243d9942de1821c94f6d62e",
+        "Protocol_3": "67c44b47616bb2c23f605d657432da5d29d06980928cf792b8835660f5d847c6",
+        "Protocol_4": "96b7fd7a644ee801618c55c59e9fce5eefbfd50ae7964a85f7a6b5d50b114d2f"
+      }
+    },
+    "structure_with_shared_obj": {
+      "description": "Structure with internally shared object reference",
+      "hashes": {
+        "Default_Protocol_3": "42f7514679db245e07dafffcb0f8f776983ce5ce4cb7a3c7235eb44621d3b544",
+        "Protocol_0": "fa3b51d228622386e0a8d1cef684e321378834469f6a29464ad4966063184562",
+        "Protocol_1": "4e435eeb192a9c1785b8f2e35b71aef7fbf1126282efaae11b1aebb75fb4ccc2",
+        "Protocol_2": "e665a7066b7cda257f14962528e69b280ff687eaf78eddca73c3dd1597c44417",
+        "Protocol_3": "42f7514679db245e07dafffcb0f8f776983ce5ce4cb7a3c7235eb44621d3b544",
+        "Protocol_4": "d3620257c3c26a3641c7a23072ee82de3e32fc9c792d31331a6cc34af66449df"
+      }
+    },
+    "list_containing_all_special_floats": {
+      "description": "List with all special floats in specific order",
+      "hashes": {
+        "Default_Protocol_3": "35f5fed9cef8f094fd9348c0df33b311c5df733ccf127e7f150bfbe646f8b56c",
+        "Protocol_0": "7cc9e2ffdd36f5fedc81d5b24e40f2e3ebd5f763408a721474e8bdeeafc04a00",
+        "Protocol_1": "dd449c87029d8bda6faf97e7c48997512819c58b45d42c54950a813e7e0e16a7",
+        "Protocol_2": "4cc705285320fbf849a2cf8d00dd6af7e722974ff9476888723faa4969733d69",
+        "Protocol_3": "35f5fed9cef8f094fd9348c0df33b311c5df733ccf127e7f150bfbe646f8b56c",
+        "Protocol_4": "4049c7afda04627f6bedbf4e06440dbe4262c8337fd1fbe847c3d4ea2de879cf"
+      }
+    },
+    "set_containing_tuples_with_nans": {
+      "description": "Set of tuples where tuples contain NaN (complex comparison)",
+      "hashes": {
+        "Default_Protocol_3": "f5cebf496e3af20fba8dc0336c09a64d24ea43eb576b22bef9392ca12f8d0497",
+        "Protocol_0": "9b58f02c571b05a6fbacb67ce79d637d03ffdaa2fef9cc886ffda2fe9a3aa4e0",
+        "Protocol_1": "a2e6a60d1bc768777feb9642be5b5209d19d04af65294c2e1d19760e1003f3c1",
+        "Protocol_2": "9726b3edd7866adca652c7903889953bbd5b31bddc1c090d97dbd711f58e4733",
+        "Protocol_3": "f5cebf496e3af20fba8dc0336c09a64d24ea43eb576b22bef9392ca12f8d0497",
+        "Protocol_4": "5c675239ed539c4889adb58c82aed23e5da00ceecb035a2ff672205cb5d85de6"
+      }
+    }
+  },
+  "Recursive Structures": {
+    "list_recursive_direct": {
+      "description": "Directly recursive list (l=[l])",
+      "hashes": {
+        "Default_Protocol_3": "845faf7a64cebdf73f665137333f74dbf05322f97183daacb5b8d66858791ebe",
+        "Protocol_0": "2c73a0e0be84ba25fecfccd3ba889946fbf6b5bcd98a0147776f36f47965da9a",
+        "Protocol_1": "4f31011bb290f1819a04dc36dc29d6df58949b4d3a5b894edf2adb331fa1899e",
+        "Protocol_2": "1b692cca0fec6df743e4f7ab679deee06b59d44837073d4b7ae734f7bef0d187",
+        "Protocol_3": "845faf7a64cebdf73f665137333f74dbf05322f97183daacb5b8d66858791ebe",
+        "Protocol_4": "86dc462a0a5b079247e5f114fc256ec30e1e31b7a7d28965ea18ec2021941dc2"
+      }
+    },
+    "dict_recursive_direct": {
+      "description": "Directly recursive dictionary (d={self:d})",
+      "hashes": {
+        "Default_Protocol_3": "cab29aa6532067fee25f920b70a38eec2f961efc5cb61969428e52de52df1531",
+        "Protocol_0": "a7c71d0c462a6b1a3205a81330bebbf03dad0fcf8a1dc74f2407cc0218c7bf49",
+        "Protocol_1": "b3165ea6c2be18a978e5226970432e0fb46cafca8efd9d8f63fbccb3fb232890",
+        "Protocol_2": "bd30cc954223684a67d83fc242dc339b390e37c0760207dd4545a854dcf754ec",
+        "Protocol_3": "cab29aa6532067fee25f920b70a38eec2f961efc5cb61969428e52de52df1531",
+        "Protocol_4": "b8205b1671223d0f624004c0571b98b257b665b6b5523751c3e2ac978b2ead6d"
+      }
+    },
+    "list_AB_recursion": {
+      "description": "Mutually recursive lists A <-> B",
+      "hashes": {
+        "Default_Protocol_3": "208c298e96b170ceda1034a055965a17f91993b4e532f20ea9f2e9797d78d30d",
+        "Protocol_0": "625d188abf24b38ef2e582c397135c4654ca44882a594da2e87fc8cb23a6f92e",
+        "Protocol_1": "821a94bc55d373555cea12ca4b422fc26f0e02aa1b54f56c589980002d93760c",
+        "Protocol_2": "cfec35a54046aa0e77f5aa8d3d4e7afbdcd775f68d282cb379f28b522f8d3db7",
+        "Protocol_3": "208c298e96b170ceda1034a055965a17f91993b4e532f20ea9f2e9797d78d30d",
+        "Protocol_4": "74ac966e338dd58c9dbef28b33185e0204ae5dd54878bd16d2e309f8b889b379"
+      }
+    },
+    "obj_indirect_recursion_complex_shared_part": {
+      "description": "Shared object part of a complex structure (re-test)",
+      "hashes": {
+        "Default_Protocol_3": "38733935bb315e8e71ead4ef16308fd140568358bcb6a160e9a6f6cc27b5dabf",
+        "Protocol_0": "701c4a62c7e9cdace48c9c5da8f40bf69144d06f20b14eb453d48da8449b71f4",
+        "Protocol_1": "b632ede0d89898e41ae70f7b9692e13d00f06c350450c553708a88427c58c264",
+        "Protocol_2": "de5eabdc811c9834ecb18cfde5246dc0101b0ce219f278070ed42158eae4da4e",
+        "Protocol_3": "38733935bb315e8e71ead4ef16308fd140568358bcb6a160e9a6f6cc27b5dabf",
+        "Protocol_4": "f8989dddb23166de0eca469a6be8a7e72fba66a0b20db815f70008352a4718e5"
+      }
+    }
+  },
+  "Custom Objects": {
+    "custom_obj_stable_getstate": {
+      "description": "MyObjectStable(name='stable', value=100, items_set=['alpha', 'beta', 'gamma'])",
+      "hashes": {
+        "Default_Protocol_3": "e42142907ae7a444469c69d1638ffa92d3133176b2976caf5f240f71a23be74e",
+        "Protocol_0": "b349d848658199a5e37b1f8fccb2efcde4b95c21a3fa49045e9f1e98d8b2d406",
+        "Protocol_1": "589675fb1cd9ce43ccfce5c86f94a77836095e9d203b8618fe5b2ebc4e3018cc",
+        "Protocol_2": "24255613ea5e6efc5376f788aa86fb51abf18aeab2252e5e1511a5055c1c5289",
+        "Protocol_3": "e42142907ae7a444469c69d1638ffa92d3133176b2976caf5f240f71a23be74e",
+        "Protocol_4": "aafd16c78ce59f9e80a2b7185a388c6399bf229915112d4dc6f467963401430a"
+      }
+    },
+    "custom_obj_unstable_no_getstate_with_set_attr": {
+      "description": "MyObjectUnstable(name='unstable', value=200, items_set={'epsilon', 'zeta', 'delta'}) (EXPECT POTENTIAL VARIATION)",
+      "hashes": {
+        "Default_Protocol_3": "b713f3713adafae1bd3cd7c384cba51be32d0b8cd421ddd2992e33809c6bfd5d",
+        "Protocol_0": "ea88823c5644eb5a7c948b410230dca3415242bef4a7fbce70caf2643f2f63eb",
+        "Protocol_1": "bf97a16e6ebc2318d168c9b91e5fe420d4fdd016e661449d8789e34aa065ac8a",
+        "Protocol_2": "0ed1441a4a96091abe848ba412d7b1686340772f3603496eb01a3e3479c80dcb",
+        "Protocol_3": "b713f3713adafae1bd3cd7c384cba51be32d0b8cd421ddd2992e33809c6bfd5d",
+        "Protocol_4": "be79e4b101a0c59b80e886b69b95eb0ec8f27f5cb4fc6f4dd4b22239732aa166"
+      }
+    },
+    "custom_obj_default_with_set_attr": {
+      "description": "MyObjectDefault(attr1='val1_instance', attr2_set={'data_set_instance'}) (EXPECT POTENTIAL VARIATION for set)",
+      "hashes": {
+        "Default_Protocol_3": "5ffdd16ad008b19ae7d703047f728f7c7b4c3d35108f3739526d6fec1c8cfabe",
+        "Protocol_0": "042db7330ed1d3bc28deba2939628b4eddef5061fbf13d6660f291163fc485b5",
+        "Protocol_1": "64f4031fea8fb6e231a13295199bc9d6e90e54a554f73f456c4e833e1fd339bc",
+        "Protocol_2": "a4f1c7f80b1800c445895efacffc22c22866c9cd8024c5536f72220ee19d3002",
+        "Protocol_3": "5ffdd16ad008b19ae7d703047f728f7c7b4c3d35108f3739526d6fec1c8cfabe",
+        "Protocol_4": "fd9911137e475c87c64ea9e1c63f5a04aa928f186ab3c5e1a9a4ed87a3090f6e"
+      }
+    }
+  },
+  "Advanced Pickling Control": {
+    "reducible_point": {
+      "description": "ReduciblePoint(10, 20)",
+      "hashes": {
+        "Default_Protocol_3": "4334814b785e3612262f6270f970013bbf1666680b9a3af2cd487a4e2364b2a3",
+        "Protocol_0": "788592bcd46184f3a9d657fdc4f59212e636dba97064d8e18c4772bf7459f9af",
+        "Protocol_1": "c7f2f4f4bd8bf3fd0c545ebc879687bd21f2bf185fa21955140a2ebbf2e6938b",
+        "Protocol_2": "929122ebcb9ffd4e8ff51d044969d872d69b0b3225c7f6651a914410a7c4c22d",
+        "Protocol_3": "4334814b785e3612262f6270f970013bbf1666680b9a3af2cd487a4e2364b2a3",
+        "Protocol_4": "52e8cbfad8a63d8eb67a68a7d5c574dae6fceacd6609e8edb8eea2db6f9dfd53"
+      }
+    },
+    "reducible_point_ex": {
+      "description": "ReduciblePointEx(30, 40, 50, extra={'info': 'from reduce_ex', 'version': 1})",
+      "hashes": {
+        "Default_Protocol_3": "56d689e2363fdcd2099148471ecbacca01c90e2305ee7ca586e2dbcadeb0857d",
+        "Protocol_0": "9f1a21da7a1505e6238784854d5162d1e2fbdce367056cbc3966ae9f080f8432",
+        "Protocol_1": "215ce606d261c95f2ec1c536cc2cf81f8da9371dcba5aa7cfac56b40c51122ef",
+        "Protocol_2": "436404f56db85b99a1629007962f7899a724c86cfab790ec0a03a712e8ba850d",
+        "Protocol_3": "56d689e2363fdcd2099148471ecbacca01c90e2305ee7ca586e2dbcadeb0857d",
+        "Protocol_4": "9240a64368571555f5b00baee66393200129a2da97fe29b6fd1d56092e848ec6"
+      }
+    },
+    "memo_tricky_list_with_shared": {
+      "description": "List with shared MemoTricky instances: [\"MemoTricky(name='shared_A', data=[1, 2])\", \"MemoTricky(name='unique_B', data=[100])\", \"MemoTricky(name='shared_A', data=[1, 2])\", \"MemoTricky(name='another_A', data=[])\"]",
+      "hashes": {
+        "Default_Protocol_3": "a0fa7a9203257a8dcf96cdcea8705f736aa0e493de586452aaa8ac08311b20b3",
+        "Protocol_0": "d4a592d619e6e29815084b3f63ae009c69779f2ef67a500a206617ea19313aad",
+        "Protocol_1": "8bbcf29e9f52c47bf76bf9be24b991e2ee70d3fe9c78fb77f5be44cf3c00ff34",
+        "Protocol_2": "6275c95e357142c243825b4aaec970b4a80da60c667e308bbca2530737bcd06f",
+        "Protocol_3": "a0fa7a9203257a8dcf96cdcea8705f736aa0e493de586452aaa8ac08311b20b3",
+        "Protocol_4": "873114e3b2117f0ac06ee3d8f3144f3844da554b1177cfdd24e9c36701738dd9"
+      }
+    }
+  },
+  "Fuzzing": {
+    "fuzz_1": {
+      "description": "Fuzzed data (depth<=3, size<=4): ()",
+      "hashes": {
+        "Default_Protocol_3": "c60882f6222b65821e2af3f1d0a1086a04469164bc9617b35fcc612ce814ddee",
+        "Protocol_0": "cec88ee7627d5bbd6bde131af5b2c84ed91d5e4bfe57b1c546270f19db7bd13b",
+        "Protocol_1": "c4b2896a2081395e282313d6683f07c81e3339ef8b9d2b5a299ea5b626a0998f",
+        "Protocol_2": "52b7561470a738d0daa05ce97f99460d02f997b8dfef94ccb0b8bd5493b574d4",
+        "Protocol_3": "c60882f6222b65821e2af3f1d0a1086a04469164bc9617b35fcc612ce814ddee",
+        "Protocol_4": "05cbd7fe125e7024a2d21155fe89f1aa3480682138834b6922c26fa432681146"
+      }
+    },
+    "fuzz_2": {
+      "description": "Fuzzed data (depth<=3, size<=4): {'MoY': {False: {-307634688, None, 9940121940.55011}, -54753: b'\\x03\\x...",
+      "hashes": {
+        "Default_Protocol_3": "e1555ff1c13d158c63fdb83e952fc6aa8e720fb81a707499d8843811e6d162c0",
+        "Protocol_0": "00bc16491b12584469c4f633963bc525dade779d8cdf00849bb3d74fb09b668a",
+        "Protocol_1": "3faab45533671d452d4c59dd0268b2f457d47b301d1d8654a65cad19584eb021",
+        "Protocol_2": "d1491bd07e867c7d09736e4a8548fcafdb86a39946ab5d81dfb7941be479493e",
+        "Protocol_3": "e1555ff1c13d158c63fdb83e952fc6aa8e720fb81a707499d8843811e6d162c0",
+        "Protocol_4": "79416b074272c7279ede88855d376bfab4fd7d1ac998639914668bc40b341ea7"
+      }
+    },
+    "fuzz_3": {
+      "description": "Fuzzed data (depth<=3, size<=4): []",
+      "hashes": {
+        "Default_Protocol_3": "08e14d71fb56a8d6888e9b1f0c21d1a98050e7cdf034fdfcd06d0db59f810477",
+        "Protocol_0": "91c9a231a5a188e4c6d11b075897454d774e325bebd389b92bec24a60c85ce8e",
+        "Protocol_1": "e49ed736a4f3d288c710ed373717adc18e9976fa7b7af0fe5673c7817d0a9755",
+        "Protocol_2": "a4f82e84e67aa7b6f1c1c917b333fe0fc57973b55e4d42202c8e3c39447bd060",
+        "Protocol_3": "08e14d71fb56a8d6888e9b1f0c21d1a98050e7cdf034fdfcd06d0db59f810477",
+        "Protocol_4": "0f9c830c70a829acb048aec3b47efb07913b0dbca36022aaaa72ed76f244bd58"
+      }
+    },
+    "fuzz_4": {
+      "description": "Fuzzed data (depth<=3, size<=4): b'\\xda\\x97M\\x0f\\xd4\\x9c\\x17\\xe3\\xd6\\x9b\\xed'",
+      "hashes": {
+        "Default_Protocol_3": "09bf9ce5c1b433f60f4ed2d2421b4fa39678ab80a0bfd838804d2af61c499b6b",
+        "Protocol_0": "8020879e9822019ceae5f83ca90011458f8879c9ff4728786b6c0a9fb650b5ab",
+        "Protocol_1": "5577e2bb10569bd506742c7e22e1b0c7e979e3d5e7a720ac0a9c1ebba001e6b9",
+        "Protocol_2": "7afb67330be770e8bf8549dab0aab330f5312b873df4bc421eed10ed7516697e",
+        "Protocol_3": "09bf9ce5c1b433f60f4ed2d2421b4fa39678ab80a0bfd838804d2af61c499b6b",
+        "Protocol_4": "a1a9cb250e442ebe2cce6284209f8d8b20aa5c0c9d2c36ea2cf5d3e1779a271f"
+      }
+    },
+    "fuzz_5": {
+      "description": "Fuzzed data (depth<=3, size<=4): {True, -9228723044.26608}",
+      "hashes": {
+        "Default_Protocol_3": "925aebb6bbf3f4d23a70955f13df8a4b0cbf2ff242cfa368bd98cad426b1e56a",
+        "Protocol_0": "96aacf43e9aeb4fe55ed1ee133516514e09d44d3f296fa2d935b002080835437",
+        "Protocol_1": "081c9d4f0f8aa5aa18b4c4e28411ec43e875f6bc3135ad438b4ad2f7d78e657b",
+        "Protocol_2": "0280665e042f6cab823db6146125d661e2f2654945918ac5165426cd01e3e48b",
+        "Protocol_3": "925aebb6bbf3f4d23a70955f13df8a4b0cbf2ff242cfa368bd98cad426b1e56a",
+        "Protocol_4": "0805b15de8a93e25ce454b578333f52dbab6b72c18486fe37be74bfcc6139d80"
+      }
+    },
+    "fuzz_6": {
+      "description": "Fuzzed data (depth<=3, size<=4): None",
+      "hashes": {
+        "Default_Protocol_3": "4f3fc348a818941a464e415fff6b9d416c1ddc3b1c64743861d328fbc345bcd6",
+        "Protocol_0": "8b1663da576e3578fd9e93e64081f24282af0bc3e08b3d3c8e288c26741faa4d",
+        "Protocol_1": "8b1663da576e3578fd9e93e64081f24282af0bc3e08b3d3c8e288c26741faa4d",
+        "Protocol_2": "e71559db7df35982f168ca0bd6d35a0270e621095a7bfd0c3a1773ed09ae1a44",
+        "Protocol_3": "4f3fc348a818941a464e415fff6b9d416c1ddc3b1c64743861d328fbc345bcd6",
+        "Protocol_4": "6832703fd8cadedf69772ea09524d8f68e8fbe05ff8143bca25aa1187740f2d8"
+      }
+    },
+    "fuzz_7": {
+      "description": "Fuzzed data (depth<=3, size<=4): {}",
+      "hashes": {
+        "Default_Protocol_3": "8ec16a78d9c9d3646c559df239aea3f15333605ddc702eeacebf6dd3ebeff684",
+        "Protocol_0": "8e452144801c40bbf1278559e870c09bfeadf68a56dbd75cc095941659b4634d",
+        "Protocol_1": "f07d5abe19c47bb964fc352ae026a6b82a5c2a8d02cd32de48348ab940d53c25",
+        "Protocol_2": "ad2598304a8af697d0c335a50a3e5a1ba06c82d9b63ef5f9d3e730b54cf9148a",
+        "Protocol_3": "8ec16a78d9c9d3646c559df239aea3f15333605ddc702eeacebf6dd3ebeff684",
+        "Protocol_4": "35d79123a0af9b56982cbfa85c84014912a6eedd3851d15bed4edc54cd35e7d8"
+      }
+    },
+    "fuzz_8": {
+      "description": "Fuzzed data (depth<=3, size<=4): (b'\\xcbNe\\x7f\\xad)({\\xf6\\x98', '<\"e1q.J(eyR~o2hvc@93)YN.RB)Fp?;%41MfyX...",
+      "hashes": {
+        "Default_Protocol_3": "a13b861d81af1f7b930897e21f11ae8f07a06b99df0d213f51d103c2707b57ff",
+        "Protocol_0": "b8df440de7a9534082bc71cfea498afa62647219e3e01776cd474507c9b74cba",
+        "Protocol_1": "d81450adc362407614a2bc0ff770a949e3cbd89ecb57e47add1b7f44a857981c",
+        "Protocol_2": "7620d14e0624fba0b9e163a1da7502b64916df24023dad589fcc34e7df9f9077",
+        "Protocol_3": "a13b861d81af1f7b930897e21f11ae8f07a06b99df0d213f51d103c2707b57ff",
+        "Protocol_4": "d5f99d1a0412d632fde926af353309d0436e045ef9fd04dd6cc181357d3cee97"
+      }
+    },
+    "fuzz_9": {
+      "description": "Fuzzed data (depth<=3, size<=4): {'CjqScXiKg': 6341693498.876722, False: [(b'?07\\xcd,\\xc7[\\xdd\\xa4\\xe5`...",
+      "hashes": {
+        "Default_Protocol_3": "107a34d6533b2cfda171cef5739e51f6373e26a796616bc6cf7d3e7bcfae0100",
+        "Protocol_0": "658f668291a5edb5c79ea5c3ac6a148b64e40d6c28d87fa7eac6183b30605eb7",
+        "Protocol_1": "9a0786d81ca89e51805e23a55b8c2bcff8ba8c132f5c804914df9fb9344c8517",
+        "Protocol_2": "6b497c819c7d05e24d0b1e2b2527bda5fb453fcfccf1ec5a838d3c14d85515b9",
+        "Protocol_3": "107a34d6533b2cfda171cef5739e51f6373e26a796616bc6cf7d3e7bcfae0100",
+        "Protocol_4": "5dd94f81321fa8ac349b9ee934a3aa24e2d8a159899e892316f58ef86c87b5e5"
+      }
+    },
+    "fuzz_10": {
+      "description": "Fuzzed data (depth<=3, size<=4): ()",
+      "hashes": {
+        "Default_Protocol_3": "c60882f6222b65821e2af3f1d0a1086a04469164bc9617b35fcc612ce814ddee",
+        "Protocol_0": "cec88ee7627d5bbd6bde131af5b2c84ed91d5e4bfe57b1c546270f19db7bd13b",
+        "Protocol_1": "c4b2896a2081395e282313d6683f07c81e3339ef8b9d2b5a299ea5b626a0998f",
+        "Protocol_2": "52b7561470a738d0daa05ce97f99460d02f997b8dfef94ccb0b8bd5493b574d4",
+        "Protocol_3": "c60882f6222b65821e2af3f1d0a1086a04469164bc9617b35fcc612ce814ddee",
+        "Protocol_4": "05cbd7fe125e7024a2d21155fe89f1aa3480682138834b6922c26fa432681146"
+      }
+    },
+    "fuzz_11": {
+      "description": "Fuzzed data (depth<=3, size<=4): 3527808811.258108",
+      "hashes": {
+        "Default_Protocol_3": "338599d41317c6083cf40367439dc3344f2febfb60877d4f1179e4f12eec1e39",
+        "Protocol_0": "5decbfa3f70ebfc7646f9982b22f3eb1e00d72239a51e3a6d838ef04a783a874",
+        "Protocol_1": "db014a01a8cd06da05312b97652303d621e2197793d39c87cef5550f797aba60",
+        "Protocol_2": "82037e13a2c2289c6d25e3521a0cf3eb4395e82725def413958dec4988620116",
+        "Protocol_3": "338599d41317c6083cf40367439dc3344f2febfb60877d4f1179e4f12eec1e39",
+        "Protocol_4": "5b43ce3ee486e3d7238fb376921ea30b56b7a701d4e353def104c6f3d52d3639"
+      }
+    },
+    "fuzz_12": {
+      "description": "Fuzzed data (depth<=3, size<=4): {423410: {\"Bx\\t_>Ad\\r'i,Pq{(hkx@drm]2l+a.:>NK-6X V;\\x0b(&eg!R\", (':+E0...",
+      "hashes": {
+        "Default_Protocol_3": "6ab15c3598d8b25ae7fac15432c6d7afaa7d15f27d118a6c046ed48f3cd137f9",
+        "Protocol_0": "55eb4d391f2ba00c289da11b84fb207ef92e600133d46478a2b763457690210f",
+        "Protocol_1": "f587435beac9b9ec3c225777ebe8266dd5ee921de2172f9a7402bbf6110ca7ba",
+        "Protocol_2": "64eba66f3e37e4f75def001b1913ffe49550b7c0bf58d00ba90a258da56be197",
+        "Protocol_3": "6ab15c3598d8b25ae7fac15432c6d7afaa7d15f27d118a6c046ed48f3cd137f9",
+        "Protocol_4": "11cd0e5098e6922e0e7a12063e055d817bdd196bd0e938f7cb5292e34814e0bd"
+      }
+    },
+    "fuzz_13": {
+      "description": "Fuzzed data (depth<=3, size<=4): (((),), True)",
+      "hashes": {
+        "Default_Protocol_3": "be437c2095bfb32b794a1fe6a0bab61de0618fe22030f0e614a9f8385d8110c2",
+        "Protocol_0": "5aba4a34e5eeadef4f070ba3cdde634d0be27ef37f67c0f6a6657ed675aa2d97",
+        "Protocol_1": "011ec11ecb3e445670fe4fa66c66abde50b17a9ea12fb86dd70044260758a0a4",
+        "Protocol_2": "1b596deef8ae7c6b801184cbd0a65d27cea7c3c46c2fbce0ccc10b88a7b69cb9",
+        "Protocol_3": "be437c2095bfb32b794a1fe6a0bab61de0618fe22030f0e614a9f8385d8110c2",
+        "Protocol_4": "138f6ecb83ab5db2fce14e5b0d4fbfda6f830c375f6b00a69f06c0ba663849c8"
+      }
+    },
+    "fuzz_14": {
+      "description": "Fuzzed data (depth<=3, size<=4): [b'\\xc2\\xa2\\xf9k;\\xdaG\\x12\\xbam/\\xc9wO\\xd7$\\x1f\\xc7H\\x82\\xf1J\\xd4\\x9c\\...",
+      "hashes": {
+        "Default_Protocol_3": "0538080a47095c9b47b0b1421e7d8fd086424d765638236ae17a4924bca7433e",
+        "Protocol_0": "0046ae00dfc2e87da096f59f0c8234f0e8bf0547b4f02b59712c00b434b30239",
+        "Protocol_1": "b48ed49d51148e26985da15b074a5ac5c318b9cc701263a6ea4ec91ba2f4db83",
+        "Protocol_2": "f0aa627eb669f31b479364c2a2e0d0dd3ec5352fbcd892958b0ab402b30262ac",
+        "Protocol_3": "0538080a47095c9b47b0b1421e7d8fd086424d765638236ae17a4924bca7433e",
+        "Protocol_4": "eae32fcda6ca115f6904b9822075fc16b50ff4ffca203f8adfb440bf4db7f301"
+      }
+    },
+    "fuzz_15": {
+      "description": "Fuzzed data (depth<=3, size<=4): ('iQG]x j1O-2\\r%wyPRe{!', {-791324: None, True: True, None: None, b'\\x...",
+      "hashes": {
+        "Default_Protocol_3": "04d5d7cad84d4b12c4639c2602a7531574f3b9aab61e6f1ea35a761cb0b33bab",
+        "Protocol_0": "a763b38dcab817f40872a76e39941c6ce8abcf95a37f487138ac8cb5c7924517",
+        "Protocol_1": "40406f7de417c55f00abe451f31ff1f82ccd7e9f2bddeebaf56ed0fb489a7eea",
+        "Protocol_2": "2dc120e1c2ae5aeb19e0f3cc10ff440ab190de624c655c782ce1b24aa8d120e6",
+        "Protocol_3": "04d5d7cad84d4b12c4639c2602a7531574f3b9aab61e6f1ea35a761cb0b33bab",
+        "Protocol_4": "1c9d2ef10f9dee7665c4584a93d5fad149a232fa8a741e75f6032d17c4e152da"
+      }
+    },
+    "fuzz_16": {
+      "description": "Fuzzed data (depth<=3, size<=4): ()",
+      "hashes": {
+        "Default_Protocol_3": "c60882f6222b65821e2af3f1d0a1086a04469164bc9617b35fcc612ce814ddee",
+        "Protocol_0": "cec88ee7627d5bbd6bde131af5b2c84ed91d5e4bfe57b1c546270f19db7bd13b",
+        "Protocol_1": "c4b2896a2081395e282313d6683f07c81e3339ef8b9d2b5a299ea5b626a0998f",
+        "Protocol_2": "52b7561470a738d0daa05ce97f99460d02f997b8dfef94ccb0b8bd5493b574d4",
+        "Protocol_3": "c60882f6222b65821e2af3f1d0a1086a04469164bc9617b35fcc612ce814ddee",
+        "Protocol_4": "05cbd7fe125e7024a2d21155fe89f1aa3480682138834b6922c26fa432681146"
+      }
+    },
+    "fuzz_17": {
+      "description": "Fuzzed data (depth<=3, size<=4): (b'/\\xe4\"\\x1d\\x05\\xfa\\xb4x)',)",
+      "hashes": {
+        "Default_Protocol_3": "01bfbc0249e1c46bfe561d080086a01759c389ac5f366948de94c3e4db49797c",
+        "Protocol_0": "0214e8125a03e312e8e9743768cb343c82f7cbff16ceb89c4bca24c301f3f752",
+        "Protocol_1": "742127ce70320522e33555af1e8e076aa4dd1a243275f28d3a40a3ac4b9753fa",
+        "Protocol_2": "a6af027dde50c3759c1476213bf4fdb66943611817fe47ffe75719e5b0f1bb34",
+        "Protocol_3": "01bfbc0249e1c46bfe561d080086a01759c389ac5f366948de94c3e4db49797c",
+        "Protocol_4": "e9c6ebb81b0a7122d7f9421dc7ca2f6aad1d181e7c45b5f4ccb094b8524a8fe9"
+      }
+    },
+    "fuzz_18": {
+      "description": "Fuzzed data (depth<=3, size<=4): {b'\\x91': {True: True, 'CufifRxgE': b\"\\xab\\xa9+\\xbc`\\x7f'[\\x11FW\\x91\\x...",
+      "hashes": {
+        "Default_Protocol_3": "8e8e109353d99f00cb2cdd334eb5b25b5981daa5dec1ea9e8a846f3fff9ed234",
+        "Protocol_0": "e64fcdee2d19b73299197d0e0bcd93ccaa690a4931d599d5501f17f358e55b8f",
+        "Protocol_1": "af231db82ec5a477991764d5f97513d8a5148244dd7ac123d23e573d3f60f452",
+        "Protocol_2": "9acbaf82ae23b7407460dd366bc55a94cbaa9667afb2c7c844a7a7b5b317d7a4",
+        "Protocol_3": "8e8e109353d99f00cb2cdd334eb5b25b5981daa5dec1ea9e8a846f3fff9ed234",
+        "Protocol_4": "614ce34629d889e3136c11624662772f7fa5589fdf550875530cf5e2522b4283"
+      }
+    },
+    "fuzz_19": {
+      "description": "Fuzzed data (depth<=3, size<=4): {-0.0, -939405540}",
+      "hashes": {
+        "Default_Protocol_3": "44935c2001da1b63b5a24ec6efa16cb335edf4c06df8bab873fc54222bcf37a8",
+        "Protocol_0": "e7d4b5f8425e4a10cf4772d1188d819e877cb31fb5a6108f4a9713c1fa9801e9",
+        "Protocol_1": "1cc37bf2899449dccd63f64db94523fd6b2c87d1ec6c6ba0c6188dfec554ff7f",
+        "Protocol_2": "d1325781300229d32e278e06877745ab2b8a0a2ea80cb5d81d9d753687c34690",
+        "Protocol_3": "44935c2001da1b63b5a24ec6efa16cb335edf4c06df8bab873fc54222bcf37a8",
+        "Protocol_4": "a51e5cd3e326d8439920f49b1168f63b22cd5f4816d35fc33fe7b9b8b0e8d857"
+      }
+    },
+    "fuzz_20": {
+      "description": "Fuzzed data (depth<=3, size<=4): {-0.0, None}",
+      "hashes": {
+        "Default_Protocol_3": "6f6d399ec9bb22272234ad8383a54f1d21f97ec9e22024a391665e52fb17fb37",
+        "Protocol_0": "faffbd6654991da1b4c2141a6b7decfac06ae8560a3077becbfef1667e629920",
+        "Protocol_1": "53b7a9ac300ea558f7c1da18ae65a1f474a6c56ba7f36d9461c5ad8ec7e66125",
+        "Protocol_2": "dfb89fda6f71ed275521bd1517703e3d016bbac7d33fed9d4414353e9bc053bb",
+        "Protocol_3": "6f6d399ec9bb22272234ad8383a54f1d21f97ec9e22024a391665e52fb17fb37",
+        "Protocol_4": "4f3aceea3467ceeb146b4303ab64f3f21bb653e635f114f7e41fea68cb386df3"
+      }
+    },
+    "fuzz_21": {
+      "description": "Fuzzed data (depth<=3, size<=4): {b'\\xef\\x02D\\xa1P\\x8bN\\x05': 1337841567.0082703}",
+      "hashes": {
+        "Default_Protocol_3": "da81e9e8f63e793b42f06fc0eeaae8184618d1a9db271ee38a2ccec939f3f4ab",
+        "Protocol_0": "9ed01d5343524877c830f9edf4b42d00e6ed636d6c1fb2d0ff1773f65553a04e",
+        "Protocol_1": "0a990afd4381fdabf130f12ac55351f04355a309b662eb063d65b05720fa7be6",
+        "Protocol_2": "ed9870b492f3183d8d21935e648d7ed7e04923ce90f78825c28000a776a1d54f",
+        "Protocol_3": "da81e9e8f63e793b42f06fc0eeaae8184618d1a9db271ee38a2ccec939f3f4ab",
+        "Protocol_4": "8af753002a09bea89ebbb53f486b4834ebfa02ee4f0839a474436c3fe29ea389"
+      }
+    },
+    "fuzz_22": {
+      "description": "Fuzzed data (depth<=3, size<=4): (None, False)",
+      "hashes": {
+        "Default_Protocol_3": "bda8880b873d8e894b0378233d18b53a92137b55231f6d57ae887a28bc0a10d2",
+        "Protocol_0": "1539c48c8ecf14f93db948746549dee8b104af828c89f78937b0a420b5328bb1",
+        "Protocol_1": "39715f2eae6f414eef43b61723349d67ab70bba960a64622f558c35c6e1fd9d0",
+        "Protocol_2": "eb601fc77a7f63ee5a73ef0e4c4f7e861f0153c4ad28262cd7be528efbe89165",
+        "Protocol_3": "bda8880b873d8e894b0378233d18b53a92137b55231f6d57ae887a28bc0a10d2",
+        "Protocol_4": "c7d31d8900d9f8ec99b840612fae1950d0714bc7eb6df72b08a70aecc146464d"
+      }
+    },
+    "fuzz_23": {
+      "description": "Fuzzed data (depth<=3, size<=4): {b'\\x03\\xf7\\xd5\\xdd\\xad\\xac\\\\\\xaa\\x05C\\x7fc2\\x96\\xbb\\xe1\\xa7\\x86J', -9...",
+      "hashes": {
+        "Default_Protocol_3": "a55a57b76bff6d3e7fc733f09e9fbcd405c54e7f1bb06a40c91adfc9f4921fc0",
+        "Protocol_0": "ee745612c7f8a8a89e6d8e6c381c0a0ba0ac285111fe8cc498b64a8ddfabfd41",
+        "Protocol_1": "54f93ccf5c2b63a334c56298cdce69ca0484c8528095385ff1618b04f67b49ee",
+        "Protocol_2": "03dbd0e0d3ab9a653dd07643eeacb908f45b8ee871b67689417d41bd0f532eea",
+        "Protocol_3": "a55a57b76bff6d3e7fc733f09e9fbcd405c54e7f1bb06a40c91adfc9f4921fc0",
+        "Protocol_4": "59b52a4bc0e262b85c1aa01b555c6c8ebde4cd1e84b137a7261a7e584610d941"
+      }
+    },
+    "fuzz_24": {
+      "description": "Fuzzed data (depth<=3, size<=4): (None, \"hi-x:%:Ma9KEwDIVHg\\nys[R'L=Qk~g_K<l&eVq)3TzgJm\", 8425278865.23...",
+      "hashes": {
+        "Default_Protocol_3": "4e475e6c3d9c3351710831db093c2663ac9eef423e9f7ad81f22768dd3703b89",
+        "Protocol_0": "e572d9da0de29c876095e74311f93ad94bb808778bb92b4259f36c8d930f97b9",
+        "Protocol_1": "d046fcb62c3c642a7ff4ab3b9a41ca069a254727049aea4be6ed98ebe4c504be",
+        "Protocol_2": "e2c7dd5053a44d4dafadba003660632c5e795d0c8447ccae725162a6357d81e5",
+        "Protocol_3": "4e475e6c3d9c3351710831db093c2663ac9eef423e9f7ad81f22768dd3703b89",
+        "Protocol_4": "7b746ec7b6ab43afaffd512017e461846c3743035fc1e37285d25b05dc8c21b9"
+      }
+    },
+    "fuzz_25": {
+      "description": "Fuzzed data (depth<=3, size<=4): [{'zyxiAfk': -895472895, 'CFmkQaYm': -4489481680.278433}, 7867352827.9...",
+      "hashes": {
+        "Default_Protocol_3": "3f5b8b27972ca2c1d8a9128ad4210bce1b6c4b3370ed45bf12ae378c9b667503",
+        "Protocol_0": "b7fbb78c0780357f73a502617852ead897ae684d165462e9938b5ce94a500ca9",
+        "Protocol_1": "ecfdd1bfb09b9f77f409b2917936174a18d6a6601310c7c3154dbbd5a78a3f81",
+        "Protocol_2": "d9e93c6b605b2035038f253bfe7fb52687bd07d13bb5c81c1ed44d908bab7f0d",
+        "Protocol_3": "3f5b8b27972ca2c1d8a9128ad4210bce1b6c4b3370ed45bf12ae378c9b667503",
+        "Protocol_4": "773fcbff4ca26ec5072ddc3a5cb7bcebd5c9aadb5896f972600e552524f37220"
+      }
+    }
+  }
+}
