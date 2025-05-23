@@ -593,13 +593,13 @@
     "set_simple": {
       "description": "Simple set (EXPECT POTENTIAL VARIATION for protocols < 4 or across Pythons)",
       "hashes": {
-        "Default_Protocol_4": "d4a90bae4be89e96926e388a0d9932a34a824142fd1fbb0bfa4ce1b60d562539",
-        "Protocol_0": "c95c2ff6e91b95bef2ffe33a387c6d60c5abedb8e0d511140353efee0b20b291",
-        "Protocol_1": "f3ab30dab5d7137099e1d3e73d57cd82db2bbf5f88818fd20141dc7612ddd4e1",
-        "Protocol_2": "9951b19261bdeec95e531f824b2005e8e1e8c19ba06e8b3992c73d3b41629e9e",
-        "Protocol_3": "8d0ea82b828684a9bc7b17ee9a0f3578a898a55fc1bc8638f502077c1f9cf4d1",
-        "Protocol_4": "d4a90bae4be89e96926e388a0d9932a34a824142fd1fbb0bfa4ce1b60d562539",
-        "Protocol_5": "311438495b0ba20bc029881635074fda85f576539c7982b1b141564acb6ad469"
+        "Default_Protocol_4": "312ccef7071f0b3ae8784926de67883348e349e21b5a26c1b85300be7f9e6d50",
+        "Protocol_0": "b017b53957b8cdaebc9901607e44645c624c5edc1159dac7118d308fb2eca55f",
+        "Protocol_1": "d4a041acfa4c1a39fa146fcdc367eb439464e1ff9ccd9d44a94970021573b443",
+        "Protocol_2": "7408cb6a00887d17399df9338e66bf3fadba74aedc85a7c720e878c153c3effc",
+        "Protocol_3": "607a7ed7986fff1b13a50ec0ee3aae26a1e166a68b5c262e411e87385868d5da",
+        "Protocol_4": "312ccef7071f0b3ae8784926de67883348e349e21b5a26c1b85300be7f9e6d50",
+        "Protocol_5": "9ec3c2e55da22b1ff2b3dd8d69324c61460c79c6c1a24dbd84d20ff3b92d8e7f"
       }
     },
     "set_empty": {
@@ -665,13 +665,13 @@
     "frozenset_simple": {
       "description": "Simple frozenset (EXPECT POTENTIAL VARIATION like sets)",
       "hashes": {
-        "Default_Protocol_4": "afe4593bafeb164263b895de5cb58d453769958fc0638a0ecf0afd673bcd490f",
-        "Protocol_0": "7d3e2b938855e4574c140e1e91b9776f3b6f5e73971c419eaf6cbcdcc85ad577",
-        "Protocol_1": "43cc032be8965e31d57f7bd7092eee421f5b0fb530e50ab186f9018d5e408432",
-        "Protocol_2": "236d1dbe2a7f831df3c628a58eb802eae76523ed5313404e12d8b6b554678728",
-        "Protocol_3": "8d7220705573de0e264fafd193084b0115ff38611e947112e65ef47710f0e436",
-        "Protocol_4": "afe4593bafeb164263b895de5cb58d453769958fc0638a0ecf0afd673bcd490f",
-        "Protocol_5": "1234db684a8b81ca8304968a4e43dfbddb4e53556c50c9fb791f7ae07c9d8d7a"
+        "Default_Protocol_4": "860f8b57388654ab5f18056883103909f3665c48952ce88848d7776bbd4862df",
+        "Protocol_0": "6b9e4a46b734c8d02e13ed3b259e75122ccf36bfcb01078ecc568d31c14475d9",
+        "Protocol_1": "abf685f1289fce78346c44084f6c2565be725eb5700f00dfb04071ea53817cd9",
+        "Protocol_2": "47a26b22ad9766f016ccfe5e363992b58dff70561d57eec0ea4ec968cea69bf8",
+        "Protocol_3": "56359692ed0e98daccd1fdecb038797149ecf86e3c767c798f2e1d941a836f61",
+        "Protocol_4": "860f8b57388654ab5f18056883103909f3665c48952ce88848d7776bbd4862df",
+        "Protocol_5": "7d87330a46cdeb4f8d64a96cbed56c23b8790bbcd0a259c4d145a00cf9e42d0b"
       }
     },
     "frozenset_empty": {
@@ -787,13 +787,13 @@
     "set_containing_tuples_with_nans": {
       "description": "Set of tuples where tuples contain NaN (complex comparison)",
       "hashes": {
-        "Default_Protocol_4": "03f67c56eadef04d827c0a3c03dd98916dc687fb6c5162919ae67930409f7704",
-        "Protocol_0": "55ec6fb74f37163c3e029041c429ac31c41cbdc5a5fa38c90fbf09227de4bda2",
-        "Protocol_1": "4434ee5bf5198f689206cd5594cec4fde74d8ae1b989a83c7c9004bb5916d145",
-        "Protocol_2": "0637d529f894bef2d71883a54fb7aeab9f9404c14b2dd337ac5f2965c350b6b1",
-        "Protocol_3": "ac19682fc410b61e12a1b3cc52f1fefbd4dc72a9ae7a847b8e420ffdb8cce087",
-        "Protocol_4": "03f67c56eadef04d827c0a3c03dd98916dc687fb6c5162919ae67930409f7704",
-        "Protocol_5": "dec6c168d3e4c3ca050bef525b2f7e97be5819bebac24f3c3a2f2801e5f65108"
+        "Default_Protocol_4": "f5242be723b6dfd12293bdf9e2a5f01132ed2d5f05b343fb048733e7fd80517a",
+        "Protocol_0": "6a0b53c3b81e93211d04c530f33f4ec1e4574522765feb1d195a235eacb73650",
+        "Protocol_1": "93cfa247e8b2a57309f99b917813865b161ea37d3054125a7af6f967b8049706",
+        "Protocol_2": "d23a1dad8b6c4fca09a01208a8009f2f498cb643ecc72065bc2a00c853bae25b",
+        "Protocol_3": "560dd500ee0451edd45910c7c3dbdd8fdaaa063815374628b603a5d6239da291",
+        "Protocol_4": "f5242be723b6dfd12293bdf9e2a5f01132ed2d5f05b343fb048733e7fd80517a",
+        "Protocol_5": "700952544c01905e8977a1e6770a2419adbe4bd1ff65e9125f0400212d07bda3"
       }
     }
   },
@@ -861,15 +861,15 @@
       }
     },
     "custom_obj_unstable_no_getstate_with_set_attr": {
-      "description": "MyObjectUnstable(name='unstable', value=200, items_set={'epsilon', 'zeta', 'delta'}) (EXPECT POTENTIAL VARIATION)",
+      "description": "MyObjectUnstable(name='unstable', value=200, items_set={'zeta', 'delta', 'epsilon'}) (EXPECT POTENTIAL VARIATION)",
       "hashes": {
-        "Default_Protocol_4": "be79e4b101a0c59b80e886b69b95eb0ec8f27f5cb4fc6f4dd4b22239732aa166",
-        "Protocol_0": "cab03ff8a3343f9269159c9f8bb4ab421b0d2a8c3e6c581a120456e95b07a70c",
-        "Protocol_1": "bf97a16e6ebc2318d168c9b91e5fe420d4fdd016e661449d8789e34aa065ac8a",
-        "Protocol_2": "0ed1441a4a96091abe848ba412d7b1686340772f3603496eb01a3e3479c80dcb",
-        "Protocol_3": "b713f3713adafae1bd3cd7c384cba51be32d0b8cd421ddd2992e33809c6bfd5d",
-        "Protocol_4": "be79e4b101a0c59b80e886b69b95eb0ec8f27f5cb4fc6f4dd4b22239732aa166",
-        "Protocol_5": "5587110e9a1a72a8103705e576afdb7a13ce2e4c39a246afb2ba58099a89331f"
+        "Default_Protocol_4": "66e82bdaeaf8338eb304721f08b282cecd6818c118766bccaf5c64d7183a0a3e",
+        "Protocol_0": "bf772f8210539c954e1fbeec69ac0ff6f437387094ad261ca1d7c587d719658f",
+        "Protocol_1": "56a7b1c9fc34aba8dd7fa661e816accafddeaee85aa83f5b3c38984f671f2257",
+        "Protocol_2": "dc83cd0e70921b09154225ba51293d5968a7de25ce4c998ccf133c53cfbc91e4",
+        "Protocol_3": "92034b34596e11df8d9c335d0b79cc402596ec882fe31c4acba809d27d2c791f",
+        "Protocol_4": "66e82bdaeaf8338eb304721f08b282cecd6818c118766bccaf5c64d7183a0a3e",
+        "Protocol_5": "34c46bc7a174415edaa4bbd1a05199aebc292a7af4cbb408cd93ae31283845ff"
       }
     },
     "custom_obj_default_with_set_attr": {
@@ -925,223 +925,115 @@
   },
   "Fuzzing": {
     "fuzz_1": {
-      "description": "Fuzzed data (depth<=3, size<=4): {}",
+      "description": "Fuzzed data (seed=42, depth<=3, size<=4): 107500119",
       "hashes": {
-        "Default_Protocol_4": "926248e52d1fa532c317e37da24ed652ae64110f8219cb5e061668bd3091f048",
-        "Protocol_0": "8e452144801c40bbf1278559e870c09bfeadf68a56dbd75cc095941659b4634d",
-        "Protocol_1": "f07d5abe19c47bb964fc352ae026a6b82a5c2a8d02cd32de48348ab940d53c25",
-        "Protocol_2": "ad2598304a8af697d0c335a50a3e5a1ba06c82d9b63ef5f9d3e730b54cf9148a",
-        "Protocol_3": "8ec16a78d9c9d3646c559df239aea3f15333605ddc702eeacebf6dd3ebeff684",
-        "Protocol_4": "926248e52d1fa532c317e37da24ed652ae64110f8219cb5e061668bd3091f048",
-        "Protocol_5": "bfce13fc2f13ad950016bb48ccbbbd04ce13be07c748476dde1f940fcdfa0d52"
+        "Default_Protocol_4": "65c9f02ee45338120113bdd22964cd816dd1852dad3af522d8888ba0eb886849",
+        "Protocol_0": "a005e24ac2550e5d46d90d8a0fa8c4ab89b9af1355dfca8674fcd0f9f680645e",
+        "Protocol_1": "3398896cdf25f3ba6ed5fa78468aefd2f6f511748af1a6c461df2e7c28f429ca",
+        "Protocol_2": "66596b53fcbbc982a5ebb2a0a5106a1534469c495dafae5a9d7c9a403d8d9a1c",
+        "Protocol_3": "c7db347a1640281a26272e18dedcf7fdbcaa35227f658386932e253c07dbb03d",
+        "Protocol_4": "65c9f02ee45338120113bdd22964cd816dd1852dad3af522d8888ba0eb886849",
+        "Protocol_5": "e6f94230e1e3b88c7fc9eba7bd97ffcbdfbe2eca1d0bf5a98d9fff5d87b666f2"
       }
     },
     "fuzz_2": {
-      "description": "Fuzzed data (depth<=3, size<=4): ['YbGNk\\x0cc\\t91h9[\"jZ1x\\x0bvBP]HOz(\\tiy:]\\'>sd\\tk*7']",
+      "description": "Fuzzed data (seed=42, depth<=3, size<=4): [-700342398]",
       "hashes": {
-        "Default_Protocol_4": "d2dd6234dd43d4a2ed27975f6aceddc6001ffa1bd9740f50ea21f8afb33b6cb0",
-        "Protocol_0": "22051dd32daf1f98edb412c61b9d47bebc7ce022ec4c2c66e1fc5c48905601c2",
-        "Protocol_1": "5eaa8ce8b0190af9f6e3e8ae7c8a037b5bdc54ad006bef46df9f7231a5711ce7",
-        "Protocol_2": "b8907255cb3b2609550dd5e1678e2f41578c0576826ed9c8dfb9243649d11579",
-        "Protocol_3": "8db80cf3052a79f592af8a76022494d7105f57151223503cca54d95bd4a7ffbd",
-        "Protocol_4": "d2dd6234dd43d4a2ed27975f6aceddc6001ffa1bd9740f50ea21f8afb33b6cb0",
-        "Protocol_5": "252c9bbeed9cfb54fa94f53b52ec8ce9ff92c503bbfcf1f59f9ead7f4903541a"
+        "Default_Protocol_4": "cd85269a176970203265d6ad3fec8bd698ce9193f08c5f0a0bdbe2a88636d2b7",
+        "Protocol_0": "77d35c35d44520475139926ef88aaf897a73404bc57da1fd03d95f6b9ccf7ae5",
+        "Protocol_1": "b20ddaee4ec95c3fb64a8a98cf523f5b39bf6facd824955c89957ac5c879bc1f",
+        "Protocol_2": "8e124ae593a9d17f0ae37c028e3c623df481053d1d70e6e46ff10b4bdf8b3b80",
+        "Protocol_3": "5b65f14429a8bce349577f9688e09d173200f6dcc500f0631970ea0a0cd00687",
+        "Protocol_4": "cd85269a176970203265d6ad3fec8bd698ce9193f08c5f0a0bdbe2a88636d2b7",
+        "Protocol_5": "d4b36620fec4304a58dcdfb5cdb5fdebbcf85fe3067f93e818b2f4303619ed73"
       }
     },
     "fuzz_3": {
-      "description": "Fuzzed data (depth<=3, size<=4): set()",
+      "description": "Fuzzed data (seed=42, depth<=3, size<=4): {4026499471.804718, -134698869, None}",
       "hashes": {
-        "Default_Protocol_4": "bea826fb2bda1fb34703d8f0f8cff70a6d3c36fc695d3cb044acc1da6c36b429",
-        "Protocol_0": "e69592a8b1d32df0039cd5d30dee6de023152c222ef28282db599df8e29d1932",
-        "Protocol_1": "48d62f729b782c2311786ea79c0aaa0faa7fb061cbe19cd6a5a0796048670d22",
-        "Protocol_2": "1db3ba52320687cce83a938105d8473d3e2b0ce7c05ae307f4ad09a093bed7c8",
-        "Protocol_3": "0cdaff94fb5e168a49c2a0b2807ed3972fce8e480f1250e43ec781d150f077ec",
-        "Protocol_4": "bea826fb2bda1fb34703d8f0f8cff70a6d3c36fc695d3cb044acc1da6c36b429",
-        "Protocol_5": "56d08dc47ca0820b594ef3bcf3a7a79b167e7747889c5363935d52d80b9c53f1"
+        "Default_Protocol_4": "a6005b0031e6159cdbcd98a5f39f1d094bddd6a10114cb0367461ce653404f01",
+        "Protocol_0": "1bc335b096b0d89b3217548fbed35aedb1eaf2a4e16519026c6665051fde5ce6",
+        "Protocol_1": "60a9f95495fa67560f259e5ba0941e75eb075dc6692c5eb2861cbd33a998fdb8",
+        "Protocol_2": "32e851ba45d587446c175623b680292f9b36df28d7af9119b9ca6a645eb156d2",
+        "Protocol_3": "c3650a0080d97e021fff3d9aa3287842ce15af75d65348502fcbeb1e24be4c68",
+        "Protocol_4": "a6005b0031e6159cdbcd98a5f39f1d094bddd6a10114cb0367461ce653404f01",
+        "Protocol_5": "7647b76dab5e197f53e107f1ee99d97c971164bf5dd40fb8537439a79afe1464"
       }
     },
     "fuzz_4": {
-      "description": "Fuzzed data (depth<=3, size<=4): None",
+      "description": "Fuzzed data (seed=42, depth<=3, size<=4): {False: -3194989669.6401625}",
       "hashes": {
-        "Default_Protocol_4": "9c298d589a2158eb513cb52191144518a2acab2cb0c04f1df14fca0f712fa4a1",
-        "Protocol_0": "8b1663da576e3578fd9e93e64081f24282af0bc3e08b3d3c8e288c26741faa4d",
-        "Protocol_1": "8b1663da576e3578fd9e93e64081f24282af0bc3e08b3d3c8e288c26741faa4d",
-        "Protocol_2": "e71559db7df35982f168ca0bd6d35a0270e621095a7bfd0c3a1773ed09ae1a44",
-        "Protocol_3": "4f3fc348a818941a464e415fff6b9d416c1ddc3b1c64743861d328fbc345bcd6",
-        "Protocol_4": "9c298d589a2158eb513cb52191144518a2acab2cb0c04f1df14fca0f712fa4a1",
-        "Protocol_5": "6c09635decb8153d3c12e3782a69fd2eb097426f912547d351a8647b27d5580a"
+        "Default_Protocol_4": "2fb0647879a9161412d8e50ebc91ed4de313c780ccf03c8eaf5881b267516c8c",
+        "Protocol_0": "4a9125d2580122af6669d42588ab2e2421e30f9178305017769877cafceb7f2a",
+        "Protocol_1": "5ed76006d17ea33bab2918ff24df63ffb6d6f4140abe47ed5425ea37d40dc1d8",
+        "Protocol_2": "9b76f74556b8ce7d9ed848d6650921878d70639bd73d79f4cacf322cfd699c70",
+        "Protocol_3": "9131ab730f385e3bd993bc0a27a88d0eef9035969701d867bfcac2bb7f25f40f",
+        "Protocol_4": "2fb0647879a9161412d8e50ebc91ed4de313c780ccf03c8eaf5881b267516c8c",
+        "Protocol_5": "5e12adfadae65fecdb45b5a5c2bbc3fc7b545d5786a5366e8fe11c22a048cf8d"
       }
     },
     "fuzz_5": {
-      "description": "Fuzzed data (depth<=3, size<=4): (b\"X\\x16\\x01\\x97\\xb7a!\\xf7\\x95\\x07\\xccuSb\\xfd\\xd2\\xd0\\xe8M\\xe8\\xbeZ\\xf...",
+      "description": "Fuzzed data (seed=42, depth<=3, size<=4): [()]",
       "hashes": {
-        "Default_Protocol_4": "0533089526b5430c81690c2c6ba42a8ab041c154b691e472b2583a020784ce89",
-        "Protocol_0": "157c73738003cff1d208055f40e4bdf7db1e7c7566437ee18b9e1a14c64e3818",
-        "Protocol_1": "4a77e345d5a95796d89b6e3f15a286e819089b25ca010960b7731c8f847bc88d",
-        "Protocol_2": "28865f1821f80804fe04a647a02662ab326da628c95cc385bfe3ae6aad7adcd5",
-        "Protocol_3": "fcaf23e9d0034de90998f8d13b02cd5fa339a9015e0b996b0203910adb86a220",
-        "Protocol_4": "0533089526b5430c81690c2c6ba42a8ab041c154b691e472b2583a020784ce89",
-        "Protocol_5": "64fed79d70e7b8d762b3b99b8f740158508739b7798cf07427aa770b9ab3142d"
+        "Default_Protocol_4": "a1cd846e1abcf4866cb14afb396f4deff5490969a47059edf27d26d34cafe8e8",
+        "Protocol_0": "814e66f066f3af3971a68a9c59f61fadf4ee884813227e2e561c2c9494d44ab3",
+        "Protocol_1": "dca9aa4581063278f2848fe28f2ec5361c4c77aa1c204b532ee5d0947d62e802",
+        "Protocol_2": "6a9e2f2009d4eb5085d282b56a9cb4a70b699084aaae7d9341bd2670b520981e",
+        "Protocol_3": "6b13e385548bbb5b771ccadf45b1b9ef31bb6816fe168c7122ee354a73aa9256",
+        "Protocol_4": "a1cd846e1abcf4866cb14afb396f4deff5490969a47059edf27d26d34cafe8e8",
+        "Protocol_5": "e137b10e6ba83e07ff7773e6c56b3979a823b41484487e4bcec37d8277f5c449"
       }
     },
     "fuzz_6": {
-      "description": "Fuzzed data (depth<=3, size<=4): {-0.0, 'y:/n&]4LsNWoP>gp[', None}",
+      "description": "Fuzzed data (seed=42, depth<=3, size<=4): True",
       "hashes": {
-        "Default_Protocol_4": "7f30286cfc09c737c1fb3e3c3cb0f8a995e4e4d874359669d88a313543cfa946",
-        "Protocol_0": "5dc53b03dbdcaa5719a3aaddb76b26230f960a0de21804262fc80c0c6593bc82",
-        "Protocol_1": "15fa0e0dc984a6947f78051e925e88c838d74a5f9bce8af42a78ed99b0a71610",
-        "Protocol_2": "b35a5ef139f710a27f556e8ca247d5e6e98fc05a6b5efc3b1e61098d93036730",
-        "Protocol_3": "1b887ac1bf825b71a9a91f22f86895da306ae4a28a4cab74ca65b5f2451a9467",
-        "Protocol_4": "7f30286cfc09c737c1fb3e3c3cb0f8a995e4e4d874359669d88a313543cfa946",
-        "Protocol_5": "1eb10c5a7a087ca7503b6916f82ae6a801460ee5466cae81d5efeccb23fbbd49"
+        "Default_Protocol_4": "112bda3b495d867b6a98c899fac7c25eb60ca4b6e6fe5ec7ab9299f93e8274bc",
+        "Protocol_0": "8252f6b37cd88a9afd6c793d8ed9a59850775b739b0cb629cf5f8cab92fd2de1",
+        "Protocol_1": "8252f6b37cd88a9afd6c793d8ed9a59850775b739b0cb629cf5f8cab92fd2de1",
+        "Protocol_2": "6b20db5af84de94011f7e8aa3df46b404959716f84dd8dd4110fdd20428a0ae6",
+        "Protocol_3": "669a00d49bd5409dd9617512b8aa8496bcf68222338ae1785f98986736b3be6f",
+        "Protocol_4": "112bda3b495d867b6a98c899fac7c25eb60ca4b6e6fe5ec7ab9299f93e8274bc",
+        "Protocol_5": "5280fce43ea9afbd61ec2c2a16c35118af29eafa08aa2f5f714e54dc9cceb5ae"
       }
     },
     "fuzz_7": {
-      "description": "Fuzzed data (depth<=3, size<=4): [b'\\xc2mIg\\xfaA\\x95\\xf6\\x91\"']",
+      "description": "Fuzzed data (seed=42, depth<=3, size<=4): (b'\\x89\\x1f\\xf9\\xec`\\x14\\x8dK\\xd4\\xa0\\x9e\\xe2\\xdc\\\\\\x931\\xb4\\x11\\x0b\\x...",
       "hashes": {
-        "Default_Protocol_4": "8820daf887f7fe465727415956e1dd7302e5e64efbe54bb4ff0920981108a5c2",
-        "Protocol_0": "6606bf3357c1979f7b2c8289e70b8ef845c42e616b42366e16c338f015925ffc",
-        "Protocol_1": "495c6a6067536dab1cef0802d7f5cea39a516138a6428538e59947cc60ccbb37",
-        "Protocol_2": "80778d40a911d44c6f7d5e7305ebb977d3d286f20f4f9ba51e06df4c16d2f564",
-        "Protocol_3": "9735afc264b9d9adecfb6c3547040c00c490e24ce44ea75ead28d3fde0c3ecf6",
-        "Protocol_4": "8820daf887f7fe465727415956e1dd7302e5e64efbe54bb4ff0920981108a5c2",
-        "Protocol_5": "e17dc91e4681e958c2ab3f2d925f5bbbb9a9fa51e3d7a0f4cdc305f1ff4f162d"
+        "Default_Protocol_4": "9c8bf5bf7b2ded06aeefbea6ad8166092f114194cb21dead766889cb10740ce2",
+        "Protocol_0": "d8493196975fcbd6fb1676bc90aa8086d2ffd117e48940b7d60f1249bceeb0c4",
+        "Protocol_1": "2eb4bb434713b62e2cfaa41c9fc0b7502d69782f67443812e0d35b8a9984285e",
+        "Protocol_2": "d0311591c85f2958f95e7018836825c29c97e3ed599b6babe8bbb3145bb5fe85",
+        "Protocol_3": "d9aea6be6701074f7b6b201e23746a0ee73f1753a24aa73800781ba2261a6ef0",
+        "Protocol_4": "9c8bf5bf7b2ded06aeefbea6ad8166092f114194cb21dead766889cb10740ce2",
+        "Protocol_5": "0a39d580b83b176f07320bb648269aa296fcf36e262865cfc1808e367c419c11"
       }
     },
     "fuzz_8": {
-      "description": "Fuzzed data (depth<=3, size<=4): ';sbk1Me\\\\00:T}AKE*DKa]5_K\\td=y9+#\"yBJ)n_*:Aq7Dr6=H1'",
+      "description": "Fuzzed data (seed=42, depth<=3, size<=4): {b\"\\x1d\\xae\\xe2\\x89\\xc0D\\xc4\\xa4W\\x1cKo(t\\x00\\xf4\\xb8\\xe0\\xb8C\\xf8\\x80...",
       "hashes": {
-        "Default_Protocol_4": "276fea11d53fb0d3a01a696ac3f00e95dcb5c6a1229ca84a0f8684ca86d2456d",
-        "Protocol_0": "e436ff8840cf3c0abf7bf782ef4ebee52b4067b18d2b196535ebcc703d48f350",
-        "Protocol_1": "e267061b59108e0000a9e3ce4ba01e6a39325230188f08857b3b35f5d65fb95c",
-        "Protocol_2": "b22552486c34eab6ceb626ab50e286ef25da6da3a11635cf623c097788f48d45",
-        "Protocol_3": "deac321e5127fc576b2c11a6f0edfdf991e1b722f8aab6a348e72a1f5c7789a0",
-        "Protocol_4": "276fea11d53fb0d3a01a696ac3f00e95dcb5c6a1229ca84a0f8684ca86d2456d",
-        "Protocol_5": "e4a946d4fe8304cb771bc2214dff095f36742d760a772b6c6a5249abd7f3c750"
+        "Default_Protocol_4": "db9bbfa3e9f2e2eec05149f19b4a57c3cd879f96409c5244bc255285c869d2c4",
+        "Protocol_0": "b08f491dae08f50b533935b2e0519cee702a4019d277603de8bc9db1bd8655f0",
+        "Protocol_1": "2df93caeb7b79c679ab50b5e41a8af40df113331ab2af9b47e66231a3c6cd708",
+        "Protocol_2": "5dfed4c8ab1a63ffb46284c9eed9ad2efd4a067c90adc4dbdfd7b971c696f40a",
+        "Protocol_3": "0d9a499cc8f0492f16917bfb7ad0e1a652a69eb881ac236a47f91fd2bca0c133",
+        "Protocol_4": "db9bbfa3e9f2e2eec05149f19b4a57c3cd879f96409c5244bc255285c869d2c4",
+        "Protocol_5": "e1ebbc63e46bda2b156b02a20b284a12124f1195264e7390f520735451ca20de"
       }
     },
     "fuzz_9": {
-      "description": "Fuzzed data (depth<=3, size<=4): ({}, b'\\x83\\xc3-\\t\\xb7C\\xa3\\x7f\\xa8\\xaa\\x1aA\\xd7\\x11\\xb1\\xb0\\xa1`4-V\\x...",
+      "description": "Fuzzed data (seed=42, depth<=3, size<=4): 1013571297",
       "hashes": {
-        "Default_Protocol_4": "b21b9af3d905d770c3befc2221cdbfcd59799f6c718b4ec4825e5dc8a48d5acb",
-        "Protocol_0": "2137062f0a1c14bf5c6be63f7bc04a40650c78f1c0df6a7a79f3645f512040af",
-        "Protocol_1": "58395f609a5c63c49d58b0d176055f51b1066b657e3000e936c9a442978ec720",
-        "Protocol_2": "f58ac86fd1978531128f0c745442c8c22395df50467e7cf8d8119b404774b13e",
-        "Protocol_3": "c45d2d530bb701282e04d3bdfa7cbab9f33df80910fae6905d43e214bef6dda7",
-        "Protocol_4": "b21b9af3d905d770c3befc2221cdbfcd59799f6c718b4ec4825e5dc8a48d5acb",
-        "Protocol_5": "63a8b386c557f47040899d0d0accbf38873ce5d60d726006af80b56871cc13c1"
+        "Default_Protocol_4": "2c563d18532cb02e4d854a5a3a6209ba02c5f15b4212318adfc327dfd988f996",
+        "Protocol_0": "21d97c4c82b9f1c3e884ab9231a0b76ae9b38d37f9a2b4b40cfceb4c5fb7f672",
+        "Protocol_1": "01a9acc426de9f0c03f670530af7e094850209543618edcc04a405892b18efc7",
+        "Protocol_2": "35f937ae0fd863eb44ba3d164e091f86d031e9fb6cfec732a4c19dc533031d95",
+        "Protocol_3": "c1bd031cc3793ee2f3736c55ce17c211aed3d786fd7595812a73b889a85d71ab",
+        "Protocol_4": "2c563d18532cb02e4d854a5a3a6209ba02c5f15b4212318adfc327dfd988f996",
+        "Protocol_5": "89841005695502ad1c24608d716ecd42148c9c864c6346f204272651f16ff496"
       }
     },
     "fuzz_10": {
-      "description": "Fuzzed data (depth<=3, size<=4): ['3z,%`L_u+{0g8pV;6U', {None: '#4t\\x0c@TvCP=OV', b'\\x9c\\xba\\x1d\\xb9r\\x...",
-      "hashes": {
-        "Default_Protocol_4": "522370d7280b7e7c742ad7716f9cc22b3c00bc029b6f1ef8ab5e3fcb87603649",
-        "Protocol_0": "21ac3316fd067574c1ce417e9856605d1fdb782899f5a4719f0d0ee81f1d4033",
-        "Protocol_1": "b0c6398d3efb586945766b41e804cb8048fb0746491b4a7906e620b8eddabad6",
-        "Protocol_2": "123c7b6c900295257870b40b797b0db97a7e4ae6fbed68cc1b7220f65df0c7ee",
-        "Protocol_3": "db618aba23cbf672fc099e41b3c72bc9d9faed89862702e5017139cb4f8dd5e7",
-        "Protocol_4": "522370d7280b7e7c742ad7716f9cc22b3c00bc029b6f1ef8ab5e3fcb87603649",
-        "Protocol_5": "e74a79ef753286c1702a2ef6fd53d61e7939944dc6f338a6fff6c69e61e40677"
-      }
-    },
-    "fuzz_11": {
-      "description": "Fuzzed data (depth<=3, size<=4): {-909859: {None}, b'\\xab\\x9b\\xe3': True, False: None}",
-      "hashes": {
-        "Default_Protocol_4": "8883aecda31d47b48c9defc5483a9ff7acaaa86e4c0794f81085b990dac9a68f",
-        "Protocol_0": "0128cf13de006d3508376e514ce895832c74ccea4e397e3a8ced54f21944313f",
-        "Protocol_1": "ae3cad54d71fe3a4f594fcb133bae60307a95e82999d426f0e942f3af0fc1177",
-        "Protocol_2": "0503b97c75cbba4513c453fd80f746de45492c859114ebd951adc6c8168d75b1",
-        "Protocol_3": "1a770dd2095dc022f30369a66c957005e210366855d32a531f9cfe0e1a181bc0",
-        "Protocol_4": "8883aecda31d47b48c9defc5483a9ff7acaaa86e4c0794f81085b990dac9a68f",
-        "Protocol_5": "54796bbc1e43d03be9be91d055c128b0641d29e6d3daa3d19bbed501e7a9652f"
-      }
-    },
-    "fuzz_12": {
-      "description": "Fuzzed data (depth<=3, size<=4): {True: [b'\\x01\\xda\\xce\\rF\\xf5<\\x0c', b'#\\xef\\x16\\xbc\\xfc\\xf5\\x90\\xf1\\x...",
-      "hashes": {
-        "Default_Protocol_4": "8d904c20b25fd3556f58eae380c54bd3461e98d9eb4ea0b4fa7e44898e723dda",
-        "Protocol_0": "336b76e7eb8e4071304873545701474d9a37ebb5018e7fbbf75cd6a5cf201c1d",
-        "Protocol_1": "981c683896a8502fbaa8a013c1d0b5330ddd4247cc857e9ac29f3effe0e49821",
-        "Protocol_2": "3d1cac1aba00a3cecc3fff77c21e7fb927580c1e6ea11a93f554c8d085a871b5",
-        "Protocol_3": "74fd5ba36575c7b7e195c32c5a6733f8757cb23bcee7739ace21be5f28ce231d",
-        "Protocol_4": "8d904c20b25fd3556f58eae380c54bd3461e98d9eb4ea0b4fa7e44898e723dda",
-        "Protocol_5": "aaadaa3663e06a58de31199fca04bc08272deee8cd33587c764b6353c5bff07a"
-      }
-    },
-    "fuzz_13": {
-      "description": "Fuzzed data (depth<=3, size<=4): 'x/)#A#6\\\\j:Xt@Ae0.wc#T(\\x0b@m?V2uG`j'",
-      "hashes": {
-        "Default_Protocol_4": "402581be3f3787233961cfc57c07f494c18fb60f8a70d4b4cc9bcb7ae23c4405",
-        "Protocol_0": "5e001f129d7ecdce7a83b59e99f70e14cf57a11a0adba29bb1335649278fbd67",
-        "Protocol_1": "098886a887493a8eac352dce76c8f5b5ad89b464b1f48db48f4aad923e6ff698",
-        "Protocol_2": "d0ef7a009a7a7f0b16610e04ba99c906792bb77c1ca13930d915411798722943",
-        "Protocol_3": "58af5445113b43ff4879d5d1d13e54bf42d59982c26931f7dfeae38e2129c8b9",
-        "Protocol_4": "402581be3f3787233961cfc57c07f494c18fb60f8a70d4b4cc9bcb7ae23c4405",
-        "Protocol_5": "d59cb3b139bbcdfdc55571e86dc61f212a12777811cb1930119e9948155a5608"
-      }
-    },
-    "fuzz_14": {
-      "description": "Fuzzed data (depth<=3, size<=4): set()",
-      "hashes": {
-        "Default_Protocol_4": "bea826fb2bda1fb34703d8f0f8cff70a6d3c36fc695d3cb044acc1da6c36b429",
-        "Protocol_0": "e69592a8b1d32df0039cd5d30dee6de023152c222ef28282db599df8e29d1932",
-        "Protocol_1": "48d62f729b782c2311786ea79c0aaa0faa7fb061cbe19cd6a5a0796048670d22",
-        "Protocol_2": "1db3ba52320687cce83a938105d8473d3e2b0ce7c05ae307f4ad09a093bed7c8",
-        "Protocol_3": "0cdaff94fb5e168a49c2a0b2807ed3972fce8e480f1250e43ec781d150f077ec",
-        "Protocol_4": "bea826fb2bda1fb34703d8f0f8cff70a6d3c36fc695d3cb044acc1da6c36b429",
-        "Protocol_5": "56d08dc47ca0820b594ef3bcf3a7a79b167e7747889c5363935d52d80b9c53f1"
-      }
-    },
-    "fuzz_15": {
-      "description": "Fuzzed data (depth<=3, size<=4): {}",
-      "hashes": {
-        "Default_Protocol_4": "926248e52d1fa532c317e37da24ed652ae64110f8219cb5e061668bd3091f048",
-        "Protocol_0": "8e452144801c40bbf1278559e870c09bfeadf68a56dbd75cc095941659b4634d",
-        "Protocol_1": "f07d5abe19c47bb964fc352ae026a6b82a5c2a8d02cd32de48348ab940d53c25",
-        "Protocol_2": "ad2598304a8af697d0c335a50a3e5a1ba06c82d9b63ef5f9d3e730b54cf9148a",
-        "Protocol_3": "8ec16a78d9c9d3646c559df239aea3f15333605ddc702eeacebf6dd3ebeff684",
-        "Protocol_4": "926248e52d1fa532c317e37da24ed652ae64110f8219cb5e061668bd3091f048",
-        "Protocol_5": "bfce13fc2f13ad950016bb48ccbbbd04ce13be07c748476dde1f940fcdfa0d52"
-      }
-    },
-    "fuzz_16": {
-      "description": "Fuzzed data (depth<=3, size<=4): {}",
-      "hashes": {
-        "Default_Protocol_4": "926248e52d1fa532c317e37da24ed652ae64110f8219cb5e061668bd3091f048",
-        "Protocol_0": "8e452144801c40bbf1278559e870c09bfeadf68a56dbd75cc095941659b4634d",
-        "Protocol_1": "f07d5abe19c47bb964fc352ae026a6b82a5c2a8d02cd32de48348ab940d53c25",
-        "Protocol_2": "ad2598304a8af697d0c335a50a3e5a1ba06c82d9b63ef5f9d3e730b54cf9148a",
-        "Protocol_3": "8ec16a78d9c9d3646c559df239aea3f15333605ddc702eeacebf6dd3ebeff684",
-        "Protocol_4": "926248e52d1fa532c317e37da24ed652ae64110f8219cb5e061668bd3091f048",
-        "Protocol_5": "bfce13fc2f13ad950016bb48ccbbbd04ce13be07c748476dde1f940fcdfa0d52"
-      }
-    },
-    "fuzz_17": {
-      "description": "Fuzzed data (depth<=3, size<=4): {None}",
-      "hashes": {
-        "Default_Protocol_4": "2d50b2ad9f5d5826a167dd8d919dc4031b6b435d30eb86aa03c6aeeb86a40002",
-        "Protocol_0": "7d0f941d5aff7a7e685987801f8279b436aff2f42e26221e64e78dbff317d78c",
-        "Protocol_1": "7eb29fe8fec44b78b6fcd3615b17a00c784a2aec28c678dbb9c7464e688ea166",
-        "Protocol_2": "db20d221f438b8edb312c147a6b2c545f65ba177b19470a698b360129e7c0594",
-        "Protocol_3": "81dca9692f622bc1a325b20efa9f0d3517982baa724344dededc10ddb97daf6b",
-        "Protocol_4": "2d50b2ad9f5d5826a167dd8d919dc4031b6b435d30eb86aa03c6aeeb86a40002",
-        "Protocol_5": "d54dbeeeeb0a78a37a90b7c84ccd5a8328e996dae3d2b53686b17cba970dd30e"
-      }
-    },
-    "fuzz_18": {
-      "description": "Fuzzed data (depth<=3, size<=4): 3865651961.126095",
-      "hashes": {
-        "Default_Protocol_4": "7b666044a77c3675a097295682c18e677b0e52ab2cb07930ce543e25c0f5cc86",
-        "Protocol_0": "6421a9350ccc97c363f2857216ba9b41ec1bcecb02d09e1ca9ffc30f7bd04b24",
-        "Protocol_1": "bf255bd2019ad74551cb55b268f7d434af800d6a1d9ae30a701ead6b3013428d",
-        "Protocol_2": "df7575f75b0ec9d9b8b0adc75def18b2adf3f760de51dd842a60866672679976",
-        "Protocol_3": "5cc2421ca75592b426ccc2aa9be17f217c665aa33645a3ed2d8e29f6b3ca8783",
-        "Protocol_4": "7b666044a77c3675a097295682c18e677b0e52ab2cb07930ce543e25c0f5cc86",
-        "Protocol_5": "9320f4a829d92e6dc5ee9ac6bb8eea4c769bbb500e7db59b93998eeb2147889f"
-      }
-    },
-    "fuzz_19": {
-      "description": "Fuzzed data (depth<=3, size<=4): None",
+      "description": "Fuzzed data (seed=42, depth<=3, size<=4): None",
       "hashes": {
         "Default_Protocol_4": "9c298d589a2158eb513cb52191144518a2acab2cb0c04f1df14fca0f712fa4a1",
         "Protocol_0": "8b1663da576e3578fd9e93e64081f24282af0bc3e08b3d3c8e288c26741faa4d",
@@ -1152,76 +1044,184 @@
         "Protocol_5": "6c09635decb8153d3c12e3782a69fd2eb097426f912547d351a8647b27d5580a"
       }
     },
-    "fuzz_20": {
-      "description": "Fuzzed data (depth<=3, size<=4): {0.0, 1026507908, None}",
+    "fuzz_11": {
+      "description": "Fuzzed data (seed=42, depth<=3, size<=4): [{None}]",
       "hashes": {
-        "Default_Protocol_4": "e31598c66afd2f965f8a98573a7797b1d796760f783b14270d77f1bc752c18a0",
-        "Protocol_0": "330b4061099f4aabb295cbbff2d46acb5c365fd4a9f0f1a4b46461ce8098acee",
-        "Protocol_1": "bbbf9aa9af1d846738646a55ff37383c67561d9147d9612497ec1ca6540ce1db",
-        "Protocol_2": "37194dc8d447a12b317673205ed6b0b23b58d6bd56c54fa22b1d8c63d2ff5be9",
-        "Protocol_3": "44b05a57aefb5624357009fe3b3f6770ff39c970bf89a106ad51cd9a46711c38",
-        "Protocol_4": "e31598c66afd2f965f8a98573a7797b1d796760f783b14270d77f1bc752c18a0",
-        "Protocol_5": "d0a2a2a801cf451c6811453b15120c2f45b02951d6016cdd743f365349710cc0"
+        "Default_Protocol_4": "8bee74a514ee8d9958d0318dcb440ff05a8e7584c502d3ce87bbdcc661b3b538",
+        "Protocol_0": "c9e06ceefb9161b33a3430c1ba31e9395d1beac7484d2b239f2e0f0a72da6b80",
+        "Protocol_1": "dbd0e0f53f1dfe5c98f94b1e39b1bf9f9bdd1cc5f2f61a893a0501e29f5dc282",
+        "Protocol_2": "f04ff9f277fb46fa03f4259538aa7581e764da241466b26a4e0a36bcde77c849",
+        "Protocol_3": "ec13db89071dcbc35b16256df002c05e24acd10df1dc8a02b67bdc814a1a9315",
+        "Protocol_4": "8bee74a514ee8d9958d0318dcb440ff05a8e7584c502d3ce87bbdcc661b3b538",
+        "Protocol_5": "11223e55326259947af011b7a2114468e3522d2f6b63e9516582b5e241846e94"
+      }
+    },
+    "fuzz_12": {
+      "description": "Fuzzed data (seed=42, depth<=3, size<=4): {None: [b'_p\\xe6\\x84s\\x1e?9\\x10V\\x05\\x96\\x8d:\\x968\\x01\\x12\\xb5\\xa1\\x0f...",
+      "hashes": {
+        "Default_Protocol_4": "0b5570e0f39910d913f2f6ddaf1b0d64ee5716f0af82bc13be7851e0d306658c",
+        "Protocol_0": "f4d3075f678946b99cec0ec6e43b0e6d2dab96631d8a7ae5a0ac8340e65ab63e",
+        "Protocol_1": "ebd9d658863c415ea5c4b453ed794e59b129066980ad2e444167060cc867b447",
+        "Protocol_2": "3813002f11a4f547af7fb712cfc67cdb1bc565cbc9015e4a70034bff802adeb8",
+        "Protocol_3": "27eed843e4e6cd71e74372b0350628dd07e3248b1f18cc783a4418dccb86e69e",
+        "Protocol_4": "0b5570e0f39910d913f2f6ddaf1b0d64ee5716f0af82bc13be7851e0d306658c",
+        "Protocol_5": "82fa454e08cf4265023ba62a3eca77d16f25dd806527c8ac8bfe9e54ae1eb075"
+      }
+    },
+    "fuzz_13": {
+      "description": "Fuzzed data (seed=42, depth<=3, size<=4): []",
+      "hashes": {
+        "Default_Protocol_4": "ec0a6ccf9debf1c16781445c4b9106080d00478b0559469336db7c7b7b9711c8",
+        "Protocol_0": "91c9a231a5a188e4c6d11b075897454d774e325bebd389b92bec24a60c85ce8e",
+        "Protocol_1": "e49ed736a4f3d288c710ed373717adc18e9976fa7b7af0fe5673c7817d0a9755",
+        "Protocol_2": "a4f82e84e67aa7b6f1c1c917b333fe0fc57973b55e4d42202c8e3c39447bd060",
+        "Protocol_3": "08e14d71fb56a8d6888e9b1f0c21d1a98050e7cdf034fdfcd06d0db59f810477",
+        "Protocol_4": "ec0a6ccf9debf1c16781445c4b9106080d00478b0559469336db7c7b7b9711c8",
+        "Protocol_5": "3fe4a92ad75f98888c0fdc32304e33df0191042a9f85c4d1c59ea2ca284412c0"
+      }
+    },
+    "fuzz_14": {
+      "description": "Fuzzed data (seed=42, depth<=3, size<=4): b'Zliw\\xdd\\xba\\r\\xac\\xa7\\xfb\\xa5\\x19\\x0fg\\xbaV\\xcc\\xdc\\x1b?10\\x89r#l.'",
+      "hashes": {
+        "Default_Protocol_4": "101214eaf150f0f99fd36d4a8bfb851200b22e4487f3259255c2a61cd9dd6837",
+        "Protocol_0": "99f011464a7e8be3cb4d2934b50a784e0f1b8f8c1d9ef7a0554e4f2ad14e1063",
+        "Protocol_1": "2ce7a9701522cfd44ebc0689aa871a1f822b3460d4025be4f289dc8ffbc7cebc",
+        "Protocol_2": "2cbe7b52b1ec15f9756cbd59b0fba227886369c9f47d1b2bcd0728da8231833c",
+        "Protocol_3": "703765acbe504649896f4f9dc929d6c4cd3e483f7bdc72e481d493b6789b9108",
+        "Protocol_4": "101214eaf150f0f99fd36d4a8bfb851200b22e4487f3259255c2a61cd9dd6837",
+        "Protocol_5": "81bc214ae216881877c7ea32b83613d114669feb84d847b44727a548fd94c74d"
+      }
+    },
+    "fuzz_15": {
+      "description": "Fuzzed data (seed=42, depth<=3, size<=4): (829490228, set(), None)",
+      "hashes": {
+        "Default_Protocol_4": "30dc90fa3439db436f09625c668d78aea4980f3763d3e78cdbb80824ef37cc45",
+        "Protocol_0": "274c0d048671c43375ae2d71d4cc10309b494f628e99ffa19a598995a7533a5a",
+        "Protocol_1": "11a35b8b55b352ec1c5bd6b78e2b64bf5b31d92172c3255f473ca0352e376b6c",
+        "Protocol_2": "4262921c3c78dfe4024435b6e15b2a8b4b29f45d656b770f56ce8609ca5e5d9e",
+        "Protocol_3": "bdff1f23e5419fd9d8160c27af789d026ae2d7637364125b465ef4945f17159c",
+        "Protocol_4": "30dc90fa3439db436f09625c668d78aea4980f3763d3e78cdbb80824ef37cc45",
+        "Protocol_5": "3633c085190fef38d5b1190fc6c00aaa06a59c187e4de12e928702430790cb15"
+      }
+    },
+    "fuzz_16": {
+      "description": "Fuzzed data (seed=42, depth<=3, size<=4): -58499648",
+      "hashes": {
+        "Default_Protocol_4": "f02e72275b1a76e40f63790c1c620ef630681ed087c6154eaec213202ac0dadc",
+        "Protocol_0": "347da427db3097a6f56aff49934d412d6c5ec7701be234c1a9fdd700a7132976",
+        "Protocol_1": "c38e48305c246743f38e82e2bd9cb967c2b68b2d12152002ca4a5151ca5b88dd",
+        "Protocol_2": "10ed5b4180904f77174642389b72c6a7f02564c1017c04b061e8c252b9bac515",
+        "Protocol_3": "b143a39a14d022f4d81c8c9ada2d0374cdc0db840703481b38cd160d35afefac",
+        "Protocol_4": "f02e72275b1a76e40f63790c1c620ef630681ed087c6154eaec213202ac0dadc",
+        "Protocol_5": "749417ec9cfb2597275085510c71fccc2fa14229b2e0ccb3a6cc4a7a9c410427"
+      }
+    },
+    "fuzz_17": {
+      "description": "Fuzzed data (seed=42, depth<=3, size<=4): [[[603106852, 'WAS`~*[|!joBr7- (7\\tE76-Z#&k7$an8/8]uPf+v-/5<aR[-+%', '...",
+      "hashes": {
+        "Default_Protocol_4": "55d588de21467a489a310364562f306166946c87b1209f2d3c4bd5b11a914cc3",
+        "Protocol_0": "468ceedcde7a7549150c29c3eb62a982f0fdc97cc5434135c628bcec093ee367",
+        "Protocol_1": "31e1ec88d92723603c5dd609a46cc648c17e1a598106509bc3841ab8f7f3e425",
+        "Protocol_2": "d2860adfab8dbeca7eee6b49b85d92842f09aea731c23a4cfc845cadf1f97eaf",
+        "Protocol_3": "0c08767def28687c259966485bb60559cf7e03c91d49a85a4bf829b5ab9a576f",
+        "Protocol_4": "55d588de21467a489a310364562f306166946c87b1209f2d3c4bd5b11a914cc3",
+        "Protocol_5": "aad08b69b54945252354eede9b8cc5803128f382390cb67335ed45d0bc1a8d8b"
+      }
+    },
+    "fuzz_18": {
+      "description": "Fuzzed data (seed=42, depth<=3, size<=4): {'5Jq^v\\\\dJ\\x0c*Q<\\tjukmQ3m GQ'}",
+      "hashes": {
+        "Default_Protocol_4": "ae1514430af4f05c6b6db4e11833c4e42e021190e9c614de6ed85149c88ceaf6",
+        "Protocol_0": "4eb6e512f89a8a99024755da04d003e75482af9e890795a6dba27a81fe28be55",
+        "Protocol_1": "6a2dc6a523b17eab1c47d505fc6b0bdb804ae3541b20a34dae82eb05525d5144",
+        "Protocol_2": "4fe27f6c2cdaa95556cd6d8938587b6e940f0f4068c595a01b06bce509cb031e",
+        "Protocol_3": "18e2c87b120f32f42aac0a41a5d7efa3d672e8c4171aa66c844a8e7290a16ba0",
+        "Protocol_4": "ae1514430af4f05c6b6db4e11833c4e42e021190e9c614de6ed85149c88ceaf6",
+        "Protocol_5": "4f07b7484003fbad39155976dcb89993c647d60f2b08df2cdaaf2e95ccfd9595"
+      }
+    },
+    "fuzz_19": {
+      "description": "Fuzzed data (seed=42, depth<=3, size<=4): [b'a\\xdf\\t\\xdbx8', False]",
+      "hashes": {
+        "Default_Protocol_4": "b234c66c275cf78bdc8975df826e20c3f0707512d567e1dcec85381204f727bd",
+        "Protocol_0": "cf819580760d55d48e53177e56a3c7316805c6a28fdcb38462c07ff601fbf414",
+        "Protocol_1": "f532179830edd74cf27b1e7184018f1d5488857b4ae988138d20e27bc33046b0",
+        "Protocol_2": "8e094976196ab735174926d46e72a307eae2e0fea7c1c29c1a69d556462ab1ad",
+        "Protocol_3": "9f3e92c181a8d425a1c724e25da86bbc37751ba03892fc684dc4d6e89e6a8250",
+        "Protocol_4": "b234c66c275cf78bdc8975df826e20c3f0707512d567e1dcec85381204f727bd",
+        "Protocol_5": "dd8425d40a8b42977c3c1c9ea0c4a0f2a64738b5923e91ded702b60f5135dcb4"
+      }
+    },
+    "fuzz_20": {
+      "description": "Fuzzed data (seed=42, depth<=3, size<=4): (b'fTG\\xdd\\x11\\xf7\\xc5GY\\xa4\\x82f',)",
+      "hashes": {
+        "Default_Protocol_4": "22edf104734e29e8d5a101e9758953b78ab755c484f8d6e8782e9866a3f1f171",
+        "Protocol_0": "d6c6734f7e12268368534460a126f16a1bbdfb185aeb99d836220005634dfe9a",
+        "Protocol_1": "6b49875dd182ca64807cc1aa6d15264b845cfccac32de5fd81996b5bd524e75e",
+        "Protocol_2": "77c32f33e3111b3efc06043f82c59e892a3af842cf2aac55dfc100d82d627746",
+        "Protocol_3": "3a3a809dc75e9eb80bcc39353302ba5bf2cf18dd89c941493e49542e77806f29",
+        "Protocol_4": "22edf104734e29e8d5a101e9758953b78ab755c484f8d6e8782e9866a3f1f171",
+        "Protocol_5": "c550b8d0db6b6532441be8e8c186cd19e9b55ad5abcb00261ffa35ca4ad96984"
       }
     },
     "fuzz_21": {
-      "description": "Fuzzed data (depth<=3, size<=4): {None: b'+\\x91\\xd1\\xb6\\xf3\\xfb*\\xee\\x11\\xe1\\x98\\x86\\x86v\\x82+N\\xd9\\xe1...",
+      "description": "Fuzzed data (seed=42, depth<=3, size<=4): {True, '-x4d/TI~ET:'}",
       "hashes": {
-        "Default_Protocol_4": "3886ff58eb04eb3ba7093335c4f851634e18eaf2d15b8ca27034732f66135e18",
-        "Protocol_0": "6a948b5874342048ae22569264327c84918504276351863eda4dba0b9bcfbe1f",
-        "Protocol_1": "757e9d2427af56b4bcc0311d81fe9484331281edb10f3d291f10c81db84519d3",
-        "Protocol_2": "4060472f171e4381e2d4c9d631f6780b36cce6f929bbad7dec777936fbd70965",
-        "Protocol_3": "f90cb5793063f00af3ef85c783b4c3f1cbcffee92064fd88cc6ae5805599bbb8",
-        "Protocol_4": "3886ff58eb04eb3ba7093335c4f851634e18eaf2d15b8ca27034732f66135e18",
-        "Protocol_5": "3c2bc5fffd931d0700d5d6087f7947149d5ffb7aca08174b378344d4d9a9591d"
+        "Default_Protocol_4": "e94f1dadf09686e265383317f7bd92440f97046953c5611eb497e136279b1108",
+        "Protocol_0": "567f91548f3e93d976ddfbeb3185ed148fd377ae051e7d518d44aa9dea1cae4d",
+        "Protocol_1": "698376884963065f82fdffe3ccc09985997473089358562a2674c47a9fe91319",
+        "Protocol_2": "674ac731d0c82574e39fe49063211d7461cd097a82a2fc12cd0ec9ed6098a295",
+        "Protocol_3": "0cbcbda5362d381c65d67946425f78d0c1c764c4d6e2ce5f10eca1e10e9a35b3",
+        "Protocol_4": "e94f1dadf09686e265383317f7bd92440f97046953c5611eb497e136279b1108",
+        "Protocol_5": "c6e205df01104481886f25548b644abfb2cfb59f321a9e554b9237c4f22d52a5"
       }
     },
     "fuzz_22": {
-      "description": "Fuzzed data (depth<=3, size<=4): [{True, -7905135159.156689, None}, ({True, 5095718699.711449, b'q\\x0c\\...",
+      "description": "Fuzzed data (seed=42, depth<=3, size<=4): ()",
       "hashes": {
-        "Default_Protocol_4": "2ea63ecc0a8822b7c7fc8608ca666fa3e1bdc49fadbbe00d7ddf0c3cd4ae9fa8",
-        "Protocol_0": "e8e4b2fe56f9a675a3990e30eb40c6a5caf2f005cabb5562ceecd775c29984f6",
-        "Protocol_1": "b7267d1c1424b52c8b74f0481ba03da312283194f11d524ff87c093580b26cc0",
-        "Protocol_2": "3f87c43f2b72ff7d587ba055b15f111b97530aa3d37bc4f94dc50c36d0028625",
-        "Protocol_3": "27c010401997b472d55f99425ec598005467160d2717803db2bb0a5f436c6179",
-        "Protocol_4": "2ea63ecc0a8822b7c7fc8608ca666fa3e1bdc49fadbbe00d7ddf0c3cd4ae9fa8",
-        "Protocol_5": "6b0b0fdcd64398c276d5f51ca473aec4b0cdd76e86b9b6e8f2a08231748a1bf6"
+        "Default_Protocol_4": "559bededcb346584f1200f573f2076d34a011e43064063b0f635e49190772830",
+        "Protocol_0": "cec88ee7627d5bbd6bde131af5b2c84ed91d5e4bfe57b1c546270f19db7bd13b",
+        "Protocol_1": "c4b2896a2081395e282313d6683f07c81e3339ef8b9d2b5a299ea5b626a0998f",
+        "Protocol_2": "52b7561470a738d0daa05ce97f99460d02f997b8dfef94ccb0b8bd5493b574d4",
+        "Protocol_3": "c60882f6222b65821e2af3f1d0a1086a04469164bc9617b35fcc612ce814ddee",
+        "Protocol_4": "559bededcb346584f1200f573f2076d34a011e43064063b0f635e49190772830",
+        "Protocol_5": "4d2bde2bcd7529f75df8685357afae6f49a6792a5e61bbb22a51ae121291bf57"
       }
     },
     "fuzz_23": {
-      "description": "Fuzzed data (depth<=3, size<=4): {False: {b\"\\x13p\\\\Y\\xf3\\xb2'\\xa5@]wM\\x17\\xbf\\xe4]\\xafI\\xb8t$\\xfb\\x13\\x...",
+      "description": "Fuzzed data (seed=42, depth<=3, size<=4): {}",
       "hashes": {
-        "Default_Protocol_4": "3bcf9e3a1d598e20e0da84f786f048175eb2feafd7f26ef7cb173478070b967e",
-        "Protocol_0": "44cb650721fc3fc3a7536a4ca2a3e94b9cbfa9c80b2bfd85c3d792006b4acf4f",
-        "Protocol_1": "8e532fe03ef3c0d263c8519f392d191462e61aeb8514bfa745466a5db98984f2",
-        "Protocol_2": "e451dd3ca1bb7c97ecd6a0e36767b106cc70646e2574a8cb6cff562f3c7dd429",
-        "Protocol_3": "5ba75deeb2e35e367b50e5b9cc9c3263b2df923de8137954e39e2964fdf1953b",
-        "Protocol_4": "3bcf9e3a1d598e20e0da84f786f048175eb2feafd7f26ef7cb173478070b967e",
-        "Protocol_5": "85cb7653f32b52521af40e5107ff51c0109085be8960b878017fbbd69c9e68da"
+        "Default_Protocol_4": "926248e52d1fa532c317e37da24ed652ae64110f8219cb5e061668bd3091f048",
+        "Protocol_0": "8e452144801c40bbf1278559e870c09bfeadf68a56dbd75cc095941659b4634d",
+        "Protocol_1": "f07d5abe19c47bb964fc352ae026a6b82a5c2a8d02cd32de48348ab940d53c25",
+        "Protocol_2": "ad2598304a8af697d0c335a50a3e5a1ba06c82d9b63ef5f9d3e730b54cf9148a",
+        "Protocol_3": "8ec16a78d9c9d3646c559df239aea3f15333605ddc702eeacebf6dd3ebeff684",
+        "Protocol_4": "926248e52d1fa532c317e37da24ed652ae64110f8219cb5e061668bd3091f048",
+        "Protocol_5": "bfce13fc2f13ad950016bb48ccbbbd04ce13be07c748476dde1f940fcdfa0d52"
       }
     },
     "fuzz_24": {
-      "description": "Fuzzed data (depth<=3, size<=4): False",
+      "description": "Fuzzed data (seed=42, depth<=3, size<=4): {False, True, None, inf}",
       "hashes": {
-        "Default_Protocol_4": "24a5341c9a6e30357187cbeaebee0a02714ee3b3d6cead951a613e96ffb746dc",
-        "Protocol_0": "b5c02fe928cc341f80db9f9d6fa8aa44fe0473ec08cf67375f50b6da92513c5f",
-        "Protocol_1": "b5c02fe928cc341f80db9f9d6fa8aa44fe0473ec08cf67375f50b6da92513c5f",
-        "Protocol_2": "c8bed7b7e2f4cb1c60ef195cd92aa122d64fc656c10bd7fa138e16382cb52be3",
-        "Protocol_3": "ae7fee9ffff7b1a04c3cedd82d414c1e2cfab3fb24e845af73446fc61a2a47ca",
-        "Protocol_4": "24a5341c9a6e30357187cbeaebee0a02714ee3b3d6cead951a613e96ffb746dc",
-        "Protocol_5": "132915fa0f4abd3a7939610b8d088fbbcdff866e17b5cbb2c0bdcb37782f4da2"
+        "Default_Protocol_4": "dcf4c3eaffd7173b3853951f63971b444a6160bd0a1a2de63ad881d113d92efe",
+        "Protocol_0": "ebc8cba61b010011c544faa5fff6a0c40edf38f30f5fdd69f8eb4f9fc97a36a7",
+        "Protocol_1": "345cbc9fbc8c80c9981a3c9ac0fd82e0c3b8af7772f5fd9e1aa9c7401e33e938",
+        "Protocol_2": "9c23ef8d25777d96ac4729a8bcf0894e1b0206ece92ae9f3ca6cd092d0499ed0",
+        "Protocol_3": "47e689d6174232793d6680f569d0b7178f22ad2e124c6f281aee35320691e517",
+        "Protocol_4": "dcf4c3eaffd7173b3853951f63971b444a6160bd0a1a2de63ad881d113d92efe",
+        "Protocol_5": "58f2bc3ed1c6567b0b82c43bce9fe79b9b24e408edc948b76f0d682ade25796c"
       }
     },
     "fuzz_25": {
-      "description": "Fuzzed data (depth<=3, size<=4): (\"B)AkQ@e\\x0bt~dO;jJE'xy^Mvjy'rEr?[1JQsk\", ([-233915472, inf, b\"g\\xff\\...",
+      "description": "Fuzzed data (seed=42, depth<=3, size<=4): {True, -674080722, None}",
       "hashes": {
-        "Default_Protocol_4": "d35fb23d3fc7fee8cff787fb317f2234369bc960ce346203e60397620f342460",
-        "Protocol_0": "8f6c75f0a8cbbfea51abdba46f97922db0d9ac642d696b287206063b7fe04e9a",
-        "Protocol_1": "b32113cc2a68534de22d6dc9888c31f9718f64d0d4bf42b8e5fddc1dadaaf9e9",
-        "Protocol_2": "536efe302d2f77c3b854701fc8b52826c3d51ac72bf356c50c2e692601e858a5",
-        "Protocol_3": "7282612fb0d993dc6b415b6a2d02bda8e585e0c576e7dd8deac69847e6ee30c8",
-        "Protocol_4": "d35fb23d3fc7fee8cff787fb317f2234369bc960ce346203e60397620f342460",
-        "Protocol_5": "bdfcd4d44b4b7afe667a1cd9483b5bec929a5f2e1d7030e717a5e8b6d0972c24"
+        "Default_Protocol_4": "61768227a6160c1e3c63c755b38cff99c8d869496879fb12500652accd62758c",
+        "Protocol_0": "acef1bfd6a3003e2c6c4bb4508e0d6caa7b7fc14421255b330a8c5a1cecdad42",
+        "Protocol_1": "ba332d6a8b1f5da8941e3bb3909dcf4b3bb3c494eb0b810cfebd5cdbbf6b3365",
+        "Protocol_2": "d13611da1d577ad68425fff2b2c1eeb56960a9a6fc1a018d30997f07baf06b35",
+        "Protocol_3": "22730f0052c63f3222dfe0d40e108c9238ce6fa377440b2d61b6321855af57ad",
+        "Protocol_4": "61768227a6160c1e3c63c755b38cff99c8d869496879fb12500652accd62758c",
+        "Protocol_5": "b87773f03469d03f970130a65e54af6aa21cc9d52591492552de66d202f6e14f"
       }
     }
   }
