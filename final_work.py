@@ -3,12 +3,14 @@
 import pickle
 import hashlib
 import sys
-import math # For inf, nan
+import math  # For inf, nan
 import random
 import string
-from decimal import Decimal # For precise float-like behavior if needed
+from decimal import Decimal  # For precise float-like behavior if needed
+import json  # For output
 
-# --- Helper Function ---
+
+# --- Helper Functions ---
 def get_pickle_hash(data_object, protocol=None, note=""):
     """
     Pickles an object and returns its SHA256 hash.
@@ -31,9 +33,26 @@ def get_pickle_hash(data_object, protocol=None, note=""):
             f"Error pickling object ({note}) with protocol "
             f"{protocol if protocol is not None else 'Default (' + str(pickle.DEFAULT_PROTOCOL) + ')'}: {e}"
         )
-        # For fuzzed objects, the object representation might be too long or complex
-        # print(f"Failed object causing error: {str(data_object)[:200]}")
         return f"ERROR: {error_message}"
+
+
+def get_limited_repr(data_object, max_chars=2048):
+    """
+    Returns repr(data_object), truncated if it exceeds max_chars.
+    Args:
+        data_object: The Python object to represent.
+        max_chars: The maximum number of characters for the representation.
+    Returns:
+        A string representation of the data_object.
+    """
+    try:
+        r = repr(data_object)
+    except Exception as e:
+        # Fallback if repr() itself fails on a strange object
+        return f"<Error generating repr: {type(data_object).__name__} - {e}>"
+    if len(r) > max_chars:
+        return r[:max_chars - 3] + "..."
+    return r
 
 
 # --- Test Cases ---
@@ -46,18 +65,18 @@ test_cases_basic = [
     {"id": "int_small_neg", "data": -1, "desc": "Small negative integer"},
     {
         "id": "int_large_pos",
-        "data": 2**100,
+        "data": 2 ** 100,
         "desc": "A large positive integer (Python arbitrary precision)",
     },
-    {"id": "int_large_neg", "data": -(2**100), "desc": "A large negative integer"},
+    {"id": "int_large_neg", "data": -(2 ** 100), "desc": "A large negative integer"},
     {
         "id": "int_boundary_32bit_pos",
-        "data": 2**31 - 1,
+        "data": 2 ** 31 - 1,
         "desc": "Max positive 32-bit signed int",
     },
     {
         "id": "int_boundary_32bit_plus_one",
-        "data": 2**31,
+        "data": 2 ** 31,
         "desc": "Max positive 32-bit signed int + 1",
     },
     {"id": "float_simple", "data": 3.14159, "desc": "A simple float"},
@@ -216,21 +235,18 @@ test_cases_containers = [
 ]
 
 # 3. Nested and Complex Structures (Extended)
-# Original deep_list logic, which creates a complex recursive structure
 deep_list_orig_logic = [1]
 temp_list_for_deep_list = deep_list_orig_logic
-for _ in range(10):  # Reduced range from 50 to keep it manageable
+for _ in range(10):
     new_level = [temp_list_for_deep_list]
     temp_list_for_deep_list.append(new_level)
     temp_list_for_deep_list = new_level
 temp_list_for_deep_list.append("end_orig_deep")
 
-# Simpler deeply nested list (non-recursive definition)
 simple_deep_item = "end_simple_deep"
-for _ in range(30):  # Depth of nesting
+for _ in range(30):
     simple_deep_item = [simple_deep_item]
 simple_deep_list_data = simple_deep_item
-
 
 complex_shared_obj = ["shared_part"]
 structure_with_shared = [
@@ -291,7 +307,6 @@ test_cases_complex = [
 ]
 
 # 4. Recursive Structures
-# These are defined after list/dict types are available.
 simple_recursive_list_data = []
 simple_recursive_list_data.append(simple_recursive_list_data)
 
@@ -319,10 +334,9 @@ test_cases_recursive = [
         "data": recursive_list_A_data,
         "desc": "Mutually recursive lists A <-> B",
     },
-    { # This tests pickling a part of a structure that involves shared references.
-      # It's not directly recursive itself but comes from a complex graph.
+    {
         "id": "obj_indirect_recursion_complex_shared_part",
-        "data": structure_with_shared[2], # This is {"key": complex_shared_obj}
+        "data": structure_with_shared[2],
         "desc": "Shared object part of a complex structure (re-test)",
     },
 ]
@@ -336,19 +350,14 @@ class MyObjectStable:
         self.items_set = items_set if items_set is not None else set()
 
     def __getstate__(self):
-        # Ensure set is sorted for stable pickling output
         state = self.__dict__.copy()
         try:
-            # Try sorting directly, works if elements are comparable
             state["items_set"] = sorted(list(self.items_set))
         except TypeError:
-            # Fallback for non-comparable elements (e.g., mixed types, NaN)
-            # Sort by representation for stability
             state["items_set"] = sorted(list(map(repr, self.items_set)))
         return state
 
     def __setstate__(self, state):
-        # Convert sorted list back to set
         state["items_set"] = set(state["items_set"])
         self.__dict__.update(state)
 
@@ -363,6 +372,9 @@ class MyObjectStable:
             f"items_set={items_repr})"
         )
 
+    def __repr__(self):  # Added for better representation in output
+        return f"MyObjectStable({self.name!r}, {self.value!r}, {self.items_set!r})"
+
 
 class MyObjectUnstable:
     def __init__(self, name, value, items_set=None):
@@ -376,28 +388,32 @@ class MyObjectUnstable:
             f"items_set={self.items_set})"
         )
 
+    def __repr__(self):  # Added for better representation in output
+        return f"MyObjectUnstable({self.name!r}, {self.value!r}, {self.items_set!r})"
+
 
 custom_obj_stable = MyObjectStable("stable", 100, {"gamma", "alpha", "beta"})
 custom_obj_unstable = MyObjectUnstable(
     "unstable", 200, {"zeta", "epsilon", "delta"}
 )
 
-# Dynamically created class for default behavior
 MyObjectDefault = type(
     "MyObjectDefault",
     (object,),
     {
         "__init__": lambda self, x, y_set: setattr(self, "attr1", x)
-        or setattr(self, "attr2_set", y_set),
+                                           or setattr(self, "attr2_set", y_set),
         "attr1": "default_val1",
         "attr2_set": {"default_set_item"},
         "__str__": lambda self: (
             f"MyObjectDefault(attr1='{self.attr1}', attr2_set={self.attr2_set})"
+        ),
+        "__repr__": lambda self: (  # Added for better representation
+            f"MyObjectDefault({getattr(self, 'attr1', 'N/A')!r}, {getattr(self, 'attr2_set', 'N/A')!r})"
         )
     },
 )
 custom_obj_default_instance = MyObjectDefault("val1_instance", {"data_set_instance"})
-
 
 test_cases_custom_objects = [
     {
@@ -419,21 +435,19 @@ test_cases_custom_objects = [
 
 
 # 6. Advanced Pickling Control / White-box Inspired
-# Classes using __reduce__ and __reduce_ex__ to control pickling.
-# These methods are key to how pickle serializes custom objects.
-# Testing them helps verify pickle's interaction with these protocols.
-
 class ReduciblePoint:
     def __init__(self, x, y):
         self.x = x
         self.y = y
 
     def __reduce__(self):
-        # Returns: (callable_to_reconstruct, args_for_callable)
         return (self.__class__, (self.x, self.y))
 
     def __str__(self):
         return f"ReduciblePoint({self.x}, {self.y})"
+
+    def __repr__(self):  # Added
+        return f"ReduciblePoint({self.x!r}, {self.y!r})"
 
 
 class ReduciblePointEx(ReduciblePoint):
@@ -443,19 +457,16 @@ class ReduciblePointEx(ReduciblePoint):
         self.extra_state = {"info": "from reduce_ex", "version": 1}
 
     def __reduce_ex__(self, protocol):
-        # Returns: (callable, args, state, listitems, dictitems)
-        # State is passed to __setstate__ if defined, else set in __dict__.
         return (
-            self.__class__, # callable to reconstruct
-            (self.x, self.y, self.z), # args for callable
-            self.extra_state, # state
-            None, # list items iterator (for list subclasses)
-            None, # dict items iterator (for dict subclasses)
+            self.__class__,
+            (self.x, self.y, self.z),
+            self.extra_state,
+            None,
+            None,
         )
 
     def __setstate__(self, state):
         self.extra_state = state
-        # If __dict__ was part of state: self.__dict__.update(state)
 
     def __str__(self):
         return (
@@ -463,29 +474,24 @@ class ReduciblePointEx(ReduciblePoint):
             f"extra={self.extra_state})"
         )
 
-# Class to test memoization handling with custom __new__
-# Pickle should correctly use its memo for `mt_shared_A` if it's referenced multiple times.
+    def __repr__(self):  # Added
+        return f"ReduciblePointEx({self.x!r}, {self.y!r}, {self.z!r}, extra_state={self.extra_state!r})"
+
+
 class MemoTricky:
-    _instance_cache = {} # Class-level cache
+    _instance_cache = {}
 
     def __new__(cls, name):
         if name not in cls._instance_cache:
             instance = super().__new__(cls)
-            instance.name = name # Initialize name here
-            instance.data = [] # Mutable part specific to instance
+            instance.name = name
+            instance.data = []
             cls._instance_cache[name] = instance
         return cls._instance_cache[name]
 
     def __init__(self, name):
-        # __init__ might be called on an already initialized object from cache.
-        # Ensure it's idempotent or handles this.
-        # For pickling, usually __new__ is called, then __setstate__ (if exists),
-        # or attributes are set from __reduce__ state.
-        if not hasattr(self, 'initialized_by_init'): # Avoid re-init issues
+        if not hasattr(self, 'initialized_by_init'):
             self.initialized_by_init = True
-            # self.name = name # name is set in __new__
-            # self.data = [] # data is set in __new__
-
 
     def add_data(self, item):
         self.data.append(item)
@@ -493,33 +499,25 @@ class MemoTricky:
     def __str__(self):
         return f"MemoTricky(name='{self.name}', data={self.data})"
 
+    def __repr__(self):  # Added
+        return f"MemoTricky({self.name!r})"  # Keep repr simple to avoid recursion issues with data
+
     def __getstate__(self):
-        # Return only what's needed to reconstruct this instance's unique state
         return {"name": self.name, "data": self.data}
 
     def __setstate__(self, state):
         self.name = state["name"]
         self.data = state["data"]
-        # This object, after unpickling, will be a new instance,
-        # not necessarily from the _instance_cache unless __reduce__ forces it.
         self.initialized_by_init = True
 
 
-# Clear cache before creating test instances
 MemoTricky._instance_cache.clear()
 mt_shared_A = MemoTricky("shared_A")
 mt_shared_A.add_data(1)
 mt_shared_A.add_data(2)
-
 mt_unique_B = MemoTricky("unique_B")
 mt_unique_B.add_data(100)
-
-# Create a list where the same MemoTricky instance appears multiple times
-# This tests if pickle's internal memoization correctly handles shared references
-# to custom objects during the pickling process.
 memo_test_list = [mt_shared_A, mt_unique_B, mt_shared_A, MemoTricky("another_A")]
-# Note: MemoTricky("another_A") will be a *new* object if "another_A" != "shared_A"
-# If "another_A" was "shared_A", it would be the same as mt_shared_A.
 
 test_cases_advanced_pickling = [
     {
@@ -538,21 +536,21 @@ test_cases_advanced_pickling = [
         "desc": f"List with shared MemoTricky instances: {[str(x) for x in memo_test_list]}",
     },
 ]
-MemoTricky._instance_cache.clear() # Clean up
-
+MemoTricky._instance_cache.clear()
 
 # 7. Fuzzing Test Cases
-# Configuration for the fuzzer
-FUZZ_NUM_TEST_CASES = 25 # Number of fuzzed objects to generate
-FUZZ_MAX_DEPTH = 3 # Max nesting depth for generated objects
-FUZZ_MAX_COLLECTION_SIZE = 4 # Max elements in lists, dicts, sets
+FUZZ_NUM_TEST_CASES = 25
+FUZZ_MAX_DEPTH = 3
+FUZZ_MAX_COLLECTION_SIZE = 4
 FUZZ_MAX_STRING_LENGTH = 50
 FUZZ_MAX_BYTES_LENGTH = 50
-FUZZ_MAX_INT = 2**30 - 1 # Keep ints a bit smaller for fuzzer
-FUZZ_MIN_INT = -(2**30)
+FUZZ_MAX_INT = 2 ** 30 - 1
+FUZZ_MIN_INT = -(2 ** 30)
+FUZZ_SEED = 42
+random.seed(FUZZ_SEED)
+
 
 def generate_fuzzed_basic_type():
-    """Generates a random basic Python type."""
     type_choice = random.choice(
         ["int", "float", "str", "bool", "none", "bytes"]
     )
@@ -560,7 +558,7 @@ def generate_fuzzed_basic_type():
         return random.randint(FUZZ_MIN_INT, FUZZ_MAX_INT)
     elif type_choice == "float":
         special_floats = [float("inf"), float("-inf"), float("nan"), 0.0, -0.0]
-        if random.random() < 0.2: # 20% chance of a special float
+        if random.random() < 0.2:
             return random.choice(special_floats)
         return random.uniform(-1e10, 1e10)
     elif type_choice == "str":
@@ -571,21 +569,17 @@ def generate_fuzzed_basic_type():
     elif type_choice == "bytes":
         length = random.randint(0, FUZZ_MAX_BYTES_LENGTH)
         return bytes(random.getrandbits(8) for _ in range(length))
-    else:  # 'none'
+    else:
         return None
 
+
 def generate_fuzzed_object(current_depth=0):
-    """Recursively generates a fuzzed Python object."""
     if current_depth >= FUZZ_MAX_DEPTH:
         return generate_fuzzed_basic_type()
-
-    # Prefer basic types more often as depth increases or by chance
     if current_depth > 0 and random.random() < 0.3 * current_depth:
-         type_choice = 'basic'
+        type_choice = 'basic'
     else:
         type_choice = random.choice(["basic", "list", "tuple", "dict", "set"])
-
-
     if type_choice == "basic":
         return generate_fuzzed_basic_type()
     elif type_choice == "list":
@@ -600,98 +594,94 @@ def generate_fuzzed_object(current_depth=0):
         size = random.randint(0, FUZZ_MAX_COLLECTION_SIZE)
         d = {}
         for _ in range(size):
-            # Ensure keys are hashable and often basic types for simplicity
             key_type_choice = random.choice(["str_key", "int_key", "bytes_key", "bool_key", "none_key"])
             key = None
             if key_type_choice == "str_key":
-                key_len = random.randint(1,10)
+                key_len = random.randint(1, 10)
                 key = "".join(random.choice(string.ascii_letters) for _ in range(key_len))
             elif key_type_choice == "int_key":
                 key = random.randint(FUZZ_MIN_INT // 1000, FUZZ_MAX_INT // 1000)
             elif key_type_choice == "bytes_key":
-                key_len = random.randint(1,10)
+                key_len = random.randint(1, 10)
                 key = bytes(random.getrandbits(8) for _ in range(key_len))
             elif key_type_choice == "bool_key":
                 key = random.choice([True, False])
-            elif key_type_choice == "none_key": # None can be a dict key
+            elif key_type_choice == "none_key":
                 key = None
-
-            # Fallback for complex keys from fuzzed_object (less likely now)
-            # try:
-            #     hash(key)
-            # except TypeError: # Should be rare with controlled key generation
-            #     key = f"fallback_fuzz_key_{random.randint(0, 1000)}"
             d[key] = generate_fuzzed_object(current_depth + 1)
         return d
     elif type_choice == "set":
         size = random.randint(0, FUZZ_MAX_COLLECTION_SIZE)
         s = set()
         for _ in range(size):
-            # Ensure elements are hashable for sets
             elem = generate_fuzzed_object(current_depth + 1)
             try:
-                hash(elem) # Check hashability
+                hash(elem)
                 s.add(elem)
             except TypeError:
-                # If element is not hashable, add a guaranteed hashable basic type
-                s.add(generate_fuzzed_basic_type())
+                s.add(generate_fuzzed_basic_type())  # Fallback
         return s
-    return None # Should not be reached
+    return None
+
 
 test_cases_fuzzing = []
 for i in range(FUZZ_NUM_TEST_CASES):
     fuzzed_data = None
     try:
         fuzzed_data = generate_fuzzed_object()
-        desc_str = f"Fuzzed data (depth<={FUZZ_MAX_DEPTH}, size<={FUZZ_MAX_COLLECTION_SIZE})"
-        # Try to get a short string representation, fallback if too complex/long
+        desc_str = f"Fuzzed data (seed={FUZZ_SEED}, depth<={FUZZ_MAX_DEPTH}, size<={FUZZ_MAX_COLLECTION_SIZE})"
         try:
             data_repr_short = repr(fuzzed_data)[:70]
             if len(repr(fuzzed_data)) > 70:
                 data_repr_short += "..."
             desc_str = f"{desc_str}: {data_repr_short}"
         except Exception:
-            pass # Stick to generic description if repr fails or is too slow
-
+            pass
         test_cases_fuzzing.append(
-            {"id": f"fuzz_{i+1}", "data": fuzzed_data, "desc": desc_str}
+            {"id": f"fuzz_{i + 1}", "data": fuzzed_data, "desc": desc_str}
         )
     except Exception as e:
-        print(f"Error generating fuzzed test case {i+1}: {e}. Skipping this one.")
-        # Optionally, add a placeholder or specific error case if desired
+        print(f"Error generating fuzzed test case {i + 1}: {e}. Skipping this one.")
         test_cases_fuzzing.append(
             {
-                "id": f"fuzz_{i+1}_generation_error",
-                "data": None, # Or some error marker object
-                "desc": f"Error during generation of fuzzed object: {e}",
+                "id": f"fuzz_{i + 1}_generation_error",
+                "data": None,
+                "desc": f"Error during generation of fuzzed object (seed={FUZZ_SEED}): {e}",
             }
         )
 
 
 # --- Test Execution ---
 def run_tests(test_cases, category_name, protocols_to_test):
-    """Runs pickle-hash tests for a list of test cases."""
-    results = {}
+    """
+    Runs pickle-hash tests for a list of test cases.
+    Returns two dictionaries: one for summary results, one for detailed results with input repr.
+    """
+    category_summary_results = {}
+    category_detailed_results = {}
     print(f"\n\n{'=' * 10} CATEGORY: {category_name} {'=' * 10}")
 
     for case in test_cases:
         case_id = case["id"]
         data = case["data"]
         desc = case["desc"]
+        input_repr_str = get_limited_repr(data)  # Get representation of input data
 
         if "generation_error" in case_id and data is None:
             print(f"\n--- SKIPPING Case ID: {case_id} (Data generation failed) ---")
             print(f"Description: {desc}")
-            results[case_id] = {"description": desc, "hashes": {"ERROR": "Data generation failed"}}
+            error_entry = {"description": desc, "hashes": {"ERROR": "Data generation failed"}}
+            category_summary_results[case_id] = error_entry
+            category_detailed_results[case_id] = {**error_entry, "input_repr": "<Data generation failed>"}
             continue
 
-        results[case_id] = {"description": desc, "hashes": {}}
+        summary_entry = {"description": desc, "hashes": {}}
+        detailed_entry = {"description": desc, "input_repr": input_repr_str, "hashes": {}}
+
         print(f"\n--- Testing Case ID: {case_id} ---")
         print(f"Description: {desc}")
-        # Data representation can be very long for fuzzed data, so limit it.
-        # data_repr = repr(data)
-        # print(f"Input Data Preview: {data_repr[:150]}{'...' if len(data_repr) > 150 else ''}")
-
+        # Uncomment if a preview of the limited_repr is desired during console output
+        # print(f"Input Data Repr (limited): {input_repr_str[:100]}{'...' if len(input_repr_str) > 100 else ''}")
 
         for protocol in protocols_to_test:
             proto_name_str = (
@@ -708,28 +698,30 @@ def run_tests(test_cases, category_name, protocols_to_test):
             current_hash = get_pickle_hash(
                 data, protocol=protocol, note=f"{case_id} (Proto: {proto_name_str})"
             )
-            results[case_id]["hashes"][proto_key_name] = current_hash
+            summary_entry["hashes"][proto_key_name] = current_hash
+            detailed_entry["hashes"][proto_key_name] = current_hash
             print(f"  {proto_key_name}: {current_hash}")
 
-            # For types known to have potential instability (sets, some custom objects without
-            # explicit ordering, or potentially complex fuzzed data), run a few times
-            # with the default protocol to spot obvious non-determinism in *this* environment.
             if (("EXPECT POTENTIAL VARIATION" in desc.upper() or "FUZZ_" in case_id.upper())
-                 and protocol is None and not current_hash.startswith("ERROR:")) :
+                    and protocol is None and not current_hash.startswith("ERROR:")):
                 print(
                     f"    (Verifying potential instability for '{case_id}' with default "
                     f"protocol, 2 more runs):"
                 )
-                for i in range(2):  # Two more runs for this specific case
+                for i_run in range(2):
                     h = get_pickle_hash(
                         data,
                         protocol=protocol,
-                        note=f"{case_id} default proto, extra run {i + 2}",
+                        note=f"{case_id} default proto, extra run {i_run + 2}",
                     )
-                    print(f"      Run {i + 2}: {h}")
+                    print(f"      Run {i_run + 2}: {h}")
                     if h != current_hash and not h.startswith("ERROR:"):
                         print(f"      WARNING: Hash mismatch on extra run for {case_id}!")
-    return results
+
+        category_summary_results[case_id] = summary_entry
+        category_detailed_results[case_id] = detailed_entry
+
+    return category_summary_results, category_detailed_results
 
 
 if __name__ == "__main__":
@@ -743,37 +735,26 @@ if __name__ == "__main__":
         "Fuzzing": test_cases_fuzzing,
     }
 
-    # Determine protocols to test
     protocols_to_test_core = [None, pickle.HIGHEST_PROTOCOL]
-    # Add specific common protocols if not already covered by default/highest
-    # and ensure they are not higher than HIGHEST_PROTOCOL
-    for p_val in [0, 1, 2, 3, 4]: # Include older protocols too for broader testing
+    for p_val in [0, 1, 2, 3, 4]:
         if p_val <= pickle.HIGHEST_PROTOCOL and p_val not in protocols_to_test_core:
             protocols_to_test_core.append(p_val)
-    if sys.version_info >= (3, 8) and 5 <= pickle.HIGHEST_PROTOCOL: # Protocol 5 requires Python 3.8+
+    if sys.version_info >= (3, 8) and 5 <= pickle.HIGHEST_PROTOCOL:
         if 5 not in protocols_to_test_core:
             protocols_to_test_core.append(5)
 
-    # Ensure None (for default) is distinctly handled and protocols are unique and sorted.
-    unique_protocols_set = set()
     processed_protocols = []
-
-    # Add None first if it's intended to be tested (represents default)
-    if None not in unique_protocols_set: # Conceptually, 'None' means default
+    if None not in processed_protocols:  # Conceptually, 'None' means default
         processed_protocols.append(None)
-        unique_protocols_set.add("DefaultMarker") # Use a marker for the set
 
-    # Add other protocols, ensuring they are valid and sorted
-    # Filter out None if it was added, sort integers, then re-add None at the start.
     numeric_protocols = sorted(
         list(set(p for p in protocols_to_test_core if isinstance(p, int)))
     )
 
     final_protocols_to_test = []
-    if None in processed_protocols: # If default was intended
+    if None in processed_protocols:
         final_protocols_to_test.append(None)
     final_protocols_to_test.extend(numeric_protocols)
-
 
     print(f"Python Version: {sys.version.splitlines()[0]}")
     print(f"Platform: {sys.platform}")
@@ -784,32 +765,47 @@ if __name__ == "__main__":
         f"{[p if p is not None else f'Default({pickle.DEFAULT_PROTOCOL})' for p in final_protocols_to_test]}"
     )
 
-    environment_results = {}
+    environment_summary_results = {}
+    environment_detailed_results = {}  # For the new file with input repr
 
     for category_name, test_data_list in all_test_data_categories.items():
-        environment_results[category_name] = run_tests(
+        summary_res, detailed_res = run_tests(
             test_data_list, category_name, final_protocols_to_test
         )
+        environment_summary_results[category_name] = summary_res
+        environment_detailed_results[category_name] = detailed_res
 
-    print("\n\n--- All Test Hashes Collected (for this environment) ---")
-    import json # Keep import here as it's only for output
+    print("\n\n--- All Test Data Collected (for this environment) ---")
 
     py_version_slug = f"py{sys.version_info.major}{sys.version_info.minor}"
     platform_slug = sys.platform.replace("-", "_").lower()
-    output_filename = f"pickle_hashes_{py_version_slug}_{platform_slug}.json"
 
+    # Output file 1: Hashes only (original format)
+    output_filename_summary = f"pickle_hashes_{py_version_slug}_{platform_slug}_seed{FUZZ_SEED}.json"
     try:
-        with open(output_filename, "w", encoding="utf-8") as f:
-            json.dump(environment_results, f, indent=2, ensure_ascii=False)
-        print(f"\nResults saved to {output_filename}")
+        with open(output_filename_summary, "w", encoding="utf-8") as f:
+            json.dump(environment_summary_results, f, indent=2, ensure_ascii=False)
+        print(f"\nSummary results (hashes only) saved to {output_filename_summary}")
     except Exception as e:
-        print(f"\nError saving results to {output_filename}: {e}")
+        print(f"\nError saving summary results to {output_filename_summary}: {e}")
+
+    # Output file 2: Inputs and Hashes (new format)
+    output_filename_detailed = f"pickle_inputs_and_hashes_{py_version_slug}_{platform_slug}_seed{FUZZ_SEED}.json"
+    try:
+        with open(output_filename_detailed, "w", encoding="utf-8") as f:
+            json.dump(environment_detailed_results, f, indent=2, ensure_ascii=False)
+        print(f"Detailed results (inputs and hashes) saved to {output_filename_detailed}")
+    except Exception as e:
+        print(f"\nError saving detailed results to {output_filename_detailed}: {e}")
 
     print("\n--- Next Steps (Reminder) ---")
     print("1. Run this script in VARIOUS environments (different OS, Python versions).")
     print("2. Collect and compare the JSON output files from each environment.")
+    print("   - Use the 'pickle_hashes_...' files for direct hash comparison.")
+    print("   - Use the 'pickle_inputs_and_hashes_...' files for more context on what was pickled.")
     print("3. Any differing hashes for the *same test case ID and same protocol* "
           "across environments indicate an instability.")
+    print("   (With the fixed seed, fuzzed cases are now also directly comparable).")
     print("4. This script provides a foundation. Consider deeper white-box analysis "
           "of pickle's C code if specific instabilities are found and need diagnosis.")
     print("5. Review test coverage (e.g., using a traceability matrix against pickle features).")
